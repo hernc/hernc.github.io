@@ -1,0 +1,26 @@
+body{
+    background-color: #33FFFF;
+}    
+
+.logo {
+    font-size: 35px;
+    background-color: #B1D6CA;
+    width: 100%;
+    border: 3px dotted #50ABFD ;
+    margin: 5px;
+}
+
+.bauhaus{
+    color: purple;
+    background-color: #FFC285;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-decoration: overline;
+}
+
+.junk{
+    color: blue;
+    border-style:  solid;
+}
+
