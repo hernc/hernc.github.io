@@ -1,6 +1,12 @@
 body{
     background-color: #33FFFF;
-}    
+    font: 80%/1.5 arial, helvetica, sans-serif;
+    text-align: center;
+}  
+
+.lab , .index{
+    background-color:white;
+}
 
 .logo {
     font-size: 35px;
@@ -17,6 +23,7 @@ body{
 
 h1,h2,h3,h4,h5,h6 {
     text-decoration: overline;
+    color:#FF3333;
 }
 
 .junk{
@@ -26,4 +33,20 @@ h1,h2,h3,h4,h5,h6 {
 
 a{
     text-decoration:none;
+    tex
+}
+
+img{
+    width:200px;
+}
+
+div {
+	width: auto;
+	margin: auto;
+}
+
+p {
+    width:50%;
+    margin:auto;
+    text-align:justify;
 }
