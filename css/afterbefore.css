@@ -1,3 +1,7 @@
+body{
+  background-color: #030103;
+background-image: url(http://www.transparenttextures.com/patterns/gplay.png);
+}
 .wrapper{
     margin:0 auto;
     color:black;
@@ -27,6 +31,10 @@
     text-align:center;
 }
 
+.three, .four, .five{
+    background-color:#F0F0F0 ;
+    text-align:center;
+}
 html, body, div {
   height: 100%;
   font-family:sans-serif;
