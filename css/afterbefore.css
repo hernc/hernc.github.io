@@ -1,6 +1,5 @@
 body{
-  background-color: #030103;
-background-image: url(http://www.transparenttextures.com/patterns/gplay.png);
+  background-image: url(https://bethanystevenson.files.wordpress.com/2014/01/img_0068.jpg);
 }
 .wrapper{
     margin:0 auto;
@@ -19,19 +18,8 @@ background-image: url(http://www.transparenttextures.com/patterns/gplay.png);
     display:inline-block;
 }
 
-.one{
-    color:red;
-    background-color:#CCFF33;
-    text-align:center;
-}
-
-.two{
-    color:#CC3399;
-    background-color:#66FFFF;
-    text-align:center;
-}
-
-.three, .four, .five{
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen{
+    color:black;
     background-color:#F0F0F0 ;
     text-align:center;
 }
