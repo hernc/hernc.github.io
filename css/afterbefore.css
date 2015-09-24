@@ -1,10 +1,10 @@
 body{
-  background-image: url(https://bethanystevenson.files.wordpress.com/2014/01/img_0068.jpg);
+  /*background-image: url(https://bethanystevenson.files.wordpress.com/2014/01/img_0068.jpg);*/
 }
 .wrapper{
-    margin:0 auto;
+    margin: 0 auto;
     color:black;
-    width:1280px;
+    /*width:1280px;*/
 }
 
 .select{
@@ -89,4 +89,9 @@ iframe{
 a{
   color:white;
   text-decoration:none;
+}
+
+p{
+  display:inline-block;
+  background-color:yellow;
 }
