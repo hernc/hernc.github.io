@@ -1,0 +1,96 @@
+.wrapper{
+    margin:0 auto;
+    color:black;
+    width:1280px;
+}
+
+.select{
+    
+    font-size:60px;
+    margin:70px;
+    width:100px;
+    height:100px;
+    /*border-style: solid;*/
+    /*border-width: 5px;*/
+    display:inline-block;
+}
+
+.one{
+    color:red;
+    background-color:#CCFF33;
+    text-align:center;
+}
+
+.two{
+    color:#CC3399;
+    background-color:#66FFFF;
+    text-align:center;
+}
+
+html, body, div {
+  height: 100%;
+  font-family:sans-serif;
+  overflow:hidden;
+}
+
+
+article {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+div {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  overflow:inherit;
+}
+
+.left{
+  font-size:200%;
+  color:white;
+  overflow:inherit;
+  background-color:black;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;                                                          
+}
+
+.right{
+  font-size:200%;
+  color:white;
+  overflow:inherit;
+  background: 
+  linear-gradient(63deg, #999 23%, transparent 23%) 7px 0, 
+  linear-gradient(63deg, transparent 74%, #999 78%), 
+  linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%), 
+  #444;
+  background-size: 16px 48px;
+  
+}
+
+iframe{
+  display:inline-block;
+  /*width:auto;*/
+  height:100%;
+  border:none;
+  overflow:hidden;
+  min-width:50%;
+  background:transparent;
+}
+
+.size_zero{
+  font-size:0;
+}
+
+a{
+  color:white;
+  text-decoration:none;
+}
