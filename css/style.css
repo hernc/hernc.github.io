@@ -12,14 +12,18 @@ body{
 .wrapper{
     position:relative;
     font-size:0px;
-    padding:5px;
+    padding:0 5px;
 }
 
 
 /**//**//**//*NAVIGATION*//**//**//**//**//**//**/
 
 ul{
-    padding:0px;
+    /*position:relative;*/
+    display:inline-block;
+    /*padding: auto 0;*/
+    margin:auto;
+    vertical-align:bottom;
 }
 
 .sl{
@@ -40,20 +44,23 @@ li{
 }
 
 nav{
+    position:relative;
+    display:inline-block;
     text-align:left;
-    border-bottom:solid;
-    border-color:#42628C;
-    margin:5px;
+    margin:auto;
     padding:10px 0px;
 }
 
 /**//**//**//*HEADER*//**//**//**//**//**//**/
 
-
+header{
+    display:inline-block;
+    width:100%;
+}
 .header{
-    text-align:left;
-    position:relative;
-    padding:20px 10px;
+    /*text-align:left;*/
+    /*position:relative;*/
+    padding-bottom:10px;
     border-bottom:dotted;
     border-bottom-color:#42628C;
 }
@@ -63,7 +70,7 @@ nav{
     text-decoration:none;
     font-family:helvetica;
     font-weight:lighter;
-    color:#A68585;
+    color:#7D6464;
     margin:4px 0px;
     width:20%;
     line-height:30px;
@@ -71,14 +78,14 @@ nav{
 }
 
 .small{
-    
+    /*position:relative;*/
     width:200px;
     height:50px;
     color:#42628C;
     line-height:16px;
     text-align:inherit;
     vertical-align:top;
-    font-size:19px;
+    font-size:14px;
     margin-left:5px;
     border-left:solid;
     border-color:#42628C;
@@ -86,9 +93,11 @@ nav{
 }
 
 .big{
+    position:relative;
     font-size:30px;
     padding-right:-20px;
-    width:12%;
+    /*width:12%;*/
+    vertical-align:center;
 }
 
 
