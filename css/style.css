@@ -29,7 +29,7 @@ ul{
 .sl{
     margin:0px 5px;
     display:inline-block;
-    border-radius: 6px;
+    border-radius: 3px;
     border:solid;
     border-color:#42628C;
     font-family: Arial;
@@ -53,8 +53,8 @@ li{
 nav{
     position:relative;
     display:inline-block;
-    text-align:left;
-    margin:auto;
+    /*text-align:left;*/
+    /*margin:auto;*/
     padding:10px 0px;
 }
 
@@ -86,7 +86,7 @@ header{
 }
 
 .small{
-    position:relative;
+    /*position:relative;*/
     width:200px;
     height:50px;
     color:#42628C;
@@ -107,6 +107,7 @@ header{
     /*width:12%;*/
     vertical-align:center;
 }
+
 
 
 /*COMPOSITION*//**//**//**//**//**//**//**//**//**//**/
@@ -145,25 +146,17 @@ article{
     vertical-align:top;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family:helvetica, sans-serif;
-    color:#A68585;
-    font-weight:lighter;
-    font-size:24px;
-}
-
-
 
 a{
     text-decoration:none;
     color:#42628C;
     border-left:solid;
     padding-left:4px;
-    display:block;
+    display:inline;
 }
 
 img{
-    width:150px;
+    width:100px;
 }
 
 
@@ -174,6 +167,13 @@ img{
     width:300px;
 }
 
-.content p {
-        
+
+.title{
+    text-align:left;
+    line-height:22px;
+    font-family:helvetica, sans-serif;
+    color:#A68585;
+    font-weight:lighter;
+    font-size:24px;
 }
+
