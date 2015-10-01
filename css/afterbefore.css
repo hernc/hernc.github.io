@@ -1,5 +1,7 @@
 body{
-  /*background-image: url(https://bethanystevenson.files.wordpress.com/2014/01/img_0068.jpg);*/
+  background-position: right;
+  background-repeat: no-repeat;
+  /*background-image: url(https://d2gg9evh47fn9z.cloudfront.net/thumb_COLOURBOX1171222.jpg);*/
 }
 .wrapper{
     margin: 0 auto;
@@ -46,29 +48,24 @@ div {
 }
 
 .left{
-  font-size:200%;
-  color:white;
+  font-size:80px;
+  line-height:20px;
+  color:black;
   overflow:inherit;
-  background-color:black;
-  background-image:
-  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
-  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;                                                          
+  background-image:url("http://40.media.tumblr.com/4d995a504c0e3252d9ec3f28b0c07e7a/tumblr_ms8ns62TQX1rog5d1o1_1280.jpg");
+  background-repeat: no-repeat;
+  
 }
 
+
 .right{
-  font-size:200%;
+  font-size:80px;
+  line-height:20px;
   color:white;
   overflow:inherit;
-  background: 
-  linear-gradient(63deg, #999 23%, transparent 23%) 7px 0, 
-  linear-gradient(63deg, transparent 74%, #999 78%), 
-  linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%), 
-  #444;
-  background-size: 16px 48px;
+  background-image:url("http://40.media.tumblr.com/4d995a504c0e3252d9ec3f28b0c07e7a/tumblr_ms8ns62TQX1rog5d1o1_1280.jpg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
   
 }
 
@@ -87,7 +84,7 @@ iframe{
 }
 
 a{
-  color:white;
+  color:black;
   text-decoration:none;
 }
 
@@ -99,3 +96,4 @@ p{
 div{
   overflow:hidden;
 }
+
