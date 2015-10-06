@@ -1,0 +1,106 @@
+
+*{
+ margin:0;
+ padding:0;
+}
+
+body{
+  font-family:arial, sans-serif;
+  color:#6F8091;
+  background-color:#D5D6D5;
+  
+}
+
+header{
+  padding: 5px;
+  /*margin:0 auto;*/
+  width:15%;
+  text-align:right;
+}
+
+h1{
+  font-size:30px;
+  color:#E0392B;
+  padding:5px;
+  /*float:right;*/
+  /*text-transform:uppercase;*/
+}
+h1 span{
+  font-weight:bolder;
+}
+
+h3{
+  font-size: 14px;
+  padding: 5px;
+}
+
+.row_container{
+   margin:0 auto;
+   position: relative;
+}
+
+.row1,
+.row2,
+.row3 {
+  /*width: 100%;*/
+  position: relative;
+}
+
+.parent,
+.parent2,
+.parent3 {
+  margin:0 0 0 9%;
+  font-size: 1em;
+  text-justify:right;
+}
+
+div span{
+  font-size: 2em;
+  color:#455666;
+}
+
+.inter,
+.inter2,
+.inter3{
+  padding-top: 20%;
+  padding-left: 20px;
+  color:#6F8091;
+  width: 35%;
+  height:100%;
+  font-size:16px;
+  position: fixed;
+  top:1%;
+  right:47%;
+  display: none;
+  z-index: 50;
+  border-left:dashed;
+  border-left-color:#6F8091;
+  
+}
+
+.action,
+.action2,
+.action3{
+  color:#6F8091;
+  /*max-width: 50%;*/
+  height:auto;
+  background-color: #C9C9C9;
+  position: absolute;
+  top:0;
+  left: 100%;
+  display: none;
+  z-index: 60;
+}
+
+.parent:hover .inter,
+.parent2:hover .inter2,
+.parent3:hover .inter3 {
+  display: block;
+  
+}
+
+.inter:hover .action,
+.inter2:hover .action2,
+.inter3:hover .action3 {
+  display: block;
+}

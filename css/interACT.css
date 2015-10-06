@@ -1,48 +1,137 @@
-/*HEADER*/
-body{
-    font-size:22px;
-    line-height:1.5em;
-}
+
 .wrapper{
     margin:0 auto;
-    width:1300px;
+    width:1000px;
 }
 header h1{
     font-family:verdana;
     background-color:yellow;
-    width:18%;
+    width:auto;
 }
 
-.content{
-    padding:40px 0;
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
 }
 
 li{
     display:inline-block;
     text-decoration:none;
-    font-size: 7.5em;
-    /*line-height: 1.2em;*/
-    /*margin:auto 0;*/
+    font-size: 100px;
+    line-height: 100px;
     padding:20px;
     margin:20px;
-    
+    vertical-align: top;
+    position: relative;
+    background-color: yellow;
 }
 
-p {
-    width:30%;
-    margin-left:auto;
-    background-color:yellow;
-}
-.user_info_display{
-    font-size: 10px;
-    /*line-height: 1em;*/
-    opacity: 0;
-    
-}
+/*p {*/
+/*    width:30%;*/
+/*    margin-left:auto;*/
+/*    background-color:yellow;*/
+/*}*/
 
 a { text-decoration: none; }
 
-.user_info:hover .user_info_display {
-    opacity: 1;
+
+
+/*interaction_columns*/
+
+body, html {
+    height: 100%;
+    margin:0 auto;
+}
+
+.wrapper-columns {
+    height: 100%;
+    font-size: 0;
+    
+
+}
+
+.column {
+    display: inline-block;
+    width: 33%;
+    height: 100%;
+    font-size: 20px;
+    overflow: auto;
+    vertical-align: top;
+}
+
+.column_one{
+    display: inline-block;
+    background-color:pink;
+}
+
+.column_two{
+    display: inline-block;
+    background-color: green;
+}
+.column_three{
+    display: inline-block;
+    background-color: blue;
+}
+
+
+.icon{
+    margin:10px;
+    float:left;
+    font-size: 70px;
+}
+
+
+.info3,
+.info2,
+.info{
+    width: 30%;
+    position: absolute;
+    left: 33%;
+    margin:10px;
+    opacity:0;
+    transition:0s;
+    
+}
+
+.icon_one:hover ~.info,
+.icon_two:hover ~.info2,
+.icon_three:hover ~.info3{
+  opacity: 1;
+  /*transition-property:180s;*/
+
+}
+
+.icon_one ~.info,
+.icon_one ~.action{
+    position:absolute;
+    opacity:0;
+    transition:0s 10s;
+}
+.icon_one:hover ~.info,
+.icon_one:hover ~.action{
+    opacity:1;
+    transition:0s;
+}
+
+/*.icon_one:hover ~ .info:focus {*/
+/*    opacity:0;*/
+/*    transition:3s;*/
+/*    -webkit-transform:rotate(-360deg) scale(0.23);*/
+/*    -moz-transform:rotate(-360deg) scale(0.23);*/
+/*    -o-transform:rotate(-360deg) scale(0.23);*/
+/*    -ms-transform:rotate(-360deg) scale(0.23);*/
+/*    transform:rotate(-360deg) scale(0.23);*/
+/*}*/
+
+
+.action{
+    width: 30%;
+    position: absolute;
+    left: 66%;
+    margin:10px;
+    opacity:0;
+    transition:0s;
     
 }
