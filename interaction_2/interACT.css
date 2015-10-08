@@ -8,25 +8,24 @@ body{
     background-size:cover;
     background-repeat:no-repeat;
     font-size: 1.2em;
-
+    font-family:Tahoma, Geneva, sans-serif ;
 }
 
 .logo, .project{
+    font-size: 1.4em;
     color:#fff;
-  background-color:#11377D;
+    background-color:rgba(17, 55, 125, 0.6);
 }
 
 .home-look{
     color:white;
     padding: 20px;
     position: absolute;
-    top:0;
+    top:2%;
     left:60%;
     width: 25%;
     vertical-align:top;
-    background-color:#11377D;
-
-    /*background-color:rgba(97, 162, 214, 0.3);*/
+    background-color:rgba(17, 55, 125, 0.6);
 }
 /*//colum 1///*/
 
@@ -66,10 +65,9 @@ ul li:nth-child(3){
     padding: 20px;
     width:25%;
     position: absolute;
-    top:0;
+    top:2%;
     left:60%;
-    background-color:#11377D;
-    /*background-color:rgba(97, 162, 214, 0.3);*/
+    background-color:rgba(17, 55, 125, 0.6);
 }
 
 /*//colum 2///*/
@@ -94,4 +92,12 @@ ul li:nth-child(3){
     width: 35%;
     padding:20px;
     background-color:rgba(97, 162, 214, 0.3);
+}
+
+.container-right img{
+    width:100%;
+}
+
+.headers{
+    text-decoration: overline;
 }
