@@ -1,0 +1,97 @@
+html,
+body{
+    height:100%;
+    color: #35478C;
+    margin: 0;
+    padding: 0;
+    background-image: url("sched-bg.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    font-size: 1.2em;
+
+}
+
+.logo, .project{
+    color:#fff;
+  background-color:#11377D;
+}
+
+.home-look{
+    color:white;
+    padding: 20px;
+    position: absolute;
+    top:0;
+    left:60%;
+    width: 25%;
+    vertical-align:top;
+    background-color:#11377D;
+
+    /*background-color:rgba(97, 162, 214, 0.3);*/
+}
+/*//colum 1///*/
+
+.container-left{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.col1{
+    list-style:none;
+    font-size: x-large ;
+    position: relative;
+}
+a{
+    color:#16193B;
+    text-decoration: none;
+    border:solid 1px #35478C;
+    padding: 5px;
+}
+
+.col1 a:hover{
+    color: white;
+    background-color:rgba(97, 162, 214, 0.3);
+}
+
+
+ul li{
+    margin:30px 0px;
+}
+
+ul li:nth-child(3){
+     margin-top:10%;
+}
+.project-info{
+    color:white;
+    padding: 20px;
+    width:25%;
+    position: absolute;
+    top:0;
+    left:60%;
+    background-color:#11377D;
+    /*background-color:rgba(97, 162, 214, 0.3);*/
+}
+
+/*//colum 2///*/
+
+.container-middle{
+    color: #35478C;
+    position: absolute;
+    top:20%;
+    left:15%;
+    width: 35%;
+    border:solid 1px #35478C;
+    /*text-align:left;*/
+    padding: 20px;
+}
+
+/*//colum 3///*/
+
+.container-right{
+    position: absolute;
+    top:20%;
+    left:55%;
+    width: 35%;
+    padding:20px;
+    background-color:rgba(97, 162, 214, 0.3);
+}

@@ -126,12 +126,12 @@ body, html {
 /*}*/
 
 
-.action{
-    width: 30%;
-    position: absolute;
-    left: 66%;
-    margin:10px;
-    opacity:0;
-    transition:0s;
+/*.action{*/
+/*    width: 30%;*/
+/*    position: absolute;*/
+/*    left: 66%;*/
+/*    margin:10px;*/
+/*    opacity:0;*/
+/*    transition:0s;*/
     
-}
+/*}*/
