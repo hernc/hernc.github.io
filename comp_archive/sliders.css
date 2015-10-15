@@ -1,0 +1,147 @@
+label,input,div {
+    display: flex;
+    /*vertical-align: top;*/
+    white-space: nowrap;
+}
+.wrapper{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.numbers{
+    height:400px;
+    /*flex:1;*/
+    position: relative;
+}
+p {
+    white-space: normal;
+}
+#u13,#u14,#u15,
+#u10,#u11,#u12,
+#u6,#u7,#u8,#u9,
+#u2,#u3,#u4,#u5,
+#u1{
+    display: none;
+}
+#u1:checked ~ .remove-check,
+#u2:checked ~ .remove-check,
+#u3:checked ~ .remove-check,
+#u4:checked ~ .remove-check,
+#u5:checked ~ .remove-check,
+#u6:checked ~ .remove-check,
+#u7:checked ~ .remove-check,
+#u8:checked ~ .remove-check,
+#u9:checked ~ .remove-check,
+#u10:checked ~ .remove-check,
+#u11:checked ~ .remove-check,
+#u12:checked ~ .remove-check,
+#u13:checked ~ .remove-check,
+#u14:checked ~ .remove-check,
+#u15:checked ~ .remove-check{
+    display: none;
+}
+#u1:checked ~ .u1,
+#u2:checked ~ .u2,
+#u3:checked ~ .u3,
+#u4:checked ~ .u4,
+#u5:checked ~ .u5,
+#u6:checked ~ .u6,
+#u7:checked ~ .u7,
+#u8:checked ~ .u8,
+#u9:checked ~ .u9,
+#u10:checked ~ .u10,
+#u11:checked ~ .u11,
+#u12:checked ~ .u12,
+#u13:checked ~ .u13,
+#u14:checked ~ .u14,
+#u15:checked ~ .u15{
+    animation-name: slide;
+    animation-duration: .5s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.u1,.u2,.u3,.u4,
+.u5,.u6,.u7,.u8,
+.u9,.u10,.u11,.u12,
+.u13,.u14,.u15{
+   width:0;
+    overflow:auto;
+}
+
+
+@keyframes slide {
+    from {width:0;}
+    to {width:300px;}
+}
+
+
+/*LABEL STYLES*/
+
+.btn{
+    color:green;
+    font-size: 2em;
+    padding: 5px;
+    margin:0px 10px 5px;
+    height:0;
+    background-color:#999;
+}
+
+.l-u1{
+    padding-bottom: 15px;
+    
+}
+.l-u2{
+    padding-bottom: 20px;
+}
+.l-u3{
+    padding-bottom: 35px;
+}
+.l-u4{
+    padding-bottom: 50px;
+}
+.l-u5{
+    padding-bottom: 65px;
+}
+.l-u6{
+    padding-bottom: 80px;
+}
+.l-u7{
+    padding-bottom: 95px;
+}
+.l-u8{
+    padding-bottom: 110px;
+}
+.l-u9{
+    padding-bottom: 125px;
+}
+.l-u10{
+    padding-bottom: 140px;
+}
+.l-u11{
+    padding-bottom: 155px;
+}
+.l-u12{
+    padding-bottom: 170px;
+}
+.l-u13{
+    padding-bottom: 170px;
+}
+.l-u14{
+    padding-bottom: 170px;
+}
+.l-u15{
+    padding-bottom: 170px;
+}
+
+.home-info{
+    color:#fff;
+    padding: 20px;
+    display:block;
+    max-width: 350px;
+    position: absolute;
+    top:55%;
+    left:5%;
+    background: #000;
+}

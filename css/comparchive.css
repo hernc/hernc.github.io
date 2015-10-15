@@ -1,3 +1,86 @@
 body{
-    background-color:black;
+    background-color:#787878;
+}
+
+.wrapper{
+    width:100%;
+    height:100%;
+}
+
+ul{
+    list-style-type:none;
+}
+
+.creators {
+	transform: rotate(90deg);
+	transform-origin: bottom right 0;
+	float:left;
+	text-decoration:none;
+	margin-left: 20px;
+	margin:5px;
+	background-color:#484848;
+	color:white;
+}
+
+.u1{
+   font-size: .6em; 
+}
+.u2{
+   font-size: .8em; 
+}
+.u3{
+   font-size: 1em; 
+}
+.u4{
+   font-size: 1.2em; 
+}
+.u5{
+   font-size: 1.4em; 
+}
+.u6{
+   font-size: 1.6em; 
+}
+.u7{
+   font-size: 1.8em; 
+}
+.u8{
+   font-size: 2em; 
+}
+.u9{
+   font-size: 2.2em; 
+}
+.u10{
+   font-size: 2.4em; 
+}
+.u11{
+   font-size: 2.6em; 
+}
+.u12{
+   font-size: 2.8em; 
+}
+.u13{
+   font-size: 3em; 
+}
+.u14{
+   font-size: 3.2em; 
+}
+.u15{
+   font-size: 3.4em; 
+}
+.u16{
+   font-size: 3.4em; 
+}
+
+/*info box*/
+.wrapper{
+    width:100%;
+    position: relative;
+}
+
+.info-box{
+    display: inline-block;
+    width:100%;
+    position:absolute;
+    top:2%;
+    left:35%;
 }
