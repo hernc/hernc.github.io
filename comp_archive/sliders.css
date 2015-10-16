@@ -86,7 +86,7 @@ p {
 /*LABEL STYLES*/
 
 .btn{
-    color:green;
+    color:#FF33FF;
     font-size: 2em;
     padding: 5px;
     margin:0px 10px 5px;
@@ -121,52 +121,52 @@ p {
     background-color:#D0D0D0;
 }
 .l-u6{
-    padding-bottom: 80%;
+    padding-bottom: 70%;
     font-size: .8em;
     background-color:#C8C8C8;
 }
 .l-u7{
-    padding-bottom: 95%;
+    padding-bottom: 80%;
     font-size: .9em;
     background-color:#C0C0C0;
 }
 .l-u8{
-    padding-bottom: 110%;
+    padding-bottom: 85%;
     font-size: 1em;
     background-color:#B8B8B8;
 }
 .l-u9{
-    padding-bottom: 125%;
+    padding-bottom: 90%;
     font-size: 1.1em;
     background-color:#B0B0B0;
 }
 .l-u10{
-    padding-bottom: 140%;
+    padding-bottom: 95%;
     font-size: 1.2em;
     background-color:#A8A8A8;
 }
 .l-u11{
-    padding-bottom: 155%;
+    padding-bottom: 100%;
     font-size: 1.3em;
     background-color:#A0A0A0;
 }
 .l-u12{
-    padding-bottom: 160%;
+    padding-bottom: 105%;
     font-size: 1.4em;
     background-color:#989898;
 }
 .l-u13{
-    padding-bottom: 165%;
+    padding-bottom: 110%;
     font-size: 1.5em;
     background-color:#909090;
 }
 .l-u14{
-    padding-bottom: 170%;
+    padding-bottom: 115%;
     font-size: 1.6em;
     background-color:#888888;
 }
 .l-u15{
-    padding-bottom: 170%;
+    padding-bottom: 125%;
     font-size: 1.7em;
     background-color:#808080;
 }
