@@ -1,3 +1,9 @@
+body{
+    display:flex;
+    justify-content:center;
+    font-family:courier;
+}
+
 label,input,div {
     display: flex;
     /*vertical-align: top;*/
@@ -89,50 +95,80 @@ p {
 }
 
 .l-u1{
-    padding-bottom: 15px;
+    padding-bottom: 15%;
+    font-size: .4em;
+    background-color:#F0F0F0;
     
 }
 .l-u2{
-    padding-bottom: 20px;
+    padding-bottom: 12%;
+    font-size: .4em;
+    background-color:#E8E8E8;
 }
 .l-u3{
-    padding-bottom: 35px;
+    padding-bottom: 35%;
+    font-size: .5em;
+    background-color:#E0E0E0;
 }
 .l-u4{
-    padding-bottom: 50px;
+    padding-bottom: 50%;
+    font-size: .6em;
+    background-color:#D8D8D8;
 }
 .l-u5{
-    padding-bottom: 65px;
+    padding-bottom: 65%;
+    font-size: .7em;
+    background-color:#D0D0D0;
 }
 .l-u6{
-    padding-bottom: 80px;
+    padding-bottom: 80%;
+    font-size: .8em;
+    background-color:#C8C8C8;
 }
 .l-u7{
-    padding-bottom: 95px;
+    padding-bottom: 95%;
+    font-size: .9em;
+    background-color:#C0C0C0;
 }
 .l-u8{
-    padding-bottom: 110px;
+    padding-bottom: 110%;
+    font-size: 1em;
+    background-color:#B8B8B8;
 }
 .l-u9{
-    padding-bottom: 125px;
+    padding-bottom: 125%;
+    font-size: 1.1em;
+    background-color:#B0B0B0;
 }
 .l-u10{
-    padding-bottom: 140px;
+    padding-bottom: 140%;
+    font-size: 1.2em;
+    background-color:#A8A8A8;
 }
 .l-u11{
-    padding-bottom: 155px;
+    padding-bottom: 155%;
+    font-size: 1.3em;
+    background-color:#A0A0A0;
 }
 .l-u12{
-    padding-bottom: 170px;
+    padding-bottom: 160%;
+    font-size: 1.4em;
+    background-color:#989898;
 }
 .l-u13{
-    padding-bottom: 170px;
+    padding-bottom: 165%;
+    font-size: 1.5em;
+    background-color:#909090;
 }
 .l-u14{
-    padding-bottom: 170px;
+    padding-bottom: 170%;
+    font-size: 1.6em;
+    background-color:#888888;
 }
 .l-u15{
-    padding-bottom: 170px;
+    padding-bottom: 170%;
+    font-size: 1.7em;
+    background-color:#808080;
 }
 
 .home-info{
@@ -142,6 +178,6 @@ p {
     max-width: 350px;
     position: absolute;
     top:55%;
-    left:5%;
+    left:10%;
     background: #000;
 }
