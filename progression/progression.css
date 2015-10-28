@@ -1,5 +1,9 @@
 body{
     font-family: sans-serif;
-    background-color: darkseagreen;
-    color:tomato;
+    background-color:gainsboro;
+    color:darkcyan;
+}
+
+p {
+    width:75% ;
 }
