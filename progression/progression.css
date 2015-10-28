@@ -2,11 +2,18 @@ body{
     font-family: sans-serif;
     background-color:gainsboro;
     color:indianred;
+	display: flex;
 }
 .wrapper{
-    margin:0 auto;
+
 }
 
+h1{
+	text-align: center;
+}
 p {
     width:75% ;
+	margin:10px auto;
+	color: #777;
+
 }
