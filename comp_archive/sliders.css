@@ -212,9 +212,9 @@ p, i{
     color:#33FF00;
     padding: 20px;
     display:block;
-    max-width: 200px;
+    max-width: 600px;
     position: absolute;
-    top:30%;
+    top:170%;
     left:3%;
     background-color: rgba(0,0,0, 0.3);
 }
