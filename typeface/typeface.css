@@ -190,4 +190,5 @@ body{
 .stopmotion:hover{
     border-bottom: none;
     height:110px;
+    background-color: bisque;
 }
