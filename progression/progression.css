@@ -1,7 +1,10 @@
 body{
     font-family: sans-serif;
     background-color:gainsboro;
-    color:darkcyan;
+    color:indianred;
+}
+.wrapper{
+    margin:0 auto;
 }
 
 p {
