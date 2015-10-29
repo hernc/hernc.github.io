@@ -7,19 +7,13 @@ body{
 .alphabet{
   display:flex;
   flex-direction:row;
-  align-content: center;
   flex-wrap: wrap;
-  justify-content: space-around;
-
 }
 
 /*letter H*/
 
 .letter-h{
   margin:20px;
-  width:30%;
-  height:30%;
-  position: relative;
   display: flex;
 }
 
@@ -34,9 +28,9 @@ body{
   width:40px;
   height:150px;
   background-color:#999;
-  transform: rotate(90deg);
+  transform: rotate(90deg) scaleY(0.9);
   animation-name: rotate;
-  animation-duration: 500ms;
+  animation-duration: 5ms;
   animation-play-state: paused;
   animation-timing-function: step-end;
 }
@@ -48,27 +42,13 @@ body{
   background-color:#999;
 
 }
-.ld:hover,
-.cd:hover,
-.co:hover,
-.ch:hover{
- animation-play-state: running;
- background-color: #79F7CF;
 
-}
 
-@keyframes rotate {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(90deg);}
-}
 
 /*letter O*/
 
 .letter-o{
-  margin:20px;
-  width:30%;
-  height:30%;
-  position: relative;
+  margin:20px auto;
   display: flex;
 }
 
@@ -83,9 +63,9 @@ body{
   width:40px;
   height:150px;
   background-color:#999;
-  transform: translateY(-75px) rotate(90deg);
+  transform: translateY(-55px) rotate(90deg) scaleY(0.9);
   animation-name: rotate;
-  animation-duration: 100ms;
+  animation-duration: 5ms;
   animation-play-state: paused;
   animation-timing-function: step-end;
 }
@@ -98,12 +78,15 @@ body{
 
 }
 
+{
+    animation-play-state: running;
+
+
+}
+
 /*letter D*/
 .letter-d{
   margin:20px;
-  width:30%;
-  height:30%;
-  position: relative;
   display: flex;
 }
 
@@ -112,9 +95,9 @@ body{
   width:40px;
   height:150px;
   background-color:#999;
-  transform: translateY(75px) translateX(45px) rotate(90deg);
+  transform: translateY(55px) translateX(45px) rotate(90deg);
   animation-name: rotate;
-  animation-duration: 500ms;
+  animation-duration: 5ms;
   animation-play-state: paused;
   animation-timing-function:step-end;
 }
@@ -123,9 +106,9 @@ body{
   width:40px;
   height:150px;
   background-color:#999;
-  transform: translateY(-75px) translateX(-5px) rotate(90deg);
+  transform: translateY(-55px) translateX(-5px) rotate(90deg);
   animation-name: rotate;
-  animation-duration: 500ms;
+  animation-duration: 5ms;
   animation-play-state: paused;
   animation-timing-function: step-end;
 }
@@ -138,57 +121,82 @@ body{
 
 } 
 
-/*alternate borders method */
 
-.border-method{
-  display:flex;
-  margin:15px;
-  flex-direction:row;
-  justify-content:center;
-  align-items:center;
-
+.letter-h:hover > .ch,
+.letter-o:hover > .co,
+.letter-d:hover > .ld,
+.letter-d:hover > .cd {
+    animation-play-state: running;
 }
 
 
-.borders {
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(90deg);}
+}
+/*alternate borders method */
+
+.border-method{
+    margin:20px;
+  display:flex;
+}
+
+
+.border-h {
     width: 70px;
     height: 150px;
     position: relative;
     margin: 5px;
-    border-left:solid 40px black;
-    border-right:solid 40px black;
+    border-left:solid 40px bisque;
+    border-right:solid 40px bisque;
 }
-.borders::before {
+.border-h::before {
     content: "";
+    display: inline-block;
     position: absolute;
     top: 0;
     left: 15px;
     height: 100%;
     width: 40px;
-    background-color: black;
-    z-index: -1;
+    background-color: bisque;
+    transform: rotate(90deg);
+    animation-name: rotate;
+    animation-duration: 5ms;
+    animation-play-state: paused;
+    animation-timing-function: step-end;
 }
-.borders:hover{
-    border-top:solid 40px black;
+
+.border-h:hover:before{
+    animation-play-state: running;
 }
-.borders:hover:before{
+
+.border-o {
+    position: relative;
+    margin:5px 20px;
+    width: 70px;
+    border-left:solid 40px aqua;
+    border-right:solid 40px aqua;
+    height:150px;
+}
+
+.border-o::before {
+    content: "";
+    display: inline-block;
     position: absolute;
     top: 0;
-    left: -40px;
+    left: 15px;
     height: 100%;
     width: 40px;
+    background-color: aqua;
+    transform: translateY(-55px) rotate(90deg);
+    animation-name: rotate;
+    animation-duration: 5ms;
+    animation-play-state: paused;
+    animation-timing-function: step-end;
 }
 
-.stopmotion {
-    margin-left: 40px;
-    display:flex;
-    width: 70px;
-    height: 100px;
-    border:solid 40px black;
+.border-o:hover:before{
+    animation-play-state: running;
 }
 
-.stopmotion:hover{
-    border-bottom: none;
-    height:110px;
-    background-color: bisque;
-}
+
