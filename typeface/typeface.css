@@ -4,161 +4,104 @@ body{
 }
 
 
-.alphabet{
-  display:flex;
-  flex-direction:row;
-  flex-wrap: wrap;
-}
-
-/*letter H*/
-
-.letter-h{
-  margin:20px;
-  display: flex;
-}
-
-.lh{
-  margin:0 5px;
-  width:40px;
-  height:150px;
-  background-color:#999;
-}
-.ch{
-  margin:0 5px;
-  width:40px;
-  height:150px;
-  background-color:#999;
-  transform: rotate(90deg) scaleY(0.9);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
-}
-
-.rh{
-  margin:0 5px;
-  width:40px;
-  height:150px;
-  background-color:#999;
-
-}
-
-
-
-/*letter O*/
-
-.letter-o{
-  margin:20px auto;
-  display: flex;
-}
-
-.lo{
-  margin:0 5px;
-  width:40px;
-  height:150px;
-  background-color:#999;
-}
-.co{
-  margin:0 5px;
-  width:40px;
-  height:150px;
-  background-color:#999;
-  transform: translateY(-55px) rotate(90deg) scaleY(0.9);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
-}
-
-.ro{
-  margin:0 5px;
-  width:40px;
-  height:150px;
-  background-color:#999;
-
-}
-
-{
-    animation-play-state: running;
-
-
-}
-
-/*letter D*/
-.letter-d{
-  margin:20px;
-  display: flex;
-}
-
-.ld{
-  margin:0 5px;
-  width:40px;
-  height:150px;
-  background-color:#999;
-  transform: translateY(55px) translateX(45px) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
-}
-.cd{
-  margin:0 5px;
-  width:40px;
-  height:150px;
-  background-color:#999;
-  transform: translateY(-55px) translateX(-5px) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
-}
-
-.rd{
-  margin:0 5px;
-  width:40px;
-  height:150px;
-  background-color:#999;
-
-} 
-
-
-.letter-h:hover > .ch,
-.letter-o:hover > .co,
-.letter-d:hover > .ld,
-.letter-d:hover > .cd {
-    animation-play-state: running;
-}
-
-
 @keyframes rotate {
     from {transform: rotate(0deg);}
     to {transform: rotate(90deg);}
 }
 /*alternate borders method */
 
-.border-method{
-    margin:20px;
-  display:flex;
+.alphabet{
+    margin:100px auto;
+    display:flex;
 }
 
-
-.border-h {
-    width: 70px;
-    height: 150px;
+.letter-a {
+    width: 35px;
+    height: 50px;
     position: relative;
-    margin: 5px;
-    border-left:solid 40px bisque;
-    border-right:solid 40px bisque;
+    margin: 10px;
+    border-left:solid 15px #555;
+    border-right:solid 15px #555;
 }
-.border-h::before {
+.letter-a::before {
     content: "";
     display: inline-block;
     position: absolute;
     top: 0;
-    left: 15px;
+    left: 10px;
     height: 100%;
-    width: 40px;
-    background-color: bisque;
+    width: 15px;
+    background-color: #555;
+    transform: translateY(-10px) rotate(90deg);
+    animation-name: rotate;
+    animation-duration: 5ms;
+    animation-play-state: paused;
+    animation-timing-function: step-end;
+}
+
+.letter-a:hover:before{
+    animation-play-state: running;
+}
+
+
+.letter-b {
+    width: 35px;
+    height: 50px;
+    position: relative;
+    margin: 10px;
+    border-left:solid 15px #555;
+    border-right:solid 15px #555;
+
+}
+
+.letter-b::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 100%;
+    width: 15px;
+    background-color: #555;
+    transform: rotate(90deg);
+    animation-name: rotate;
+    animation-duration: 5ms;
+    animation-play-state: paused;
+    animation-timing-function: step-end;
+}
+.letter-b:hover,
+.letter-b:hover:before{
+    animation-play-state: running;
+	border-bottom: solid 15px #555;
+	border-right:transparent;
+
+}
+
+/*
+.letter-b:hover{
+	border-bottom: solid 15px #555;
+}
+
+*/
+
+
+.letter-h {
+    width: 35px;
+    height: 50px;
+    position: relative;
+    margin: 10px;
+    border-left:solid 15px #555;
+    border-right:solid 15px #555;
+}
+.letter-h::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 100%;
+    width: 15px;
+    background-color: #555;
     transform: rotate(90deg);
     animation-name: rotate;
     animation-duration: 5ms;
@@ -166,17 +109,17 @@ body{
     animation-timing-function: step-end;
 }
 
-.border-h:hover:before{
+.letter-h:hover:before{
     animation-play-state: running;
 }
 
 .border-o {
     position: relative;
-    margin:5px 20px;
-    width: 70px;
-    border-left:solid 40px aqua;
-    border-right:solid 40px aqua;
-    height:150px;
+    margin:10px;
+    width: 35px;
+	height: 50px;
+    border-left:solid 15px #555;
+    border-right:solid 15px #555;
 }
 
 .border-o::before {
@@ -184,11 +127,11 @@ body{
     display: inline-block;
     position: absolute;
     top: 0;
-    left: 15px;
+    left: 10px;
     height: 100%;
-    width: 40px;
-    background-color: aqua;
-    transform: translateY(-55px) rotate(90deg);
+    width: 15px;
+    background-color: #555;
+    transform: translateY(-17.5px) rotate(90deg);
     animation-name: rotate;
     animation-duration: 5ms;
     animation-play-state: paused;
