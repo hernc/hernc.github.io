@@ -54,10 +54,14 @@ body{
     margin: 10px;
     border-left:15px solid #555;
     border-right:15px solid #555;
+    transition: border-right 5ms transform 5ms;;
+/*
+	transform:
     animation-name:move;
     animation-duration: 5ms;
     animation-play-state: paused;
     animation-timing-function: step-end;
+*/
 
 }
 
@@ -70,7 +74,7 @@ body{
     height: 100%;
     width: 15px;
     background-color: #555;
-    transform:translateY(4px)rotate(90deg);
+    transform:translateY(4px) translateX(-7px) rotate(90deg);
     animation-name: rotate;
     animation-duration: 5ms;
     animation-play-state: paused;
@@ -83,7 +87,9 @@ body{
 }
 
 .letter-b:hover{
-    animation-play-state: running;
+    border-bottom: 15px solid #555;
+    border-right:0px solid;
+	transform: translateY(-15px);
 }
 
 .letter-b:hover:before{
