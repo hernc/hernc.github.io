@@ -33,7 +33,9 @@ var buttonstatus = false;
 
 $("h1").html("WELCOME TO JQUERY!"); //uppercase, overwrite 
 $("h1").css("color","white")    //color of H1
-$("#status").css("border-radius","100px")   //rounded button
+$("#status").css("border-radius","25%")   //rounded button
+$("#status").css("background-color","#FF3366")   //color button
+$("#status").css("margingtop","50px")   //move button
 $("#pirate").hide();    //hide flag
 $("body").css({ 'background': '-webkit-gradient(linear,left top,left bottom,from(#B8B8B8 ),to(#E0E0E0))' });    //add gradient
 // $("body").addClass("gradient"); 
