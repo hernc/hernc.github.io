@@ -4,16 +4,270 @@ body{
   display: flex;
 }
 
-
-
-
-/*alternate borders method */
-
 .alphabet{
     margin:100px auto;
     display:flex;
 }
 
+/*DIVS METHOD */
+/**//**//**//**//*LETTER A//**//**//**//**//**/
+
+.letter-a{
+  margin:10px;
+  display: flex;
+}
+
+.la{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+}
+.ca{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  transform: translateY(-12px) rotate(90deg);
+  animation-name: rotate;
+  animation-duration: 5ms;
+  animation-play-state: paused;
+  animation-timing-function: step-end;
+}
+
+.ra{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+}
+
+/**//**//**//**//*LETTER B//**//**//**//**//**/
+
+
+.letter-b{
+  margin:10px;
+  display: flex;
+}
+
+
+.lb{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+}
+.cb{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  transform: translateY(1px) translateX(-7px) rotate(90deg);
+  animation-name: rotate;
+  animation-duration: 5ms;
+  animation-play-state: paused;
+  animation-timing-function: step-end;
+}
+
+.rb{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  transform: translateY(17.5px) translateX(-32px) rotate(90deg);
+  animation-name: rotate;
+  animation-duration: 5ms;
+  animation-play-state: paused;
+  animation-timing-function:step-end;
+
+}
+/**//**//**//**//*LETTER C//**//**//**//**//**/
+
+.letter-c{
+  margin:10px;
+  display: flex;
+}
+
+
+.lc{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+}
+.cc{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  transform: translateY(-18px) translateX(-7.5px) rotate(90deg);
+  animation-name: rotate;
+  animation-duration: 5ms;
+  animation-play-state: paused;
+  animation-timing-function: step-end;
+}
+
+.rc{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  transform: translateY(18px) translateX(-32px) rotate(90deg);
+  animation-name: rotate;
+  animation-duration: 5ms;
+  animation-play-state: paused;
+  animation-timing-function:step-end;
+}
+
+/**//**//**//**//*LETTER D//**//**//**//**//**/
+
+.letter-d{
+  margin:10px;
+  display: flex;
+}
+
+
+.ld{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+  transform: translateY(18px) translateX(32px) rotate(90deg);
+  animation-name: rotate;
+  animation-duration: 5ms;
+  animation-play-state: paused;
+  animation-timing-function:step-end;
+}
+.cd{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  transform: translateY(-18px) translateX(7.5px) rotate(90deg);
+  animation-name: rotate;
+  animation-duration: 5ms;
+  animation-play-state: paused;
+  animation-timing-function: step-end;
+}
+
+.rd{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+
+}
+
+/**//**//**//**//*LETTER E//**//**//**//**//**/
+
+.letter-e{
+  margin:10px;
+  display: flex;
+}
+
+
+.le{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+  transform: translateY(-18px) translateX(10px) rotate(90deg);
+  animation-name: rotate;
+  animation-duration: 5ms;
+  animation-play-state: paused;
+  animation-timing-function:step-end;
+}
+.ce{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  transform: translateY(-0.5px) translateX(-15px) rotate(90deg);
+  animation-name: rotate;
+  animation-duration: 5ms;
+  animation-play-state: paused;
+  animation-timing-function:step-end;
+}
+
+.re{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  transform: translateY(17px) translateX(-40px) rotate(90deg);
+  animation-name: rotate;
+  animation-duration: 5ms;
+  animation-play-state: paused;
+  animation-timing-function:step-end;
+}
+
+
+/**//**//**//**//*LETTER F//**//**//**//**//**/
+/**//**//**//**//*LETTER G//**//**//**//**//**/
+/**//**//**//**//*LETTER H//**//**//**//**//**/
+/**//**//**//**//*LETTER I//**//**//**//**//**/
+/**//**//**//**//*LETTER J//**//**//**//**//**/
+/**//**//**//**//*LETTER K//**//**//**//**//**/
+/**//**//**//**//*LETTER L//**//**//**//**//**/
+/**//**//**//**//*LETTER M//**//**//**//**//**/
+/**//**//**//**//*LETTER N//**//**//**//**//**/
+/**//**//**//**//*LETTER O//**//**//**//**//**/
+/**//**//**//**//*LETTER P//**//**//**//**//**/
+/**//**//**//**//*LETTER Q//**//**//**//**//**/
+/**//**//**//**//*LETTER R//**//**//**//**//**/
+/**//**//**//**//*LETTER S//**//**//**//**//**/
+/**//**//**//**//*LETTER T//**//**//**//**//**/
+/**//**//**//**//*LETTER U//**//**//**//**//**/
+/**//**//**//**//*LETTER V//**//**//**//**//**/
+/**//**//**//**//*LETTER W//**//**//**//**//**/
+/**//**//**//**//*LETTER X//**//**//**//**//**/
+/**//**//**//**//*LETTER Y//**//**//**//**//**/
+/**//**//**//**//*LETTER Z//**//**//**//**//**/
+
+
+
+
+
+
+/**//**//**//**//*HOVER STATES*//**//**//**//**/
+
+
+
+
+
+
+{
+    animation-play-state: running;
+}
+
+.letter-e:hover > .le,
+.letter-e:hover > .ce,
+.letter-e:hover > .re,
+.letter-c:hover > .rc,
+.letter-c:hover > .cc,
+.letter-b:hover > .cb,
+.letter-b:hover > .rb,
+.letter-a:hover > .ca,
+.letter-d:hover > .ld,
+.letter-d:hover > .cd {
+    animation-play-state: running;
+}
+
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(90deg);}
+}
+
+
+/*BORDERS METHOD */
+
+/*
 .letter-a {
     width: 35px;
     height: 50px;
@@ -55,13 +309,11 @@ body{
     border-left:15px solid #555;
     border-right:15px solid #555;
     transition: border-right 5ms transform 5ms;;
-/*
 	transform:
     animation-name:move;
     animation-duration: 5ms;
     animation-play-state: paused;
     animation-timing-function: step-end;
-*/
 
 }
 
@@ -96,9 +348,6 @@ body{
     animation-play-state: running;
 
 }
-
-
-
 
 .letter-h {
     width: 35px;
@@ -156,5 +405,6 @@ body{
 .border-o:hover:before{
     animation-play-state: running;
 }
+*/
 
 
