@@ -1,13 +1,12 @@
 body{
+  padding: 0;
   background-color:#bbb;
   display: flex;
 }
 
 
-@keyframes rotate {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(90deg);}
-}
+
+
 /*alternate borders method */
 
 .alphabet{
@@ -39,8 +38,12 @@ body{
     animation-timing-function: step-end;
 }
 
-.letter-a:hover:before{
+.letter-a:hover::before{
     animation-play-state: running;
+}
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(90deg);}
 }
 
 
@@ -49,8 +52,12 @@ body{
     height: 50px;
     position: relative;
     margin: 10px;
-    border-left:solid 15px #555;
-    border-right:solid 15px #555;
+    border-left:15px solid #555;
+    border-right:15px solid #555;
+    animation-name:move;
+    animation-duration: 5ms;
+    animation-play-state: paused;
+    animation-timing-function: step-end;
 
 }
 
@@ -63,26 +70,28 @@ body{
     height: 100%;
     width: 15px;
     background-color: #555;
-    transform: rotate(90deg);
+    transform:translateY(4px)rotate(90deg);
     animation-name: rotate;
     animation-duration: 5ms;
     animation-play-state: paused;
     animation-timing-function: step-end;
 }
-.letter-b:hover,
+
+@keyframes move{
+    from {border-right: 15px solid #555;}
+    to {border-bottom: 15px solid #555;}
+}
+
+.letter-b:hover{
+    animation-play-state: running;
+}
+
 .letter-b:hover:before{
     animation-play-state: running;
-	border-bottom: solid 15px #555;
-	border-right:transparent;
 
 }
 
-/*
-.letter-b:hover{
-	border-bottom: solid 15px #555;
-}
 
-*/
 
 
 .letter-h {
@@ -90,8 +99,8 @@ body{
     height: 50px;
     position: relative;
     margin: 10px;
-    border-left:solid 15px #555;
-    border-right:solid 15px #555;
+    border-left:15px solid #555;
+    border-right:15px solid #555;
 }
 .letter-h::before {
     content: "";
