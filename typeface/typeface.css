@@ -76,7 +76,7 @@ body{
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(17.5px) translateX(-18px) rotate(90deg);
+  transform: translateY(1.094em) translateX(-18px) rotate(90deg);
   animation-name: rotate;
   animation-duration: 5ms;
   animation-play-state: paused;
@@ -103,7 +103,7 @@ body{
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(-18px) translateX(7px) rotate(90deg);
+  transform: translateY(-1.094em) translateX(7px) rotate(90deg);
   animation-name: rotate;
   animation-duration: 5ms;
   animation-play-state: paused;
@@ -115,7 +115,7 @@ body{
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(18px) translateX(-18px) rotate(90deg);
+  transform: translateY(1.094em) translateX(-18px) rotate(90deg);
   animation-name: rotate;
   animation-duration: 5ms;
   animation-play-state: paused;
@@ -136,7 +136,7 @@ body{
   height: 50px;
   position: relative;
   background-color:#555;
-  transform: translateY(18px) translateX(32px) rotate(90deg);
+  transform: translateY(1.094em) translateX(18px) rotate(90deg);
   animation-name: rotate;
   animation-duration: 5ms;
   animation-play-state: paused;
@@ -147,7 +147,7 @@ body{
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(-18px) translateX(7.5px) rotate(90deg);
+  transform: translateY(-1.094em) translateX(-0.469em) rotate(90deg);
   animation-name: rotate;
   animation-duration: 5ms;
   animation-play-state: paused;
@@ -176,7 +176,7 @@ body{
   height: 50px;
   position: relative;
   background-color:#555;
-  transform: translateY(-18px) translateX(25px) rotate(90deg);
+  transform: scaleX(1.35) translateY(-18px) translateX(19px) rotate(90deg);
   animation-name: rotate;
   animation-duration: 5ms;
   animation-play-state: paused;
@@ -187,7 +187,7 @@ body{
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(-0.5px) rotate(90deg);
+  transform:scaleX(1.35) translateY(0.031em) translateX(0.031em) rotate(90deg);
   animation-name: rotate;
   animation-duration: 5ms;
   animation-play-state: paused;
@@ -199,7 +199,7 @@ body{
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(17px) translateX(-25px) rotate(90deg);
+  transform:scaleX(1.35) translateY(19px) translateX(-18px) rotate(90deg);
   animation-name: rotate;
   animation-duration: 5ms;
   animation-play-state: paused;
@@ -220,18 +220,13 @@ body{
   height: 50px;
   position: relative;
   background-color:#555;
-  transform: translateY(-18px) translateX(10px) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
 }
 .cf{
   margin:0 5px;
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(-18px) translateX(-7px) rotate(90deg);
+  transform: translateY(-1.094em) translateX(0.469em) rotate(90deg);
   animation-name: rotate;
   animation-duration: 5ms;
   animation-play-state: paused;
@@ -243,7 +238,7 @@ body{
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(-0.5px) translateX(-32px) rotate(90deg);
+  transform: translateY(-0.031em) translateX(-18px) rotate(90deg);
   animation-name: rotate;
   animation-duration: 5ms;
   animation-play-state: paused;
@@ -282,7 +277,7 @@ body{
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(17px) translateX(-20px) rotate(90deg);
+  transform: translateY(1.094em) translateX(-18px) rotate(90deg);
   animation-name: rotate;
   animation-duration: 5ms;
   animation-play-state: paused;
@@ -325,11 +320,166 @@ body{
 
 /**//**//**//**//*LETTER I//**//**//**//**//**/
 
+.letter-i{
+  margin:10px;
+  display: flex;
+}
+
+
+.li{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+  transform:scaleX(1.35) translateY(-1.094em) translateX(19px) rotate(90deg);
+  animation-name: rotate;
+  animation-duration: 5ms;
+  animation-play-state: paused;
+  animation-timing-function: step-end;
+}
+.ci{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+
+}
+
+.ri{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  transform:scaleX(1.35) translateY(1.094em) translateX(-18px) rotate(90deg);
+  animation-name: rotate;
+  animation-duration: 5ms;
+  animation-play-state: paused;
+  animation-timing-function:step-end;
+}
 
 
 /**//**//**//**//*LETTER J//**//**//**//**//**/
+
+.letter-j{
+  margin:10px;
+  display: flex;
+}
+
+
+.lj{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+  transform: translateY(1.094em) translateX(18px) rotate(90deg);
+  animation-name: rotate;
+  animation-duration: 5ms;
+  animation-play-state: paused;
+  animation-timing-function:step-end;
+}
+.cj{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  transform: translateY(1.094em) rotate(90deg);
+  animation-name: rotate;
+  animation-duration: 5ms;
+  animation-play-state: paused;
+  animation-timing-function: step-end;
+}
+
+.rj{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+
+}
+
+
+
 /**//**//**//**//*LETTER K//**//**//**//**//**/
+
+.letter-k{
+  margin:10px;
+  display: flex;
+}
+
+.lk{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+}
+.ck{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  transform:  translateY(-1px) translateX(-5px)rotate(35deg);
+  animation-name: rotate;
+  animation-duration: 1ms;
+  animation-play-state: paused;
+  animation-timing-function:step-end;
+}
+
+.rk{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  transform: translateY(1.094em) translateX(-18px) rotate(90deg);
+  animation-name: rotate;
+  animation-duration: 1ms;
+  animation-play-state: paused;
+  animation-timing-function:step-end;
+}
+
+
 /**//**//**//**//*LETTER L//**//**//**//**//**/
+
+.letter-l{
+  margin:10px;
+  display: flex;
+}
+
+
+.ll{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+  transform: translateY(1.094em) translateX(18px) rotate(90deg);
+  animation-name: rotate;
+  animation-duration: 5ms;
+  animation-play-state: paused;
+  animation-timing-function:step-end;
+}
+.cl{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  transform: translateY(1.094em) rotate(90deg);
+  animation-name: rotate;
+  animation-duration: 5ms;
+  animation-play-state: paused;
+  animation-timing-function: step-end;
+}
+
+.rl{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+
+}
+
 /**//**//**//**//*LETTER M//**//**//**//**//**/
 /**//**//**//**//*LETTER N//**//**//**//**//**/
 /**//**//**//**//*LETTER O//**//**//**//**//**/
@@ -358,6 +508,12 @@ body{
 
 
 
+.letter-k:hover > .ck,
+.letter-k:hover > .rk,
+.letter-j:hover > .lj,
+.letter-j:hover > .cj,
+.letter-i:hover > .li,
+.letter-i:hover > .ri,
 .letter-h:hover > .ch,
 .letter-g:hover > .cg,
 .letter-g:hover > .rg,
