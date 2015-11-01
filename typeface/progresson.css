@@ -4,16 +4,28 @@ body{
   padding:0;
   background-color:#f0f0f0;
   display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  width:auto;
+}
+.nav{
+  display: inline-flex;
+  flex-direction: row;
+  align-content: flex-start;
+  height: fit-content;
 }
 
 .nav li{
-  display: inline-flex;
+  display:flex;
   flex-direction: row;
-  flex-grow:2;
-  height: 60px;
-  text-align: center;
-  line-height: 60px;
+  line-height: 20px;
   padding: 10px;
+  border-bottom: solid 2px rgba(255, 255, 255, 0);
 
 }
 
@@ -22,6 +34,12 @@ body{
   color: #e32458;
 }
 
+ul li:nth-child(1){
+  margin-right:55px;
+  font-size: 1.75em;
+  font-weight: 900;
+  text-decoration: overline;
+}
 
 
 
@@ -29,10 +47,10 @@ body{
 /**//**//**//**//**//**//*CONTENT*//**//**//**//**//**//**//**/
 
 .alphabet{
-    width: 100vh;
-    margin:100px auto;
+    margin:100px 0;
     display: inline-flex;
     flex-wrap:wrap;
+    padding: 40px;
 
 
 }
