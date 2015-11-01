@@ -13,6 +13,8 @@ body{
   flex-direction: column;
   width:auto;
 }
+
+/************HEADER*/
 .nav{
   display: inline-flex;
   flex-direction: row;
@@ -20,12 +22,16 @@ body{
   height: fit-content;
 }
 
+
 .nav li{
+  margin-right: 20px;
   display:flex;
   flex-direction: row;
   line-height: 20px;
-  padding: 10px;
+  padding:10px 20px;
+  text-decoration: overline;
   border-bottom: solid 2px rgba(255, 255, 255, 0);
+  border-top: solid 2px;
 
 }
 
@@ -35,6 +41,7 @@ body{
 }
 
 ul li:nth-child(1){
+  border-top:solid 0px rgba(255, 255, 255, 0);
   margin-right:55px;
   font-size: 1.75em;
   font-weight: 900;
@@ -43,8 +50,7 @@ ul li:nth-child(1){
 
 
 
-
-/**//**//**//**//**//**//*CONTENT*//**//**//**//**//**//**//**/
+/************ALPHABET*****************************************/
 
 .alphabet{
     margin:100px 0;
@@ -1091,65 +1097,24 @@ ul li:nth-child(1){
 
 /**//**//**//**//*HOVER STATES*//**//**//**//**/
 
-
-
-
-
-
-.letter-z:hover > .lz,
-.letter-z:hover > .cz,
-.letter-z:hover > .rz,
-.letter-y:hover > .ly,
-.letter-y:hover > .cy,
-.letter-y:hover > .ry,
-.letter-x:hover > .lx,
-.letter-x:hover > .cx,
-.letter-x:hover > .rx,
-.letter-w:hover > .cw,
-.letter-w:hover > .rw,
-.letter-v:hover > .lv,
-.letter-v:hover > .cv,
-.letter-v:hover > .rv,
-.letter-u:hover > .cu,
-.letter-t:hover > .lt,
-.letter-t:hover > .rt,
-.letter-s:hover > .ls,
-.letter-s:hover > .cs,
-.letter-s:hover > .rs,
-.letter-r:hover > .cr,
-.letter-r:hover > .rr,
-.letter-q:hover > .cq,
-.letter-p:hover > .cp,
-.letter-p:hover > .rp,
-.letter-o:hover > .co,
-.letter-n:hover > .cn,
-.letter-m:hover > .cm,
-.letter-m:hover > .rm,
-.letter-l:hover > .cl,
-.letter-l:hover > .rl,
-.letter-k:hover > .ck,
-.letter-k:hover > .rk,
-.letter-j:hover > .lj,
-.letter-j:hover > .cj,
-.letter-i:hover > .li,
-.letter-i:hover > .ri,
-.letter-h:hover > .ch,
-.letter-g:hover > .lg,
-.letter-g:hover > .cg,
-.letter-g:hover > .rg,
-.letter-f:hover > .rf,
-.letter-f:hover > .cf,
-.letter-e:hover > .le,
-.letter-e:hover > .ce,
-.letter-e:hover > .re,
-.letter-c:hover > .rc,
-.letter-c:hover > .cc,
-.letter-b:hover > .cb,
-.letter-b:hover > .rb,
-.letter-a:hover > .la,
-.letter-a:hover > .ca,
-.letter-a:hover > .ra,
-.letter-d:hover > .ld,
+.letter-z:hover > .lz,.letter-z:hover > .cz,.letter-z:hover > .rz,
+.letter-y:hover > .ly,.letter-y:hover > .cy,.letter-y:hover > .ry,
+.letter-x:hover > .lx,.letter-x:hover > .cx,.letter-x:hover > .rx,
+.letter-w:hover > .cw,.letter-w:hover > .rw,.letter-v:hover > .lv,
+.letter-v:hover > .cv,.letter-v:hover > .rv,.letter-u:hover > .cu,
+.letter-t:hover > .lt,.letter-t:hover > .rt,.letter-s:hover > .ls,
+.letter-s:hover > .cs,.letter-s:hover > .rs,.letter-r:hover > .cr,
+.letter-r:hover > .rr,.letter-q:hover > .cq,.letter-p:hover > .cp,
+.letter-p:hover > .rp,.letter-o:hover > .co,.letter-n:hover > .cn,
+.letter-m:hover > .cm,.letter-m:hover > .rm,.letter-l:hover > .cl,
+.letter-l:hover > .rl,.letter-k:hover > .ck,.letter-k:hover > .rk,
+.letter-j:hover > .lj,.letter-j:hover > .cj,.letter-i:hover > .li,
+.letter-i:hover > .ri,.letter-h:hover > .ch,.letter-g:hover > .lg,
+.letter-g:hover > .cg,.letter-g:hover > .rg,.letter-f:hover > .rf,
+.letter-f:hover > .cf,.letter-e:hover > .le,.letter-e:hover > .ce,
+.letter-e:hover > .re,.letter-c:hover > .rc,.letter-c:hover > .cc,
+.letter-b:hover > .cb,.letter-b:hover > .rb,.letter-a:hover > .la,
+.letter-a:hover > .ca,.letter-a:hover > .ra,.letter-d:hover > .ld,
 .letter-d:hover > .cd {
     animation-play-state: running;
 }
@@ -1159,6 +1124,29 @@ ul li:nth-child(1){
     from {transform: rotate(0deg);}
     to {transform: rotate(90deg);}
 }
+
+
+
+/**//**//**//**//**//**//*CONTENT*//**//**//**//**//**//**//**/
+
+.content{
+  display:flex;
+  justify-content:flex-end;
+}
+.about{
+  width: 25%;
+  padding-right:20%;
+  text-align: justify;
+}
+
+
+
+
+
+
+
+
+
 
 
 /*BORDERS METHOD */
