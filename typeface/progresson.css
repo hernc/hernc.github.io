@@ -14,11 +14,12 @@ body{
   text-align: center;
   line-height: 60px;
   padding: 10px;
-  border-bottom: solid 2px #e32458;
+
 }
 
 .nav li:hover{
-  background-color: #aaa;
+  border-bottom: solid 2px #e32458;
+  color: #e32458;
 }
 
 
