@@ -1058,24 +1058,26 @@ ul li:nth-child(1){
   margin: 0 5px;
   width: 15px;
   height: 50px;
-  position: relative;
+/*  position: relative;*/
   background-color:#555;
-  transform:scaleX(1.30) translateY(18px) translateX(20px) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: left;
+  animation-duration: 1300ms;
+  animation-fill-mode:both;
+	animation-delay: 3s;
+  animation-iteration-count:5;
+	animation-direction:alternate;
 }
 .cz{
   margin:0 5px;
   width:15px;
   height:50px;
   background-color:#555;
-  transform:scaleX(1.30) translateY(-1.094em) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name:center;
+  animation-duration:1300ms;
+	animation-fill-mode:both;
+	animation-delay: 3s;
+  animation-iteration-count:5;
+	animation-direction: alternate;
 }
 
 .rz{
@@ -1083,11 +1085,12 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform:translateY(0px)translateX(-25px) rotate(45deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: right;
+  animation-duration:1300ms;
+	animation-fill-mode:both;
+	animation-delay: 3s;
+  animation-iteration-count:5;
+	animation-direction: alternate;
 }
 
 
@@ -1122,7 +1125,23 @@ ul li:nth-child(1){
     to {transform: rotate(90deg);}
 }
 
+/**//**//*/*ALTERNATEZ*//**//**//**//**//**//**//**/
 
+
+@keyframes right {
+    from {transform:rotate(0deg);}
+    to {transform: translateY(0px)translateX(-25px) rotate(45deg);}
+}
+
+@keyframes center{
+		from{transform: rotate(0);}
+		to{transform:scaleX(1.30) translateY(-1.094em) rotate(90deg);}
+}
+
+@keyframes left{
+		from{transform: rotate(0);}
+		to{transform:scaleX(1.30) translateY(18px) translateX(20px) rotate(90deg);}
+}
 
 /**//**//**//**//**//**//*CONTENT*//**//**//**//**//**//**//**/
 
