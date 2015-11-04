@@ -53,7 +53,7 @@ ul li:nth-child(1){
     margin:100px 0;
     display: inline-flex;
     flex-wrap:wrap;
-    padding: 40px;
+    padding: 40px 30px 20px 30px;
 
 
 }
@@ -1063,8 +1063,8 @@ ul li:nth-child(1){
   animation-name: left;
   animation-duration: 1300ms;
   animation-fill-mode:both;
-	animation-delay: 3s;
-  animation-iteration-count:5;
+	animation-delay: 1s;
+  animation-iteration-count:3;
 	animation-direction:alternate;
 }
 .cz{
@@ -1075,8 +1075,8 @@ ul li:nth-child(1){
   animation-name:center;
   animation-duration:1300ms;
 	animation-fill-mode:both;
-	animation-delay: 3s;
-  animation-iteration-count:5;
+	animation-delay: 1s;
+  animation-iteration-count:3;
 	animation-direction: alternate;
 }
 
@@ -1088,8 +1088,8 @@ ul li:nth-child(1){
   animation-name: right;
   animation-duration:1300ms;
 	animation-fill-mode:both;
-	animation-delay: 3s;
-  animation-iteration-count:5;
+	animation-delay: 1s;
+  animation-iteration-count:3;
 	animation-direction: alternate;
 }
 
@@ -1117,6 +1117,7 @@ ul li:nth-child(1){
 .letter-a:hover > .ca,.letter-a:hover > .ra,.letter-d:hover > .ld,
 .letter-d:hover > .cd {
     animation-play-state: running;
+		background-color: #24e37c;
 }
 
 
@@ -1127,6 +1128,9 @@ ul li:nth-child(1){
 
 /**//**//*/*ALTERNATEZ*//**//**//**//**//**//**//**/
 
+.refresh{
+		background-color: aqua;
+}
 
 @keyframes right {
     from {transform:rotate(0deg);}
@@ -1152,7 +1156,7 @@ ul li:nth-child(1){
 .about{
   width: 25%;
   padding-right:20%;
-  text-align: justify;
+	font-weight: 100;
 }
 
 
