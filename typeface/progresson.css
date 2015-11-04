@@ -972,22 +972,24 @@ ul li:nth-child(1){
   height: 50px;
   position: relative;
   background-color:#555;
-  transform:scaleY(1.1) scaleX(1.35) translateX(18px) rotate(-35deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: left-x;
+  animation-duration: 900ms;
+  animation-fill-mode:forwards;
+	animation-delay: 400ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 .cx{
   margin:0 5px;
   width:15px;
   height:50px;
   background-color:#555;
-  transform:scale(0);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: center-x;
+  animation-duration: 600ms;
+  animation-fill-mode:forwards;
+	animation-delay: 400ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .rx{
@@ -995,11 +997,31 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform:scaleY(1.1) scaleX(1.35) translateX(-18px) rotate(35deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: right-x;
+  animation-duration: 300ms;
+  animation-fill-mode:forwards;
+	animation-delay: 400ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+
+/**//**//*/*ANIMATION X*//**//**//**//**//**//**//**/
+
+@keyframes right-x{
+		from{transform: rotate(0);}
+		to{transform:scaleY(1.1) scaleX(1.35) translateX(-18px) rotate(35deg);}
+}
+
+@keyframes center-x {
+    from {transform:rotate(0deg);}
+    to {transform: translateY(4px)  translateX(-2px) rotate(35deg);}
+}
+
+
+@keyframes left-x{
+		from{transform: rotate(0);}
+		to{transform:scaleY(1.1) scaleX(1.35) translateX(18px) rotate(-35deg);}
 }
 
 /**//**//**//**//*LETTER Y//**//**//**//**//**/
@@ -1016,22 +1038,24 @@ ul li:nth-child(1){
   height: 50px;
   position: relative;
   background-color:#555;
-  transform:scaleY(1.10) translateX(12px) rotate(-45deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: left-y;
+  animation-duration: 900ms;
+  animation-fill-mode:forwards;
+	animation-delay: 500ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 .cy{
   margin:0 5px;
   width:15px;
   height:50px;
   background-color:#555;
-  transform:scale(0.95) translateY(1.094em)  translateX(-2px) rotate(39deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: center-y;
+  animation-duration: 600ms;
+  animation-fill-mode:forwards;
+	animation-delay: 500ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .ry{
@@ -1039,11 +1063,30 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform:scaleY(1.10) translateX(-13px) rotate(43deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: right-y;
+  animation-duration: 300ms;
+  animation-fill-mode:forwards;
+	animation-delay: 500ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+/**//**//*/*ANIMATION Y*//**//**//**//**//**//**//**/
+
+@keyframes right-y{
+		from{transform: rotate(0);}
+		to{transform:scaleY(1.10) translateX(-13px) rotate(45deg);}
+}
+
+@keyframes center-y {
+    from {transform:rotate(0deg);}
+    to {transform:scale(0.95) translateY(1.094em)  translateX(-2px) rotate(39deg);}
+}
+
+
+@keyframes left-y{
+		from{transform: rotate(0);}
+		to{transform:scaleY(1.10) translateX(12px) rotate(-45deg);}
 }
 
 /**//**//**//**//*LETTER Z//**//**//**//**//**/
@@ -1058,26 +1101,25 @@ ul li:nth-child(1){
   margin: 0 5px;
   width: 15px;
   height: 50px;
-/*  position: relative;*/
   background-color:#555;
-  animation-name: left;
-  animation-duration: 1300ms;
-  animation-fill-mode:both;
-	animation-delay: 1s;
-  animation-iteration-count:3;
-	animation-direction:alternate;
+  animation-name: left-a;
+  animation-duration: 900ms;
+  animation-fill-mode:forwards;
+	animation-delay: 1000ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 .cz{
   margin:0 5px;
   width:15px;
   height:50px;
   background-color:#555;
-  animation-name:center;
-  animation-duration:1300ms;
-	animation-fill-mode:both;
-	animation-delay: 1s;
-  animation-iteration-count:3;
-	animation-direction: alternate;
+  animation-name:center-a;
+  animation-duration:600ms;
+	animation-fill-mode:forwards;
+	animation-delay: 1000ms;
+  animation-iteration-count:1;
+	animation-direction: normal;
 }
 
 .rz{
@@ -1085,14 +1127,33 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  animation-name: right;
-  animation-duration:1300ms;
+  animation-name: right-a;
+  animation-duration:400ms;
 	animation-fill-mode:both;
-	animation-delay: 1s;
-  animation-iteration-count:3;
-	animation-direction: alternate;
+	animation-delay: 1000ms;
+  animation-iteration-count:1;
+	animation-direction: normal;
 }
 
+
+/**//**//*/*ANIMATION Z*//**//**//**//**//**//**//**/
+
+
+@keyframes right-a{
+		from{transform: rotate(0);}
+		to{transform:scaleX(1.30) translateX(-20px)translateY(-1.094em) rotate(90deg);}
+}
+
+@keyframes center-a {
+    from {transform:rotate(0deg);}
+    to {transform: translateY(0px) rotate(45deg);}
+}
+
+
+@keyframes left-a{
+		from{transform: rotate(0);}
+		to{transform:scaleX(1.30) translateY(18px) translateX(20px) rotate(90deg);}
+}
 
 
 /**//**//**//**//*HOVER STATES*//**//**//**//**/
@@ -1126,24 +1187,6 @@ ul li:nth-child(1){
     to {transform: rotate(90deg);}
 }
 
-/**//**//*/*ALTERNATEZ*//**//**//**//**//**//**//**/
-
-
-
-@keyframes right {
-    from {transform:rotate(0deg);}
-    to {transform: translateY(0px)translateX(-25px) rotate(45deg);}
-}
-
-@keyframes center{
-		from{transform: rotate(0);}
-		to{transform:scaleX(1.30) translateY(-1.094em) rotate(90deg);}
-}
-
-@keyframes left{
-		from{transform: rotate(0);}
-		to{transform:scaleX(1.30) translateY(18px) translateX(20px) rotate(90deg);}
-}
 
 /**//**//**//**//**//**//*CONTENT*//**//**//**//**//**//**//**/
 
@@ -1152,6 +1195,7 @@ ul li:nth-child(1){
   justify-content:flex-end;
 }
 .about{
+	color:#e32458;
   width: 25%;
   padding-right:20%;
 	font-weight: 100;
