@@ -1128,9 +1128,7 @@ ul li:nth-child(1){
 
 /**//**//*/*ALTERNATEZ*//**//**//**//**//**//**//**/
 
-.refresh{
-		background-color: aqua;
-}
+
 
 @keyframes right {
     from {transform:rotate(0deg);}
