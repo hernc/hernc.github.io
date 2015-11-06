@@ -23,35 +23,38 @@ body{
 }
 
 
+
 .nav li{
   margin-right: 20px;
   display:flex;
   flex-direction: row;
   line-height: 20px;
   padding:10px 20px;
-  border-bottom: solid 2px rgba(255, 255, 255, 0);
-  border-top: solid 2px;
+	opacity: 0;
 
 }
 
+
+
 .nav li:hover{
-  border-bottom: solid 2px #e32458;
   color: #e32458;
+	opacity: 1;
 }
 
 ul li:nth-child(1){
   margin-right:55px;
   font-size: 1.75em;
   font-weight: 900;
+	color: #4fa76e;
+	opacity: 5;
+	border-top: solid 2px #4fa76e ;
 }
-
-
 
 /************ALPHABET*****************************************/
 
 .alphabet{
-    margin:100px 0;
-    display: inline-flex;
+    margin:100px 50px;
+/*    display:flex;*/
     flex-wrap:wrap;
     padding: 40px 30px 20px 30px;
 
@@ -72,22 +75,24 @@ ul li:nth-child(1){
   height: 50px;
   position: relative;
   background-color:#555;
-  transform: rotate(15deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
+  animation-name: left-a;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 300ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 .ca{
   margin:0 5px;
   width:15px;
   height:50px;
   background-color:#555;
-  transform:  rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
+  animation-name: center-a;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 300ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .ra{
@@ -95,11 +100,28 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform: rotate(-15deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
+  animation-name: right-a;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 300ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION A//**//**//**//**//**/
+@keyframes left-a{
+		from{transform: rotate(0);}
+		to{transform: rotate(15deg);}
+}
+
+@keyframes center-a{
+		from{transform: rotate(0);}
+		to{transform:  rotate(90deg);}
+}
+
+@keyframes right-a{
+		from{transform: rotate(0);}
+		to{transform: rotate(-15deg);}
 }
 
 /**//**//**//**//*LETTER B//**//**//**//**//**/
@@ -123,11 +145,12 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(1px) translateX(7px) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
+  animation-name: center-b;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 400ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .rb{
@@ -135,13 +158,26 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(1.094em) translateX(-18px) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: right-b;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 400ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 
 }
+
+/**//**//**//**//*ANIMATION B//**//**//**//**//**/
+@keyframes center-b{
+		from{transform: rotate(0);}
+		to{transform: translateY(1px) translateX(7px) rotate(90deg);}
+}
+
+@keyframes right-b{
+		from{transform: rotate(0);}
+		to{transform: translateY(1.094em) translateX(-18px) rotate(90deg);}
+}
+
 /**//**//**//**//*LETTER C//**//**//**//**//**/
 
 .letter-c{
@@ -162,11 +198,12 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(-1.094em) translateX(7px) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
+  animation-name: center-c;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 700ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .rc{
@@ -174,11 +211,23 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(1.094em) translateX(-18px) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: right-c;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 700ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION C//**//**//**//**//**/
+@keyframes center-c{
+		from{transform: rotate(0);}
+		to{transform: translateY(-1.094em) translateX(7px) rotate(90deg);}
+}
+
+@keyframes right-c{
+		from{transform: rotate(0);}
+		to{transform: translateY(1.094em) translateX(-18px) rotate(90deg);}
 }
 
 /**//**//**//**//*LETTER D//**//**//**//**//**/
@@ -195,22 +244,24 @@ ul li:nth-child(1){
   height: 50px;
   position: relative;
   background-color:#555;
-  transform: translateY(1.094em) translateX(18px) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: left-d;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 600ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 .cd{
   margin:0 5px;
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(-1.094em) translateX(-0.469em) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
+  animation-name: center-d;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 600ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .rd{
@@ -219,6 +270,17 @@ ul li:nth-child(1){
   height:50px;
   background-color:#555;
 
+}
+
+/**//**//**//**//*ANIMATION D//**//**//**//**//**/
+@keyframes left-d{
+		from{transform: rotate(0);}
+		to{transform: translateY(1.094em) translateX(18px) rotate(90deg);}
+}
+
+@keyframes center-d{
+		from{transform: rotate(0);}
+		to{transform: translateY(-1.094em) translateX(-0.469em) rotate(90deg);}
 }
 
 /**//**//**//**//*LETTER E//**//**//**//**//**/
@@ -235,22 +297,24 @@ ul li:nth-child(1){
   height: 50px;
   position: relative;
   background-color:#555;
-  transform: scaleX(1.35) translateY(-18px) translateX(19px) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: left-e;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 700ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 .ce{
   margin:0 5px;
   width:15px;
   height:50px;
   background-color:#555;
-  transform:scaleX(1.35) translateY(0.031em) translateX(0.031em) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: center-e;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 700ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .re{
@@ -258,13 +322,29 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform:scaleX(1.35) translateY(19px) translateX(-18px) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: right-e;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 700ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
+/**//**//**//**//*ANIMATION E//**//**//**//**//**/
+@keyframes left-e{
+		from{transform: rotate(0);}
+		to{transform: scaleX(1.35) translateY(-18px) translateX(19px) rotate(90deg);}
+}
+
+@keyframes center-e{
+		from{transform: rotate(0);}
+		to{transform:scaleX(1.35) translateY(0.031em) translateX(0.031em) rotate(90deg);}
+}
+
+@keyframes right-e{
+		from{transform: rotate(0);}
+		to{transform:scaleX(1.35) translateY(19px) translateX(-18px) rotate(90deg);}
+}
 
 /**//**//**//**//*LETTER F//**//**//**//**//**/
 
@@ -285,11 +365,12 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(-1.094em) translateX(0.469em) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: center-f;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 800ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .rf{
@@ -297,11 +378,24 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(-0.031em) translateX(-18px) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: right-f;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 800ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION F//**//**//**//**//**/
+
+@keyframes center-f{
+		from{transform: rotate(0);}
+		to{transform: translateY(-1.094em) translateX(0.469em) rotate(90deg);}
+}
+
+@keyframes right-f{
+		from{transform: rotate(0);}
+		to{transform: translateY(-0.031em) translateX(-18px) rotate(90deg);}
 }
 
 /**//**//**//**//*LETTER G//**//**//**//**//**/
@@ -318,22 +412,24 @@ ul li:nth-child(1){
   height: 50px;
   position: relative;
   background-color:#555;
-  transform:scaleX(1.3) translateY(-16px) translateX(20px) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: left-g;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 900ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 .cg{
   margin:0 5px;
   width:15px;
   height:50px;
   background-color:#555;
-  transform:scaleX(1.3) translateY(25px) translateX(1px) rotate(-90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: center-g;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 900ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .rg{
@@ -341,11 +437,29 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform:scaleY(.55)translateY(32px) translateX(2px);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: right-g;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 900ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION G//**//**//**//**//**/
+
+@keyframes left-g{
+		from{transform: rotate(0);}
+		to{transform:scaleX(1.3) translateY(-16px) translateX(20px) rotate(90deg);}
+}
+
+@keyframes center-g{
+		from{transform: rotate(0);}
+		to{transform:scaleX(1.3) translateY(18px) translateX(1px) rotate(-90deg);}
+}
+
+@keyframes right-g{
+		from{transform: rotate(0);}
+		to{transform:scaleY(.40)translateY(32px) translateX(2px);}
 }
 
 /**//**//**//**//*LETTER H//**//**//**//**//**/
@@ -367,11 +481,12 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform:rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
+  animation-name: center-h;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 1000ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .rh{
@@ -381,6 +496,12 @@ ul li:nth-child(1){
   background-color:#555;
 }
 
+/**//**//**//**//*ANIMATION H//**//**//**//**//**/
+
+@keyframes center-h{
+		from{transform: rotate(0);}
+		to{transform:rotate(90deg);}
+}
 
 /**//**//**//**//*LETTER I//**//**//**//**//**/
 
@@ -396,11 +517,12 @@ ul li:nth-child(1){
   height: 50px;
   position: relative;
   background-color:#555;
-  transform:scaleX(1.35) translateY(-1.094em) translateX(19px) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
+  animation-name: left-i;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 1100ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 .ci{
   margin:0 5px;
@@ -415,13 +537,25 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform:scaleX(1.35) translateY(1.094em) translateX(-18px) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: right-i;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 1100ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
+/**//**//**//**//*ANIMATION I//**//**//**//**//**/
+
+@keyframes left-i{
+		from{transform: rotate(0);}
+		to{transform:scaleX(1.35) translateY(-1.094em) translateX(19px) rotate(90deg);}
+}
+
+@keyframes right-i{
+		from{transform: rotate(0);}
+		to{transform:scaleX(1.35) translateY(1.094em) translateX(-18px) rotate(90deg);}
+}
 
 /**//**//**//**//*LETTER J//**//**//**//**//**/
 
@@ -437,22 +571,24 @@ ul li:nth-child(1){
   height: 50px;
   position: relative;
   background-color:#555;
-  transform: translateY(1.094em) translateX(18px) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: left-j;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 1200ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 .cj{
   margin:0 5px;
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(1.094em) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
+  animation-name: center-j;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 1200ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .rj{
@@ -463,7 +599,17 @@ ul li:nth-child(1){
 
 }
 
+/**//**//**//**//*ANIMATION J//**//**//**//**//**/
 
+@keyframes left-j{
+		from{transform: rotate(0);}
+		to{transform: translateY(1.094em) translateX(18px) rotate(90deg);}
+}
+
+@keyframes center-j{
+		from{transform: rotate(0);}
+		to{transform: translateY(1.094em) rotate(90deg);}
+}
 
 /**//**//**//**//*LETTER K//**//**//**//**//**/
 
@@ -484,11 +630,12 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform:  translateY(-1px) translateX(3px)rotate(35deg);
-  animation-name: rotate;
-  animation-duration: 1ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: center-k;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 1300ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .rk{
@@ -496,11 +643,24 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(1.094em) translateX(-18px) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 1ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: right-k;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 1300ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION K//**//**//**//**//**/
+
+@keyframes center-k{
+		from{transform: rotate(0);}
+		to{transform:  translateY(-1px) translateX(3px)rotate(35deg);}
+}
+
+@keyframes right-k{
+		from{transform: rotate(0);}
+		to{transform: translateY(1.094em) translateX(-18px) rotate(90deg);}
 }
 
 
@@ -525,11 +685,12 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(1.094em) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
+  animation-name: center-l;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 1400ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .rl{
@@ -537,12 +698,25 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(1.094em) translateX(-18px) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: right-l;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 1400ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 
+}
+
+/**//**//**//**//*ANIMATION L//**//**//**//**//**/
+
+@keyframes center-l{
+		from{transform: rotate(0);}
+		to{transform: translateY(1.094em) rotate(90deg);}
+}
+
+@keyframes right-l{
+		from{transform: rotate(0);}
+		to{transform: translateY(1.094em) translateX(-18px) rotate(90deg);}
 }
 
 /**//**//**//**//*LETTER M//**//**//**//**//**/
@@ -564,11 +738,12 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform:rotate(-27deg) translateX(-10px) translateY(-4px);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
+  animation-name: center-m;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 1700ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .rm{
@@ -576,12 +751,26 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform:rotate(-27deg) translateX(-10px) translateY(-7px);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
+  animation-name: right-m;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 1700ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
+
+/**//**//**//**//*ANIMATION M//**//**//**//**//**/
+
+@keyframes center-m{
+		from{transform: rotate(0);}
+		to{transform:rotate(-27deg) translateX(-10px) translateY(-4px);}
+}
+
+@keyframes right-m{
+		from{transform: rotate(0);}
+		to{transform:rotate(-27deg) translateX(-10px) translateY(-7px);}
+}
+
 
 /**//**//**//**//*LETTER N//**//**//**//**//**/
 
@@ -602,11 +791,12 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform:rotate(-60deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
+  animation-name: center-n;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 1600ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .rn{
@@ -615,6 +805,14 @@ ul li:nth-child(1){
   height:50px;
   background-color:#555;
 }
+
+/**//**//**//**//*ANIMATION O//**//**//**//**//**/
+
+@keyframes center-n{
+		from{transform: rotate(0);}
+		to{transform:rotate(-60deg);}
+}
+
 
 /**//**//**//**//*LETTER O//**//**//**//**//**/
 
@@ -635,11 +833,12 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(-1.094em) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
+  animation-name: center-o;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 1700ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .ro{
@@ -647,6 +846,13 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
+}
+
+/**//**//**//**//*ANIMATION O//**//**//**//**//**/
+
+@keyframes center-o{
+		from{transform: rotate(0);}
+		to{transform: translateY(-1.094em) rotate(90deg);}
 }
 
 /**//**//**//**//*LETTER P//**//**//**//**//**/
@@ -668,11 +874,12 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(-1.094em) translateX(0.469em) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: center-p;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 1800ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .rp{
@@ -680,11 +887,24 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(-.2em) translateX(-1.094em) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: right-p;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 1800ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION P//**//**//**//**//**/
+
+@keyframes center-p{
+		from{transform: rotate(0);}
+		to{transform: translateY(-1.094em) translateX(0.469em) rotate(90deg);}
+}
+
+@keyframes right-p{
+		from{transform: rotate(0);}
+		to{transform: translateY(-.2em) translateX(-1.094em) rotate(90deg);}
 }
 
 /**//**//**//**//*LETTER Q//**//**//**//**//**/
@@ -706,11 +926,12 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform:rotate(-45deg) translate(-10px, 18px);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
+  animation-name: center-q;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 1900ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .rq{
@@ -718,6 +939,14 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
+}
+
+/**//**//**//**//*ANIMATION Q//**//**//**//**//**/
+
+
+@keyframes center-q{
+		from{transform: rotate(0);}
+		to{transform:rotate(-45deg) translate(-10px, 18px);}
 }
 
 /**//**//**//**//*LETTER R//**//**//**//**//**/
@@ -739,11 +968,12 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform: translateY(-1.094em) translateX(0.469em) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: center-r;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 2000ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .rr{
@@ -751,11 +981,25 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform:translateY(2px)translateX(-15px) rotate(-45deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: right-r;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 2000ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION R//**//**//**//**//**/
+
+
+@keyframes center-r{
+		from{transform: rotate(0);}
+		to{transform: translateY(-1.094em) translateX(0.469em) rotate(90deg);}
+}
+
+@keyframes right-r{
+		from{transform: rotate(0);}
+		to{transform:translateY(2px)translateX(-15px) rotate(-45deg);}
 }
 
 /**//**//**//**//*LETTER S//**//**//**//**//**/
@@ -771,22 +1015,24 @@ ul li:nth-child(1){
   height: 50px;
   position: relative;
   background-color:#555;
-  transform:scaleX(1.30) translateY(18px) translateX(20px) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: left-s;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 2100ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 .cs{
   margin:0 5px;
   width:15px;
   height:50px;
   background-color:#555;
-  transform:scaleX(1.30) translateY(-1.094em) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: center-s;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 2100ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .rs{
@@ -794,11 +1040,30 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform:translateY(0px)translateX(-25px) rotate(-45deg);
   animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: right-s;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 2100ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION S//**//**//**//**//**/
+
+@keyframes left-s{
+		from{transform: rotate(0);}
+		to{transform:scaleX(1.30) translateY(18px) translateX(20px) rotate(90deg);}
+}
+
+@keyframes center-s{
+		from{transform: rotate(0);}
+		to{transform:scaleX(1.30) translateY(-1.094em) rotate(90deg);}
+}
+
+@keyframes right-s{
+		from{transform: rotate(0);}
+		to{transform:translateY(0px)translateX(-25px) rotate(-45deg);}
 }
 
 /**//**//**//**//*LETTER T//**//**//**//**//**/
@@ -815,11 +1080,12 @@ ul li:nth-child(1){
   height: 50px;
   position: relative;
   background-color:#555;
-  transform:scaleX(1.35) translateY(-1.094em) translateX(19px) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
+  animation-name: left-t;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 2200ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 .ct{
   margin:0 5px;
@@ -834,11 +1100,24 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform:scaleX(1.35) translateY(-1.094em) translateX(-18px) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: right-t;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 2200ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION T//**//**//**//**//**/
+
+@keyframes left-t{
+		from{transform: rotate(0);}
+		to{transform:scaleX(1.35) translateY(-1.094em) translateX(19px) rotate(90deg);}
+}
+
+@keyframes right-t{
+		from{transform: rotate(0);}
+		to{transform:scaleX(1.35) translateY(-1.094em) translateX(-18px) rotate(90deg);}
 }
 
 /**//**//**//**//*LETTER U//**//**//**//**//**/
@@ -861,11 +1140,12 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform:translateY(1.094em) rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: center-u;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 2300ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .ru{
@@ -874,6 +1154,14 @@ ul li:nth-child(1){
   height:50px;
   background-color:#555;
 }
+
+/**//**//**//**//*ANIMATION U//**//**//**//**//**/
+
+@keyframes center-u {
+    from {transform:rotate(0deg);}
+    to {transform:translateY(1.094em) rotate(90deg);}
+}
+
 
 /**//**//**//**//*LETTER V//**//**//**//**//**/
 
@@ -889,22 +1177,24 @@ ul li:nth-child(1){
   height: 50px;
   position: relative;
   background-color:#555;
-  transform:scaleY(1.25) translateX(12px) rotate(-45deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: left-v;
+  animation-duration: 900ms;
+  animation-fill-mode:forwards;
+	animation-delay: 2400ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 .cv{
   margin:0 5px;
   width:15px;
   height:50px;
   background-color:#555;
-  transform:scale(0)translateY(1.094em)  rotate(90deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: center-v;
+  animation-duration: 600ms;
+  animation-fill-mode:forwards;
+	animation-delay: 2400ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .rv{
@@ -912,11 +1202,29 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform:scaleY(1.25) translateX(-12px) rotate(45deg);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function:step-end;
+  animation-name: right-v;
+  animation-duration: 300ms;
+  animation-fill-mode:forwards;
+	animation-delay: 2400ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION V//**//**//**//**//**/
+
+@keyframes left-v{
+		from{transform: rotate(0);}
+		to{transform:scaleY(1.25) translateX(12px) rotate(-45deg);}
+}
+
+@keyframes center-v {
+    from {transform:rotate(0deg);}
+    to {transform:translateX(15px)  rotate(40deg);}
+}
+
+@keyframes right-v{
+		from{transform: rotate(0);}
+		to{transform:scaleY(1.25) translateX(-12px) rotate(45deg);}
 }
 
 /**//**//**//**//*LETTER W//**//**//**//**//**/
@@ -939,11 +1247,12 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform:rotate(27deg) translateX(-10px) translateY(5px);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
+  animation-name: center-w;
+  animation-duration: 900ms;
+  animation-fill-mode:forwards;
+	animation-delay: 2700ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
 }
 
 .rw{
@@ -951,11 +1260,29 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  transform:rotate(27deg) translateX(-10px) translateY(7px);
-  animation-name: rotate;
-  animation-duration: 5ms;
-  animation-play-state: paused;
-  animation-timing-function: step-end;
+  animation-name: right-w;
+  animation-duration: 600ms;
+  animation-fill-mode:forwards;
+	animation-delay: 2700ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION W//**//**//**//**//**/
+
+@keyframes left-w{
+		from{transform: rotate(0);}
+		to{transform:scaleY(1.1) scaleX(1.35) translateX(18px) rotate(-35deg);}
+}
+
+@keyframes center-w {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(27deg) translateX(-10px) translateY(5px);}
+}
+
+@keyframes right-w{
+		from{transform: rotate(0);}
+		to{transform:rotate(27deg) translateX(-10px) translateY(7px);}
 }
 
 /**//**//**//**//*LETTER X//**//**//**//**//**/
@@ -975,7 +1302,7 @@ ul li:nth-child(1){
   animation-name: left-x;
   animation-duration: 900ms;
   animation-fill-mode:forwards;
-	animation-delay: 400ms;
+	animation-delay: 2600ms;
   animation-iteration-count:1;
 	animation-direction:normal;
 }
@@ -987,7 +1314,7 @@ ul li:nth-child(1){
   animation-name: center-x;
   animation-duration: 600ms;
   animation-fill-mode:forwards;
-	animation-delay: 400ms;
+	animation-delay: 2600ms;
   animation-iteration-count:1;
 	animation-direction:normal;
 }
@@ -1000,7 +1327,7 @@ ul li:nth-child(1){
   animation-name: right-x;
   animation-duration: 300ms;
   animation-fill-mode:forwards;
-	animation-delay: 400ms;
+	animation-delay: 2600ms;
   animation-iteration-count:1;
 	animation-direction:normal;
 }
@@ -1041,7 +1368,7 @@ ul li:nth-child(1){
   animation-name: left-y;
   animation-duration: 900ms;
   animation-fill-mode:forwards;
-	animation-delay: 500ms;
+	animation-delay: 2700ms;
   animation-iteration-count:1;
 	animation-direction:normal;
 }
@@ -1053,7 +1380,7 @@ ul li:nth-child(1){
   animation-name: center-y;
   animation-duration: 600ms;
   animation-fill-mode:forwards;
-	animation-delay: 500ms;
+	animation-delay: 2700ms;
   animation-iteration-count:1;
 	animation-direction:normal;
 }
@@ -1066,7 +1393,7 @@ ul li:nth-child(1){
   animation-name: right-y;
   animation-duration: 300ms;
   animation-fill-mode:forwards;
-	animation-delay: 500ms;
+	animation-delay: 2700ms;
   animation-iteration-count:1;
 	animation-direction:normal;
 }
@@ -1102,10 +1429,10 @@ ul li:nth-child(1){
   width: 15px;
   height: 50px;
   background-color:#555;
-  animation-name: left-a;
+  animation-name: left-z;
   animation-duration: 900ms;
   animation-fill-mode:forwards;
-	animation-delay: 1000ms;
+	animation-delay: 2800ms;
   animation-iteration-count:1;
 	animation-direction:normal;
 }
@@ -1114,10 +1441,10 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  animation-name:center-a;
+  animation-name:center-z;
   animation-duration:600ms;
 	animation-fill-mode:forwards;
-	animation-delay: 1000ms;
+	animation-delay: 2800ms;
   animation-iteration-count:1;
 	animation-direction: normal;
 }
@@ -1127,10 +1454,10 @@ ul li:nth-child(1){
   width:15px;
   height:50px;
   background-color:#555;
-  animation-name: right-a;
+  animation-name: right-z;
   animation-duration:400ms;
 	animation-fill-mode:both;
-	animation-delay: 1000ms;
+	animation-delay: 2800ms;
   animation-iteration-count:1;
 	animation-direction: normal;
 }
@@ -1139,66 +1466,44 @@ ul li:nth-child(1){
 /**//**//*/*ANIMATION Z*//**//**//**//**//**//**//**/
 
 
-@keyframes right-a{
+@keyframes right-z{
 		from{transform: rotate(0);}
 		to{transform:scaleX(1.30) translateX(-20px)translateY(-1.094em) rotate(90deg);}
 }
 
-@keyframes center-a {
+@keyframes center-z {
     from {transform:rotate(0deg);}
     to {transform: translateY(0px) rotate(45deg);}
 }
 
-
-@keyframes left-a{
+@keyframes left-z{
 		from{transform: rotate(0);}
 		to{transform:scaleX(1.30) translateY(18px) translateX(20px) rotate(90deg);}
 }
-
-
-/**//**//**//**//*HOVER STATES*//**//**//**//**/
-
-.letter-z:hover > .lz,.letter-z:hover > .cz,.letter-z:hover > .rz,
-.letter-y:hover > .ly,.letter-y:hover > .cy,.letter-y:hover > .ry,
-.letter-x:hover > .lx,.letter-x:hover > .cx,.letter-x:hover > .rx,
-.letter-w:hover > .cw,.letter-w:hover > .rw,.letter-v:hover > .lv,
-.letter-v:hover > .cv,.letter-v:hover > .rv,.letter-u:hover > .cu,
-.letter-t:hover > .lt,.letter-t:hover > .rt,.letter-s:hover > .ls,
-.letter-s:hover > .cs,.letter-s:hover > .rs,.letter-r:hover > .cr,
-.letter-r:hover > .rr,.letter-q:hover > .cq,.letter-p:hover > .cp,
-.letter-p:hover > .rp,.letter-o:hover > .co,.letter-n:hover > .cn,
-.letter-m:hover > .cm,.letter-m:hover > .rm,.letter-l:hover > .cl,
-.letter-l:hover > .rl,.letter-k:hover > .ck,.letter-k:hover > .rk,
-.letter-j:hover > .lj,.letter-j:hover > .cj,.letter-i:hover > .li,
-.letter-i:hover > .ri,.letter-h:hover > .ch,.letter-g:hover > .lg,
-.letter-g:hover > .cg,.letter-g:hover > .rg,.letter-f:hover > .rf,
-.letter-f:hover > .cf,.letter-e:hover > .le,.letter-e:hover > .ce,
-.letter-e:hover > .re,.letter-c:hover > .rc,.letter-c:hover > .cc,
-.letter-b:hover > .cb,.letter-b:hover > .rb,.letter-a:hover > .la,
-.letter-a:hover > .ca,.letter-a:hover > .ra,.letter-d:hover > .ld,
-.letter-d:hover > .cd {
-    animation-play-state: running;
-		background-color: #24e37c;
-}
-
-
-@keyframes rotate {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(90deg);}
-}
-
 
 /**//**//**//**//**//**//*CONTENT*//**//**//**//**//**//**//**/
 
 .content{
   display:flex;
   justify-content:flex-end;
+	position: relative;
 }
 .about{
-	color:#e32458;
-  width: 25%;
-  padding-right:20%;
+	color:#4fa76e;
+  width: 35%;
+  padding-right:10%;
 	font-weight: 100;
+	font-size: 20px;
+}
+
+.box{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top:5%;
+	left:15%;
+	background-color: #d4d4d4;
+
 }
 
 
@@ -1211,146 +1516,52 @@ ul li:nth-child(1){
 
 
 
-/*BORDERS METHOD */
 
-/*
-.letter-a {
-    width: 35px;
-    height: 50px;
-    position: relative;
-    margin: 10px;
-    border-left:solid 15px #555;
-    border-right:solid 15px #555;
-}
-.letter-a::before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 10px;
-    height: 100%;
-    width: 15px;
-    background-color: #555;
-    transform: translateY(-10px) rotate(90deg);
-    animation-name: rotate;
-    animation-duration: 5ms;
-    animation-play-state: paused;
-    animation-timing-function: step-end;
-}
-
-.letter-a:hover::before{
-    animation-play-state: running;
-}
-@keyframes rotate {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(90deg);}
-}
+/**//**//**//**//**//**//*PHRASE*//**//**//**//**//**//**//**/
 
 
-.letter-b {
-    width: 35px;
-    height: 50px;
-    position: relative;
-    margin: 10px;
-    border-left:15px solid #555;
-    border-right:15px solid #555;
-    transition: border-right 5ms transform 5ms;;
-	transform:
-    animation-name:move;
-    animation-duration: 5ms;
-    animation-play-state: paused;
-    animation-timing-function: step-end;
+.to .letter-t,
+.to .letter-o{
+	margin: 5px 2px;
+}
+
+ {
+	display: flex;
+	margin: 20px;
 
 }
 
-.letter-b::before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 10px;
-    height: 100%;
-    width: 15px;
-    background-color: #555;
-    transform:translateY(4px) translateX(-7px) rotate(90deg);
-    animation-name: rotate;
-    animation-duration: 5ms;
-    animation-play-state: paused;
-    animation-timing-function: step-end;
-}
-
-@keyframes move{
-    from {border-right: 15px solid #555;}
-    to {border-bottom: 15px solid #555;}
-}
-
-.letter-b:hover{
-    border-bottom: 15px solid #555;
-    border-right:0px solid;
-	transform: translateY(-15px);
-}
-
-.letter-b:hover:before{
-    animation-play-state: running;
+.improve .letter-i,
+.improve .letter-m,
+.improve .letter-p,
+.improve .letter-r,
+.improve .letter-o,
+.improve .letter-v,
+.improve .letter-e{
+	margin: 5px -1px;
 
 }
-
-.letter-h {
-    width: 35px;
-    height: 50px;
-    position: relative;
-    margin: 10px;
-    border-left:15px solid #555;
-    border-right:15px solid #555;
-}
-.letter-h::before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 10px;
-    height: 100%;
-    width: 15px;
-    background-color: #555;
-    transform: rotate(90deg);
-    animation-name: rotate;
-    animation-duration: 5ms;
-    animation-play-state: paused;
-    animation-timing-function: step-end;
+.to,
+.improve,
+.is,
+.change{
+	display:flex;
+	margin: 3px;
 }
 
-.letter-h:hover:before{
-    animation-play-state: running;
+.is .letter-t,
+.is .letter-o,
+.is .letter-i,
+.is .letter-s{
+	margin: 5px -1px;
 }
 
-.border-o {
-    position: relative;
-    margin:10px;
-    width: 35px;
-	height: 50px;
-    border-left:solid 15px #555;
-    border-right:solid 15px #555;
+
+.change .letter-c,
+.change .letter-h,
+.change .letter-a,
+.change .letter-n,
+.change .letter-g,
+.change .letter-e {
+	margin:5px -1px;
 }
-
-.border-o::before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 10px;
-    height: 100%;
-    width: 15px;
-    background-color: #555;
-    transform: translateY(-17.5px) rotate(90deg);
-    animation-name: rotate;
-    animation-duration: 5ms;
-    animation-play-state: paused;
-    animation-timing-function: step-end;
-}
-
-.border-o:hover:before{
-    animation-play-state: running;
-}
-*/
-
-
