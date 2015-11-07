@@ -19,14 +19,11 @@ p {
 
 
 /************ALPHABET*****************************************/
-
 .alphabet{
     margin:100px 50px;
     display:flex;
     flex-wrap:wrap;
     padding: 40px 30px 20px 30px;
-
-
 }
 
 /*DIVS METHOD */
@@ -1450,11 +1447,13 @@ p {
 }
 
 
+
+
 /************ALPHABET GLITCHY*****************************************/
 
-.alphabet{
+.alphabet-b{
     margin:100px 50px;
-/*    display:flex;*/
+    display:flex;
     flex-wrap:wrap;
     padding: 40px 30px 20px 30px;
 
@@ -1475,11 +1474,14 @@ p {
   height: 50px;
   position: relative;
   background-color:#555;
-  animation-name: left-a;
+}
+
+.animate{
+	animation-name: left-a;
   animation-duration: 200ms;
   animation-fill-mode:forwards;
 	animation-delay: 200ms;
-  animation-iteration-count:1;
+  animation-iteration-count:3;
 	animation-direction:alternate;
 }
 .ca{
@@ -1491,7 +1493,7 @@ p {
   animation-duration: 200ms;
   animation-fill-mode:forwards;
 	animation-delay: 150ms;
-  animation-iteration-count:1;
+  animation-iteration-count:3;
 	animation-direction:alternate;
 }
 
@@ -1504,7 +1506,7 @@ p {
   animation-duration: 200ms;
   animation-fill-mode:ba;
 	animation-delay: 100ms;
-  animation-iteration-count:1;
+  animation-iteration-count:5;
 	animation-direction:alternate;
 }
 
@@ -1546,11 +1548,11 @@ p {
   height:50px;
   background-color:#555;
   animation-name: center-b;
-  animation-duration: 700ms;
+  animation-duration: 300ms;
   animation-fill-mode:forwards;
 	animation-delay: 400ms;
-  animation-iteration-count:1;
-	animation-direction:normal;
+  animation-iteration-count:5;
+	animation-direction:alternate;
 }
 
 .rb{
@@ -1559,11 +1561,11 @@ p {
   height:50px;
   background-color:#555;
   animation-name: right-b;
-  animation-duration: 700ms;
+  animation-duration: 300ms;
   animation-fill-mode:forwards;
 	animation-delay: 400ms;
-  animation-iteration-count:1;
-	animation-direction:normal;
+  animation-iteration-count:3;
+	animation-direction:alternate;
 
 }
 
@@ -1599,10 +1601,10 @@ p {
   height:50px;
   background-color:#555;
   animation-name: center-c;
-  animation-duration: 700ms;
+  animation-duration: 300ms;
   animation-fill-mode:forwards;
 	animation-delay: 700ms;
-  animation-iteration-count:1;
+  animation-iteration-count:3;
 	animation-direction:normal;
 }
 
@@ -1612,10 +1614,10 @@ p {
   height:50px;
   background-color:#555;
   animation-name: right-c;
-  animation-duration: 700ms;
+  animation-duration: 300ms;
   animation-fill-mode:forwards;
 	animation-delay: 700ms;
-  animation-iteration-count:1;
+  animation-iteration-count:4;
 	animation-direction:normal;
 }
 
@@ -1645,10 +1647,10 @@ p {
   position: relative;
   background-color:#555;
   animation-name: left-d;
-  animation-duration: 700ms;
+  animation-duration: 300ms;
   animation-fill-mode:forwards;
 	animation-delay: 600ms;
-  animation-iteration-count:1;
+  animation-iteration-count:2;
 	animation-direction:normal;
 }
 .cd{
@@ -1660,7 +1662,7 @@ p {
   animation-duration: 700ms;
   animation-fill-mode:forwards;
 	animation-delay: 600ms;
-  animation-iteration-count:1;
+  animation-iteration-count:3;
 	animation-direction:normal;
 }
 
@@ -1698,10 +1700,10 @@ p {
   position: relative;
   background-color:#555;
   animation-name: left-e;
-  animation-duration: 700ms;
+  animation-duration: 400ms;
   animation-fill-mode:forwards;
 	animation-delay: 700ms;
-  animation-iteration-count:1;
+  animation-iteration-count:3;
 	animation-direction:normal;
 }
 .ce{
@@ -1710,10 +1712,10 @@ p {
   height:50px;
   background-color:#555;
   animation-name: center-e;
-  animation-duration: 700ms;
+  animation-duration: 300ms;
   animation-fill-mode:forwards;
 	animation-delay: 700ms;
-  animation-iteration-count:1;
+  animation-iteration-count:3;
 	animation-direction:normal;
 }
 
@@ -1723,10 +1725,10 @@ p {
   height:50px;
   background-color:#555;
   animation-name: right-e;
-  animation-duration: 700ms;
+  animation-duration: 500ms;
   animation-fill-mode:forwards;
 	animation-delay: 700ms;
-  animation-iteration-count:1;
+  animation-iteration-count:5;
 	animation-direction:normal;
 }
 
@@ -1766,10 +1768,10 @@ p {
   height:50px;
   background-color:#555;
   animation-name: center-f;
-  animation-duration: 700ms;
+  animation-duration: 300ms;
   animation-fill-mode:forwards;
 	animation-delay: 800ms;
-  animation-iteration-count:1;
+  animation-iteration-count:2;
 	animation-direction:normal;
 }
 
@@ -1779,18 +1781,19 @@ p {
   height:50px;
   background-color:#555;
   animation-name: right-f;
-  animation-duration: 700ms;
+  animation-duration: 400ms;
   animation-fill-mode:forwards;
 	animation-delay: 800ms;
-  animation-iteration-count:1;
+  animation-iteration-count:3;
 	animation-direction:normal;
 }
 
 /**//**//**//**//*ANIMATION F//**//**//**//**//**/
 
 @keyframes center-f{
-		from{transform: rotate(0);}
-		to{transform: translateY(-1.094em) translateX(0.469em) rotate(90deg);}
+		0%{transform: rotate(0);}
+		30%{transform: rotate(50);}
+		100%{transform: translateY(-1.094em) translateX(0.469em) rotate(90deg);}
 }
 
 @keyframes right-f{
@@ -1815,8 +1818,8 @@ p {
   animation-name: left-g;
   animation-duration: 700ms;
   animation-fill-mode:forwards;
-	animation-delay: 900ms;
-  animation-iteration-count:1;
+	animation-delay: 400ms;
+  animation-iteration-count:3;
 	animation-direction:normal;
 }
 .cg{
@@ -1827,8 +1830,8 @@ p {
   animation-name: center-g;
   animation-duration: 700ms;
   animation-fill-mode:forwards;
-	animation-delay: 900ms;
-  animation-iteration-count:1;
+	animation-delay: 300ms;
+  animation-iteration-count:3;
 	animation-direction:normal;
 }
 
@@ -1840,8 +1843,8 @@ p {
   animation-name: right-g;
   animation-duration: 700ms;
   animation-fill-mode:forwards;
-	animation-delay: 900ms;
-  animation-iteration-count:1;
+	animation-delay: 500ms;
+  animation-iteration-count:2;
 	animation-direction:normal;
 }
 
@@ -1899,8 +1902,10 @@ p {
 /**//**//**//**//*ANIMATION H//**//**//**//**//**/
 
 @keyframes center-h{
-		from{transform: rotate(0);}
-		to{transform:rotate(90deg);}
+		0%{transform: rotate(0);}
+		25%{transform:rotate(70deg);}
+		75%{transform:rotate(45deg);}
+		100%{transform:rotate(90deg);}
 }
 
 /**//**//**//**//*LETTER I//**//**//**//**//**/
@@ -1921,7 +1926,7 @@ p {
   animation-duration: 700ms;
   animation-fill-mode:forwards;
 	animation-delay: 1100ms;
-  animation-iteration-count:1;
+  animation-iteration-count:3;
 	animation-direction:normal;
 }
 .ci{
@@ -1941,20 +1946,22 @@ p {
   animation-duration: 700ms;
   animation-fill-mode:forwards;
 	animation-delay: 1100ms;
-  animation-iteration-count:1;
+  animation-iteration-count:2;
 	animation-direction:normal;
 }
 
 /**//**//**//**//*ANIMATION I//**//**//**//**//**/
 
 @keyframes left-i{
-		from{transform: rotate(0);}
-		to{transform:scaleX(1.35) translateY(-1.094em) translateX(19px) rotate(90deg);}
+		0%{transform: rotate(0);}
+		25%{transform:rotate(-70deg);}
+		100%{transform:scaleX(1.35) translateY(-1.094em) translateX(19px) rotate(90deg);}
 }
 
 @keyframes right-i{
-		from{transform: rotate(0);}
-		to{transform:scaleX(1.35) translateY(1.094em) translateX(-18px) rotate(90deg);}
+		0%{transform: rotate(0);}
+		50%{transform:scaleX(-1.35) translateY(-1.094em) translateX(-8px) rotate(9deg);}
+		100%{transform:scaleX(1.35) translateY(1.094em) translateX(-18px) rotate(90deg);}
 }
 
 /**//**//**//**//*LETTER J//**//**//**//**//**/
@@ -2002,8 +2009,9 @@ p {
 /**//**//**//**//*ANIMATION J//**//**//**//**//**/
 
 @keyframes left-j{
-		from{transform: rotate(0);}
-		to{transform: translateY(1.094em) translateX(18px) rotate(90deg);}
+		0%{transform: rotate(0);}
+		40%{transform: translateY(0.94em) translateX(6px) rotate(10deg);}
+		100%{transform: translateY(1.094em) translateX(18px) rotate(90deg);}
 }
 
 @keyframes center-j{
@@ -2034,7 +2042,7 @@ p {
   animation-duration: 700ms;
   animation-fill-mode:forwards;
 	animation-delay: 1300ms;
-  animation-iteration-count:1;
+  animation-iteration-count:3;
 	animation-direction:normal;
 }
 
@@ -2047,15 +2055,17 @@ p {
   animation-duration: 700ms;
   animation-fill-mode:forwards;
 	animation-delay: 1300ms;
-  animation-iteration-count:1;
+  animation-iteration-count:2;
 	animation-direction:normal;
 }
 
 /**//**//**//**//*ANIMATION K//**//**//**//**//**/
 
 @keyframes center-k{
-		from{transform: rotate(0);}
-		to{transform:  translateY(-1px) translateX(3px)rotate(35deg);}
+		0%{transform: rotate(0);}
+		10%{transform: rotate(30);}
+		50%{transform: rotate(-36);}
+		100%{transform:  translateY(-1px) translateX(3px)rotate(35deg);}
 }
 
 @keyframes right-k{
