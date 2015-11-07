@@ -1461,7 +1461,7 @@ p {
 
 }
 
-/*DIVS METHOD */
+/*ROUGH ANIMATION */
 /**//**//**//**//*LETTER A//**//**//**//**//**/
 
 .letter-a{
@@ -1476,11 +1476,11 @@ p {
   position: relative;
   background-color:#555;
   animation-name: left-a;
-  animation-duration: 700ms;
+  animation-duration: 200ms;
   animation-fill-mode:forwards;
-	animation-delay: 300ms;
+	animation-delay: 200ms;
   animation-iteration-count:1;
-	animation-direction:normal;
+	animation-direction:alternate;
 }
 .ca{
   margin:0 5px;
@@ -1488,11 +1488,11 @@ p {
   height:50px;
   background-color:#555;
   animation-name: center-a;
-  animation-duration: 700ms;
+  animation-duration: 200ms;
   animation-fill-mode:forwards;
-	animation-delay: 300ms;
+	animation-delay: 150ms;
   animation-iteration-count:1;
-	animation-direction:normal;
+	animation-direction:alternate;
 }
 
 .ra{
@@ -1501,11 +1501,11 @@ p {
   height:50px;
   background-color:#555;
   animation-name: right-a;
-  animation-duration: 700ms;
-  animation-fill-mode:forwards;
-	animation-delay: 300ms;
+  animation-duration: 200ms;
+  animation-fill-mode:ba;
+	animation-delay: 100ms;
   animation-iteration-count:1;
-	animation-direction:normal;
+	animation-direction:alternate;
 }
 
 /**//**//**//**//*ANIMATION A//**//**//**//**//**/
