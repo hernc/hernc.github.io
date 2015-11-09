@@ -19,26 +19,24 @@ body{
   display: inline-flex;
   flex-direction: row;
   align-content: flex-start;
-  height: fit-content;
+	flex-wrap: wrap;
 }
 
 
 
 .nav li{
-  margin-right: 20px;
+  margin-right: 10px;
   display:flex;
   flex-direction: row;
   line-height: 20px;
-  padding:10px 20px;
-	opacity: 0;
-
+  padding:10px;
 }
 
 
 
 .nav li:hover{
   color: #e32458;
-	opacity: 1;
+	border-top: solid 2px #4fa76e;
 }
 
 ul li:nth-child(1){
@@ -46,8 +44,14 @@ ul li:nth-child(1){
   font-size: 1.75em;
   font-weight: 900;
 	color: #4fa76e;
-	opacity: 5;
 	border-top: solid 2px #4fa76e ;
+}
+
+.nav a{
+	text-decoration: none;
+	color: inherit;
+
+
 }
 
 /************ALPHABET*****************************************/
@@ -1517,30 +1521,47 @@ ul li:nth-child(1){
 
 
 
-/**//**//**//**//**//**//*PHRASE*//**//**//**//**//**//**//**/
+/**//**//**//**//**//**//*PSON PHRASE*//**//**//**//**//**//**//**/
 
 
+.this .letter-t,
+.this .letter-h,
+.this .letter-i,
+.this .letter-s,
+.road .letter-r,
+.road .letter-o,
+.road .letter-a,
+.road .letter-d,
+.hard .letter-h,
+.hard .letter-a,
+.hard .letter-r,
+.hard .letter-d,
 .to .letter-t,
-.to .letter-o{
-	margin: 5px 2px;
-}
-
- {
-	display: flex;
-	margin: 20px;
-
-}
-
+.to .letter-o,
 .improve .letter-i,
 .improve .letter-m,
 .improve .letter-p,
 .improve .letter-r,
 .improve .letter-o,
 .improve .letter-v,
-.improve .letter-e{
+.improve .letter-e,
+.is .letter-t,
+.is .letter-o,
+.is .letter-i,
+.is .letter-s,
+.change .letter-c,
+.change .letter-h,
+.change .letter-a,
+.change .letter-n,
+.change .letter-g,
+.change .letter-e {
 	margin: 5px -1px;
 
 }
+.this,
+.road,
+.is,
+.hard,
 .to,
 .improve,
 .is,
@@ -1549,19 +1570,19 @@ ul li:nth-child(1){
 	margin: 3px;
 }
 
-.is .letter-t,
-.is .letter-o,
-.is .letter-i,
-.is .letter-s{
-	margin: 5px -1px;
+
+
+/**//**//**//**//**//**//*RIVERROAD PHRASE*//**//**//**//**//**//**//**/
+
+.pson{
+	margin: 20px;
 }
 
+.riverroad {
+	display: none;
+	margin: 20px;
+}
 
-.change .letter-c,
-.change .letter-h,
-.change .letter-a,
-.change .letter-n,
-.change .letter-g,
-.change .letter-e {
-	margin:5px -1px;
+.thisland{
+	display: none;
 }
