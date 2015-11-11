@@ -1521,7 +1521,7 @@ ul li:nth-child(1){
 
 
 
-/**//**//**//**//**//**//*PSON PHRASE*//**//**//**//**//**//**//**/
+/**//**//**//**//**//**//* PHRASES MARGIN*//**//**//**//**//**//**//**/
 
 
 .this .letter-t,
@@ -1572,17 +1572,15 @@ ul li:nth-child(1){
 
 
 
-/**//**//**//**//**//**//*RIVERROAD PHRASE*//**//**//**//**//**//**//**/
+/**//**//**//**//**//**//* HIDDEN PHRASES DISPLAY*//**//**//**//**//**//**//**/
 
-.pson{
-	margin: 20px;
-}
 
+.pson,
+.song4,
+.song3,
+.thisland,
 .riverroad {
 	display: none;
 	margin: 20px;
 }
 
-.thisland{
-	display: none;
-}
