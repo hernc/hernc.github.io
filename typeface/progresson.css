@@ -65,6 +65,38 @@ ul li:nth-child(1){
 
 }
 
+
+/************PHRASES*****************************************/
+
+.phrase{
+	display:inline-flex;
+	flex-flow:row;
+	flex-wrap: nowrap;
+	position: relative;
+}
+
+.letter-blocks{
+	display:flex;
+	flex-wrap: wrap;
+	position: absolute;
+	top: 0;
+	left: 40%;
+
+}
+/*BLOCKS NOT ANIMATED*/
+.blocks{
+  margin:10px;
+  display: flex;
+	flex-wrap: wrap;
+}
+
+.b1{
+  margin:5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+}
 /*DIVS METHOD */
 /**//**//**//**//*LETTER A//**//**//**//**//**/
 
@@ -1488,30 +1520,56 @@ ul li:nth-child(1){
 /**//**//**//**//**//**//*CONTENT*//**//**//**//**//**//**//**/
 
 .content{
+	margin-top: 30px;
   display:flex;
-  justify-content:flex-end;
+	flex-flow: row;
 	position: relative;
 }
+
+
+
 .about{
 	color:#4fa76e;
-  width: 35%;
-  padding-right:10%;
+  padding:5px;
 	font-weight: 100;
 	font-size: 20px;
+/*	position: relative;*/
 }
 
-.box{
-	width: 200px;
-	height: 200px;
-	position: absolute;
-	top:5%;
-	left:15%;
-	background-color: #d4d4d4;
+.stagecard1{
+	flex-grow:1;
+	margin: 0 10px;
+	width: 300px;
+	height: 50px;
+	background-color: #555;
 
 }
 
 
+.stagecard2{
+	flex-grow:1;
+	margin: 0 10px;
+	width: 300px;
+	height: 20px;
+	border-top: solid 50px #555;
+	border-bottom: solid 50px #555;
+}
 
+.stagecard3{
+	flex-grow:1;
+	margin: 0 10px;
+	width: 300px;
+	height: 20px;
+	border-top: solid 50px #555;
+	border-bottom: solid 50px #555;
+}
+
+.stagecard3:after{
+	width: 300px;
+	height: 150px;
+	content: "";
+	background-color: #555;
+}
 
 
 
