@@ -85,11 +85,12 @@ ul li:nth-child(1){
 	text-decoration: none;
 	color:inherit;
 }
-button a{
+.v-button{
 	text-decoration: none;
 	background-color: none;
+	align-self: flex-end;
 }
-button a:visited{
+.v-button:visited{
 	color:inherit;
 	text-decoration: none;
 
@@ -188,7 +189,7 @@ button a:visited{
 }
 
 
-.button{
+.v-button{
 	margin-bottom: 10px;
 	color: #fff;
 	border: none;
@@ -198,9 +199,9 @@ button a:visited{
 	text-align: center;
 }
 
-.button .letter-v .lv,
-.button .letter-v .cv,
-.button .letter-v .rv{
+.v-button .letter-v .lv,
+.v-button .letter-v .cv,
+.v-button .letter-v .rv{
 	background-color: #f0f0f0;
 }
 
