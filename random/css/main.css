@@ -1,10 +1,7 @@
-/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+/* ==========================================================================
+   Boilerplate custom styles
+   ========================================================================== */
 
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -91,17 +88,105 @@ textarea {
     padding: 0.2em 0;
 }
 
+
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-.button{
-    background-color:red;
-    width:100px;
-    height: 100px;
-    color: white;
-    text-align: center;
-    justify-content: center;
+.wrapper{
+	margin: 0 auto;
+}
+
+h1{
+	color: #37d37f;
+	margin: 10 auto;
+	font-size: 4em;
+	text-align: center;
+	line-height: .8em;
+
+}
+.alphabet-b{
+		margin-top: 25%;
+    display:flex;
+		justify-content: center;
+    padding: 40px 30px 20px 30px;
+
+
+}
+
+/*ROUGH ANIMATION */
+/**//**//**//**//*LETTER A//**//**//**//**//**/
+
+.letter-a{
+  margin:10px;
+  display: flex;
+}
+
+.la{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+/*  position: relative;*/
+  background-color:#555;
+}
+
+.animateLa{
+	animation-name: left-a;
+  animation-duration: 500ms;
+  animation-fill-mode:forwards;
+/*	animation-delay: 1s;*/
+  animation-iteration-count:2;
+/*	animation-direction:normal;*/
+}
+.ca{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+
+}
+
+.animateCa{
+	animation-name: center-a;
+  animation-duration: 500ms;
+  animation-fill-mode:forwards;
+/*	animation-delay: 1s;*/
+  animation-iteration-count:2;
+/*	animation-direction:normal;*/
+}
+
+.ra{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+}
+
+.animateRa{
+	animation-name: right-a;
+  animation-duration: 500ms;
+  animation-fill-mode:forwards;
+/*	animation-delay: 1s;*/
+  animation-iteration-count:3;
+/*	animation-direction:normal;*/
+}
+
+
+/**//**//**//**//*ANIMATION A//**//**//**//**//**/
+@keyframes left-a{
+		from{transform: rotate(-20);}
+		to{transform: rotate(15deg);}
+}
+
+@keyframes center-a{
+		from{transform: rotate(0);}
+		to{transform:  rotate(90deg);}
+}
+
+@keyframes right-a{
+		from{transform: rotate(0);}
+		to{transform: rotate(-15deg);}
 }
 
 
@@ -115,9 +200,9 @@ textarea {
 
 
 
-
-
-
+/* ==========================================================================
+   Boilerplate custom styles
+   ========================================================================== */
 /* ==========================================================================
    Helper classes
    ========================================================================== */

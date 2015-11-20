@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TEST</title>
+	<style>
+		/**//**//**//**//*LETTER K//**//**//**//**//
+
+.alphabet{
+/*    margin:100px 50px;*/
+    display:flex;
+    flex-wrap:wrap;
+/*    padding: 40px 30px 20px 30px;*/
+}
+
+.letter-k{
+  margin:10px;
+  display: flex;
+}
+
+.lk{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+}
+.ck{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: center-k;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 1300ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+.rk{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: right-k;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 1300ms;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION K//**//**//**//**//**/
+
+/*
+@keyframes center-k{
+		from{transform: rotate(0);}
+		to{transform:  translateY(-1px) translateX(3px)rotate(35deg);}
+}
+
+@keyframes right-k{
+		from{transform: rotate(0);}
+		to{transform: translateY(1.094em) translateX(-18px) rotate(90deg);}
+		to{transform: translateY(1.094em) translateX(18px) rotate(90deg);}
+}
+*/
+
+
+@keyframes center-k{
+		from{transform: rotate(0);}
+		to{transform:  translateY(-1px) translateX(3px)rotate(35deg);}
+}
+
+@keyframes right-k{
+		from{transform: rotate(0);}
+		to{transform: translateY(1.094em) translateX(-18px) rotate(90deg);}
+}
+
+
+/*
+@keyframes center-k{
+		0%{transform: rotate(0);}
+		10%{transform: rotate(30);}
+		50%{transform: rotate(-36);}
+		100%{transform:  translateY(-1px) translateX(3px)rotate(35deg);}
+}
+
+@keyframes right-k{
+		0%{transform: rotate(0);}
+		50%{transform: rotate(-50deg);}
+		100%{transform: translateY(1.094em) translateX(-18px) rotate(90deg);}
+}
+
+	*/
+
+
+
+
+
+	</style>
+
+</head>
+<body>
+	<div class="alphabet">
+		<div class="letter-k">
+				<div class="lk"></div>
+				<div class="ck"></div>
+				<div class="rk"></div>
+		</div>
+	</div>
+</body>
+</html>
