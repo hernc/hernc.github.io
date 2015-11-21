@@ -96,7 +96,14 @@ textarea {
 
 .wrapper{
 	margin: 0 auto;
+	display:flex;
+	flex-flow: row wrap;
 }
+
+.wrapper:firtschild{
+	justify-content: flex-end;
+}
+
 
 h1{
 	color: #37d37f;
@@ -107,20 +114,21 @@ h1{
 
 }
 .alphabet-b{
-		margin-top: 25%;
+		margin-top: 15%;
     display:flex;
-		justify-content: center;
-    padding: 40px 30px 20px 30px;
-
-
+		flex-flow: row wrap;
 }
+
+
+
 
 /*ROUGH ANIMATION */
 /**//**//**//**//*LETTER A//**//**//**//**//**/
 
 .letter-a{
   margin:10px;
-  display: flex;
+  display:flex;
+
 }
 
 .la{

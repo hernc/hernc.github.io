@@ -30,9 +30,27 @@ $(".letter-a").click(function(){
 
 
 
+
+
+var moreletter = function () {
+
+    var letter = $('.letter-a').clone(Math.random *5);
+    var i = 0;
+    letter.click(function() {
+//        $(this).addClass('letter-a');
+    });
+
+    letter.prependTo('.alphabet-b');
+
+}
+
+$('.letter-a').click(function(){
+    moreletter();
+})
+
 //TRANSFORM RAMDOMLY
 	//create an array of properties to animate randomly
-var properties = ["height", "width"]
+var properties = ["height", "width" ]
 	//on click animate letter using random values
 
 	//duplicate letter with different animation
