@@ -56,7 +56,7 @@ $(".letter-a").click(function () {
 // HOME SOUND CODE
 
 
-$(".homesong").prop('volume', 0.6);
+$(".homesong").prop('volume', 0.5);
 
 function stopHome(){
   //pause playing
