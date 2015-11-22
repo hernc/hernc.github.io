@@ -30,6 +30,11 @@ $(".letter-a").click(function(){
 
 
 
+//BRANDON'S SUGGESTION
+//var source = '<div class="source"></div>';
+//$("button").click(function() {
+//  $(".target").append(source);
+//});
 
 
 var moreletter = function () {

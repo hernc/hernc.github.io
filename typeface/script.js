@@ -25,51 +25,12 @@ $(".letter-a").click(function () {
 
 
 
-//HIDE & SHOW PHRASES AND SONGS
-
-//$(".riverroad").hide();
-//$(".pson").show();
-//stopRiver();
-//
-//    $(".home, .song1").bind("click", function () {
-//
-//      $(".pson, .riverroad").hide();
-//
-//      if ($(this).attr("class") == "home")
-//      {
-//        $(".pson").show();
-//				startHome();
-//				stopRiver();
-//
-//      }
-//      else
-//      {
-//        $(".riverroad").show();
-//				stopHome();
-//				startRiver();
-//
-//				preventDefault();
-//      }
-//	});
-
 
 // HOME SOUND CODE
 
 
 $(".homesong").prop('volume', 0.5);
 
-function stopHome(){
-  //pause playing
-  $(".homesong").trigger('pause');
-  //set play time to 0
-  $(".homesong").prop("currentTime",0);
-}
-
-
-function startHome(){
-  //start playing
-  $(".homesong").trigger('play');
-}
 
 // RIVERROAD HIDE/SHOW SOUND CODE
 
