@@ -13,8 +13,8 @@ $(function(){
     });
 });
 
-//RESTART ANIMATION ON CLICK
 
+//RESTART ANIMATION ON CLICK
 
 $(".letter-a").click(function () {
 	$(".la").toggleClass("animateLa");
@@ -57,6 +57,8 @@ $('.v-button').click(function(event) {
 
 	$('body, html').animate({ scrollTop: y_offset - 20 });
 })
+
+
 
 // RIVERROAD SCROLL SOUND CODE
 $(window).scroll(function() {
