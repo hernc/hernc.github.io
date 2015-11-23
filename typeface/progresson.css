@@ -1805,15 +1805,15 @@ ul li:nth-child(1){
 
 .lc{
   margin: 0 5px;
-  width: 15px;
-  height: 50px;
+  width: 1vw;
+  height: 5vh;
   position: relative;
   background-color:#555;
 }
 .cc{
   margin:0 5px;
-  width:15px;
-  height:50px;
+  width:1vw;
+  height:5vh;
   background-color:#555;
   animation-name: center-c;
   animation-duration: 7s;
@@ -1824,8 +1824,8 @@ ul li:nth-child(1){
 
 .rc{
   margin:0 5px;
-  width:15px;
-  height:50px;
+  width:1vw;
+  height:5vh;
   background-color:#555;
   animation-name: right-c;
   animation-duration: 7s;
@@ -1837,12 +1837,12 @@ ul li:nth-child(1){
 /**//**//**//**//*ANIMATION C//**//**//**//**//**/
 @keyframes center-c{
 		0%,30%,80%,100%{transform: rotate(0);}
-		70%{transform: translateY(-1.094em) translateX(7px) rotate(90deg);}
+		70%{transform: translateY(-30%) translateX(25%) rotate(90deg);}
 }
 
 @keyframes right-c{
 		0%,30%,80%,100%{transform: rotate(0);}
-		70%{transform: translateY(1.094em) translateX(-18px) rotate(90deg);}
+		70%{transform: translateY(30%) translateX(-100%) rotate(90deg);}
 }
 
 /**//**//**//**//*LETTER D//**//**//**//**//**/
