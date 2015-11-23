@@ -86,15 +86,14 @@ function choose_song_to_play() {
 	}
 }
 
-//var $window = $(window);
-//
-//$(window).on('scroll', function() {
-//    $topOffset = $(this).scrollTop();
-//
-//    console.log($topOffset);
-//
-//});
+// PROGRESS BAR
 
+function progress(percent, $element) {
+    var progressBarWidth = percent * $element.width() / 100;
+    $element.find('.progressfill').animate({ width: progressBarWidth }, 60000);
+}
+
+progress(80, $('.progressbar'));
 
 
 

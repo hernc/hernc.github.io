@@ -112,7 +112,7 @@ ul li:nth-child(1){
 .phrase{
 	display:flex;
 	flex-flow:column;
-    flex-grow:2;
+  flex-grow:2;
 
 }
 
@@ -177,29 +177,45 @@ ul li:nth-child(1){
   padding:5px;
 	font-weight: 100;
 	font-size: 1.5em;
-/*	align-self: center;*/
 }
 
 .merrily .about{
 	color: #000;
 }
 
+
 .stagecard{
 	flex-basis: 350px;
 	display:flex;
-	align-content: center;
-    min-height: 50vh;
+	flex-flow: column;
+	justify-content: center;
+  min-height: 50vh;
 }
 
+.progresscontainer{
+	align-self: flex-end;
+	width: 200px;
+}
+
+.progressbar{
+	width:100%;
+	background-color: #555;
+}
+
+.progressfill{
+	height: 15px;
+	width: 0;
+	display: block;
+	background-color: #fff;
+}
 
 .v-button{
 	margin-bottom: 10px;
 	color: #fff;
 	border: none;
-	align-self:flex-end;
+	align-self:center;
 	height: 40px;
 	background-color:inherit;
-	text-align: center;
 }
 
 .v-button .letter-v .lv,
