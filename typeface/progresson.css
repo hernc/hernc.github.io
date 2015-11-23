@@ -2,6 +2,7 @@ body{
   display: flex;
   flex-flow: column;
   font-family: arial, helvetica, sans-serif;
+  font-size: 1.2vw;
   margin: 0 auto;
   padding:0;
   background-color:#3CC76F;
@@ -105,9 +106,7 @@ ul li:nth-child(1){
 	display:flex;
 	flex-flow:column;
 	flex-wrap: wrap;
-/*    flex-grow: 2;*/
 	margin-top:20px;
-    height: 100vh;
 }
 
 .phrase{
@@ -121,9 +120,11 @@ ul li:nth-child(1){
 /*BLOCKS NOT ANIMATED*/
 .blocks{
   display:flex;
-	flex-wrap:wrap;
-	align-items: baseline;
-	margin-top: 60px;
+  flex-wrap:wrap;
+  align-items: baseline;
+  margin-top: 60px;
+  font-size: 1.4
+
 }
 
 .b1{
@@ -184,10 +185,10 @@ ul li:nth-child(1){
 }
 
 .stagecard{
-	height: 350px;
+	flex-basis: 350px;
 	display:flex;
 	align-content: center;
-/*	margin:10px ;*/
+    min-height: 50vh;
 }
 
 
