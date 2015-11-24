@@ -91,7 +91,6 @@ ul li:nth-child(1){
 .v-button{
 	text-decoration: none;
 	background-color: none;
-	align-self: flex-end;
 }
 .v-button:visited{
 	color:inherit;
@@ -114,8 +113,6 @@ ul li:nth-child(1){
 .phrase{
 	display:flex;
 	flex-flow:column;
-  flex-grow:2;
-
 }
 
 
@@ -125,8 +122,6 @@ ul li:nth-child(1){
   flex-wrap:wrap;
   align-items: baseline;
   margin-top: 60px;
-  font-size: 1.4
-
 }
 
 .b1{
@@ -171,13 +166,21 @@ ul li:nth-child(1){
 
 /**//**//**//**//**//**//*CONTENT*//**//**//**//**//**//**//**/
 
+.stagecard{
+	display:flex;
+	flex-flow:row;
+	align-items:center;
+  min-height: 40vh;
+	justify-content: space-between;
+}
 
 .about{
-    width:65%;
+  width:45%;
 	color:#f0f0f0;
-    padding:5px;
+  padding:5px;
 	font-weight: 100;
 	font-size: 1.8vw;
+	align-self: flex-start;
 }
 
 .merrily .about{
@@ -185,27 +188,19 @@ ul li:nth-child(1){
 }
 
 
-.stagecard{
-	flex-basis: 350px;
+.progresscontainer{
 	display:flex;
 	flex-flow: column;
-	justify-content: center;
-    min-height: 75vh;
-}
-
-.progresscontainer{
-	align-self: flex-end;
 	width: 15vw;
 }
 
 .stagebutton{
   color: #555;
-  padding:0 7px;
   font-size: 1.3vh;
   background: #fff;
-  margin:10px 0px;
   border: none;
 }
+
 .progressbar{
 	width:100%;
 	background-color: #fff;
@@ -216,7 +211,7 @@ ul li:nth-child(1){
 	width: 0;
 	display: block;
 	background-color: #555;
-    transition: width 60s ease;
+  transition: width 60s ease;
 }
 
 .v-button{
@@ -255,7 +250,7 @@ ul li:nth-child(1){
 
 .thisland .stage2 .blocks,
 .riverroad .stage2 .blocks{
-	margin-bottom: 60px;
+
 }
 
 
