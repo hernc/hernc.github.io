@@ -58,15 +58,16 @@ body#merrily{background-color:#f7f042}
   flex-direction: row;
   line-height: 20px;
   padding:10px;
-	font-size: 1em;
-	text-transform: uppercase;
+  font-size: 1.3vw;
+  text-transform: uppercase;
+  line-height: 1.2vw;
 }
 
 
 
 .nav li:hover{
   color: #EA4E3E;
-	border-top: solid 2px #E74240;
+	border-top: solid .3vw #E74240;
 }
 
 .nav.merrily a.merrily{
@@ -75,11 +76,12 @@ body#merrily{background-color:#f7f042}
 
 ul li:nth-child(1){
   margin-right:55px;
-  font-size:2em;
+  font-size:2vw;
   font-weight: 900;
-	color:#EA4E3E;
-	border-top: solid 2px #E74240 ;
-	text-transform: none;
+  color:#EA4E3E;
+  padding: .7vw;
+  border-top: solid 2px #E74240 ;
+  text-transform: none;
 }
 
 .nav a{
@@ -171,12 +173,11 @@ ul li:nth-child(1){
 
 
 .about{
-	width: 50%;
-	height: 50%;
+    width:65%;
 	color:#f0f0f0;
-  padding:5px;
+    padding:5px;
 	font-weight: 100;
-	font-size: 1.5em;
+	font-size: 1.8vw;
 }
 
 .merrily .about{
@@ -189,32 +190,39 @@ ul li:nth-child(1){
 	display:flex;
 	flex-flow: column;
 	justify-content: center;
-  min-height: 50vh;
+    min-height: 75vh;
 }
 
 .progresscontainer{
 	align-self: flex-end;
-	width: 200px;
+	width: 15vw;
 }
 
+.stagebutton{
+  color: #555;
+  padding:0 7px;
+  font-size: 1.3vh;
+  background: #fff;
+  margin:10px 0px;
+  border: none;
+}
 .progressbar{
 	width:100%;
-	background-color: #555;
-}
-
-.progressfill{
-	height: 15px;
-	width: 0;
-	display: block;
 	background-color: #fff;
 }
 
+.progressfill{
+	height: 2vh;
+	width: 0;
+	display: block;
+	background-color: #555;
+    transition: width 60s ease;
+}
+
 .v-button{
-	margin-bottom: 10px;
 	color: #fff;
 	border: none;
 	align-self:center;
-	height: 40px;
 	background-color:inherit;
 }
 
@@ -222,6 +230,7 @@ ul li:nth-child(1){
 .v-button .letter-v .cv,
 .v-button .letter-v .rv{
 	background-color: #f0f0f0;
+
 }
 
 .merrily,
@@ -233,7 +242,6 @@ ul li:nth-child(1){
 .pson{
   display: flex;
   flex-flow: column;
-  flex-grow: 1;
 }
 
 .stage2,
