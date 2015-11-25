@@ -3,14 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>TEST</title>
-	<style>
+<style>
 		/**//**//**//**//*LETTER K//**//**//**//**//
+body{
+}
 
 .alphabet{
-/*    margin:100px 50px;*/
+    height: 100vh;
+    border: solid 2px #555;
     display:flex;
-    flex-wrap:wrap;
-/*    padding: 40px 30px 20px 30px;*/
+    flex-flow: column;
+     justify-content: center;
+    align-items: center;
+
+
 }
 
 .letter-k{
@@ -19,16 +25,16 @@
 }
 
 .lk{
-  margin: 0 5px;
-  width: 15px;
-  height: 50px;
+  margin: 0 1vh;
+  width: 3vh;
+  height: 8vh;
   position: relative;
   background-color:#555;
 }
 .ck{
-  margin:0 5px;
-  width:15px;
-  height:50px;
+  margin: 0 1vh;
+ width: 3vh;
+  height: 8vh;
   background-color:#555;
   animation-name: center-k;
   animation-duration: 700ms;
@@ -39,9 +45,9 @@
 }
 
 .rk{
-  margin:0 5px;
-  width:15px;
-  height:50px;
+  margin: 0 1vh;
+  width: 3vh;
+  height: 8vh;
   background-color:#555;
   animation-name: right-k;
   animation-duration: 700ms;
@@ -69,12 +75,12 @@
 
 @keyframes center-k{
 		from{transform: rotate(0);}
-		to{transform:  translateY(-1px) translateX(3px)rotate(35deg);}
+		to{transform:  translateY(-.2vh) translateX(-1vh)rotate(35deg);}
 }
 
 @keyframes right-k{
 		from{transform: rotate(0);}
-		to{transform: translateY(1.094em) translateX(-18px) rotate(90deg);}
+		to{transform: translateY(2.5vh) translateX(-4.5vh) rotate(90deg);}
 }
 
 
