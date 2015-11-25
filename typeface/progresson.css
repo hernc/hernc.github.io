@@ -83,7 +83,7 @@ body#merrily {
 
 .nav li:hover {
   color: #EA4E3E;
-  border-top: solid .3vw #E74240;
+  border-top: solid .1vw #E74240;
 }
 
 .nav.merrily a.merrily {
@@ -243,10 +243,12 @@ ul li:nth-child(1) {
 
 .justpress{
   width: 25%;
-  color: #E74240;
-  padding: 5px;
-  font-weight: 900;
-  font-size: 1.3vw;
+  color: #555;
+  padding: 15px;
+  font-weight: 100;
+  font-size: 1.1vw;
+  text-transform:uppercase;
+  text-align: right;
 }
 
 .progresscontainer {
@@ -340,6 +342,10 @@ ul li:nth-child(1) {
 #merrily .v-button .letter-v .cv,
 #merrily .v-button .letter-v .rv {
   background-color: #E74240;
+}
+
+#home .v-button {
+  transform: rotate(90deg);
 }
 
 
