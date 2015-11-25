@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-flow: column;
   font-family: arial, helvetica, sans-serif;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   margin: 0 auto;
   padding: 0;
   background-color: #3CC76F;
@@ -231,46 +231,8 @@ ul li:nth-child(1) {
 /*RIVER ROAD STAGE 3 ANIMATION*/
 
 
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
 /*CONTENT*/
 
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
 
 .stagecard {
   display: flex;
@@ -294,8 +256,55 @@ ul li:nth-child(1) {
 
 .progresscontainer {
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
+	align-items: center;
   width: 15vw;
+	padding: 10px;
+}
+
+
+.play {
+  display:flex;
+	align-items: center;
+	justify-content:center;
+  width: 4em;
+  height: 4em;
+  border: 0.5em solid #E74240;
+  border-radius: 50%;
+	position: relative;
+	cursor: pointer;
+}
+
+.play:after {
+	position: absolute;
+	top: 1em;
+	left: .8em;
+  content: '';
+  width: 1.4em;
+  height: 1.4em;
+  border-top: 0.5em solid #E74240;
+  border-right: 0.5em solid #E74240;
+  transform: rotate(45deg);
+}
+
+.playerinfo{
+	color:#f0f0f0;
+	width: 50%;
+	align-self: center;
+	padding: 10px;
+	font-size: 1.8vw;
+}
+.progressbar {
+  width: 100%;
+  background-color: #fff;
+
+}
+
+.progressfill {
+  height: 2vh;
+  width: 0;
+  display: block;
+  background-color: #E74240;
 }
 
 .stagebutton {
@@ -303,19 +312,6 @@ ul li:nth-child(1) {
   font-size: 1.3vh;
   background: #fff;
   border: none;
-}
-
-.progressbar {
-  width: 100%;
-  background-color: #fff;
-}
-
-.progressfill {
-  height: 2vh;
-  width: 0;
-  display: block;
-  background-color: #555;
-  transition: width 60s ease;
 }
 
 .v-button {
@@ -3410,32 +3406,7 @@ ul li:nth-child(1) {
 
 /*DIVS METHOD */
 
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
 /*LETTER A//**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
 
 .letter-a {
   display: flex;
@@ -3478,32 +3449,7 @@ ul li:nth-child(1) {
   animation-iteration-count: infinite;
 }
 
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
 /*ANIMATION A//**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
 
 @keyframes left-a {
   0%,
@@ -3541,32 +3487,7 @@ ul li:nth-child(1) {
   }
 }
 
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
 /*LETTER B//**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
 
 .letter-b {
   display: flex;
@@ -3604,32 +3525,7 @@ ul li:nth-child(1) {
   animation-iteration-count: infinite;
 }
 
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
 /*ANIMATION B//**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
 
 @keyframes center-b {
   0%,
@@ -3655,50 +3551,24 @@ ul li:nth-child(1) {
   }
 }
 
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/*LETTER C//**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-.letter-c {
+/*LETTER C*/
+.letter-c{
   display: flex;
 }
 
-.lc {
-  margin: 0 5px;
-  width: 1vw;
-  height: 5vh;
-  position: relative;
-  background-color: #555;
-}
 
-.cc {
+.lc{
   margin: 0 5px;
-  width: 1vw;
-  height: 5vh;
-  background-color: #555;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+}
+.cc{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
   animation-name: center-c;
   animation-duration: 7s;
   animation-fill-mode: both;
@@ -3706,11 +3576,11 @@ ul li:nth-child(1) {
   animation-iteration-count: infinite;
 }
 
-.rc {
-  margin: 0 5px;
-  width: 1vw;
-  height: 5vh;
-  background-color: #555;
+.rc{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
   animation-name: right-c;
   animation-duration: 7s;
   animation-fill-mode: both;
@@ -3718,57 +3588,26 @@ ul li:nth-child(1) {
   animation-iteration-count: infinite;
 }
 
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/*ANIMATION C//**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-@keyframes center-c {
-  0%,
+/**//**//**//**//*ANIMATION C//**//**//**//**//**/
+@keyframes center-c{
+		0%,
   30%,
   80%,
   100% {
     transform: rotate(0);
   }
-  70% {
-    transform: translateY(-30%) translateX(25%) rotate(90deg);
-  }
+		70%{transform: translateY(-1.094em) translateX(7px) rotate(90deg);}
 }
 
-@keyframes right-c {
-  0%,
+@keyframes right-c{
+		0%,
   30%,
   80%,
   100% {
     transform: rotate(0);
   }
-  70% {
-    transform: translateY(30%) translateX(-100%) rotate(90deg);
-  }
+		70%{transform: translateY(1.094em) translateX(-18px) rotate(90deg);}
 }
-
 
 /**/
 
