@@ -29,7 +29,7 @@ $(".letter-a").click(function () {
 // HOME SOUND CODE
 
 
-$(".homesong").prop('volume', 0.5);
+$(".homesong").prop('volume', 0.8);
 
 
 $('.v-button').click(function(event) {
@@ -43,52 +43,7 @@ $('.v-button').click(function(event) {
 
 
 
-// RIVERROAD SCROLL SOUND CODE
-//$(window).scroll(function() {
-//  choose_song_to_play();
-//});
-//
-//
-//function choose_song_to_play() {
-//	var y = $(window).scrollTop();
-//	//starting position
-//	if (y < 789) {
-//		$("#river1").trigger('play');
-//		$("#river2").trigger('pause');
-//		$("#river3").trigger('pause');
-//		//second position
-//	} else if (y >= 790 && y < 1509) {
-//		$("#river2").trigger('play');
-//		$("#river1").trigger('pause');
-//		$("#river3").trigger('pause');
-//		//third position
-//	} else if (y >= 1510 && y < 2500) {
-//		$("#river3").trigger('play');
-//		$("#river2").trigger('pause');
-//		$("#river1").trigger('pause');
-//	}
-//}
-
-
-
-// UNATTACHED PROGRESS BAR
-
-//function progress(percent, $element) {
-//    var progressBarWidth = percent * $element.width() / 100;
-//    $element.find('.progressfill').animate({ width: progressBarWidth },99930);
-//}
-//progress(100, $('.progressbar'));
-
-
-
-//PLAY ON CLICK
-
-//var playjowell = $(".lightlyrow2")[0];
-//$(".play")
-//	.click(function() {
-//		playjowell.play();
-//		progress(100, $('.progressbar'));
-//	});
+/////TOGGLE & PROGRESS BAR///////////////
 
 
 //RIVER ROAD 1 PLAY TOGGLE ON CLICK
@@ -149,7 +104,7 @@ $('#riverroad').find('.play:eq(2)').click(function () {
 $(".river3").bind('timeupdate', function(){
 
          var track_length = $(".river3")[0].duration;
-         var secs = $(".river2")[0].currentTime;
+         var secs = $(".river3")[0].currentTime;
          var progress = (secs/track_length) * 100;
 
          $('#riverroad').find('.progressfill:eq(2)').css({'width' : progress + "%"});
@@ -226,10 +181,100 @@ $(".thisland3").bind('timeupdate', function(){
  });
 
 
+///////////////////////////////////
 
+//LONDON BRIDGES 1 PLAY TOGGLE ON CLICK
+$('#londonbridges').find('.play:eq(0)').click(function () {
+    if ($(".londonbridges1")[0].paused == false) {
+        $(".londonbridges1").trigger('pause')
+
+    } else {
+        $(".londonbridges1").trigger('play')
+
+    }
+});
+//LONDON BRIDGES 1 ATTACHED TO AUDIO PROGRESS BAR
+$(".londonbridges1").bind('timeupdate', function(){
+
+         var track_length = $(".londonbridges1")[0].duration;
+         var secs = $(".londonbridges1")[0].currentTime;
+         var progress = (secs/track_length) * 100;
+
+         $('#londonbridges').find('.progressfill:eq(0)').css({'width' : progress + "%"});
+
+
+ });
+
+//LONDON BRIDGES 2 PLAY TOGGLE ON CLICK
+$('#londonbridges').find('.play:eq(1)').click(function () {
+    if ($(".londonbridges2")[0].paused == false) {
+        $(".londonbridges2").trigger('pause')
+
+    } else {
+        $(".londonbridges2").trigger('play')
+
+    }
+});
+//LONDON BRIDGES 2 ATTACHED TO AUDIO PROGRESS BAR
+$(".londonbridges2").bind('timeupdate', function(){
+
+         var track_length = $(".londonbridges2")[0].duration;
+         var secs = $(".londonbridges2")[0].currentTime;
+         var progress = (secs/track_length) * 100;
+
+         $('#londonbridges').find('.progressfill:eq(1)').css({'width' : progress + "%"});
+
+
+ });
+
+//LONDON BRIDGES 3 PLAY TOGGLE ON CLICK
+$('#londonbridges').find('.play:eq(2)').click(function () {
+    if ($(".londonbridges3")[0].paused == false) {
+        $(".londonbridges3").trigger('pause')
+
+    } else {
+        $(".londonbridges3").trigger('play')
+
+    }
+});
+//LONDON BRIDGES 3 ATTACHED TO AUDIO PROGRESS BAR
+$(".londonbridges3").bind('timeupdate', function(){
+
+         var track_length = $(".londonbridges3")[0].duration;
+         var secs = $(".londonbridges3")[0].currentTime;
+         var progress = (secs/track_length) * 100;
+
+         $('#londonbridges').find('.progressfill:eq(2)').css({'width' : progress + "%"});
+
+
+ });
+
+///////////////////////////////////
+
+//LIGHTLY ROW 1 PLAY TOGGLE ON CLICK
+$('#lightlyrow').find('.play:eq(0)').click(function () {
+    if ($(".lightlyrow1")[0].paused == false) {
+        $(".lightlyrow1").trigger('pause')
+
+    } else {
+        $(".lightlyrow1").trigger('play')
+
+    }
+});
+//LIGHTLY ROW 1 ATTACHED TO AUDIO PROGRESS BAR
+$(".lightlyrow1").bind('timeupdate', function(){
+
+         var track_length = $(".lightlyrow1")[0].duration;
+         var secs = $(".lightlyrow1")[0].currentTime;
+         var progress = (secs/track_length) * 100;
+
+         $('#lightlyrow').find('.progressfill:eq(0)').css({'width' : progress + "%"});
+
+
+ });
 
 //LIGHTLY ROW 2 PLAY TOGGLE ON CLICK
-$('.lightlyrow').find('.play').click(function () {
+$('#lightlyrow').find('.play:eq(1)').click(function () {
     if ($(".lightlyrow2")[0].paused == false) {
         $(".lightlyrow2").trigger('pause')
 
@@ -238,14 +283,174 @@ $('.lightlyrow').find('.play').click(function () {
 
     }
 });
-//LIGHTLY ROW ATTACHED TO AUDIO PROGRESS BAR
+//LIGHTLY ROW 2 ATTACHED TO AUDIO PROGRESS BAR
 $(".lightlyrow2").bind('timeupdate', function(){
 
          var track_length = $(".lightlyrow2")[0].duration;
          var secs = $(".lightlyrow2")[0].currentTime;
          var progress = (secs/track_length) * 100;
 
-         $('.lightlyrow').find('.progressfill').css({'width' : progress + "%"});
+         $('#lightlyrow').find('.progressfill:eq(1)').css({'width' : progress + "%"});
+
+
+ });
+
+//LIGHTLY ROW 3 PLAY TOGGLE ON CLICK
+$('#lightlyrow').find('.play:eq(2)').click(function () {
+    if ($(".lightlyrow3")[0].paused == false) {
+        $(".lightlyrow3").trigger('pause')
+
+    } else {
+        $(".lightlyrow3").trigger('play')
+
+    }
+});
+//LIGHTLY ROW 3 ATTACHED TO AUDIO PROGRESS BAR
+$(".lightlyrow3").bind('timeupdate', function(){
+
+         var track_length = $(".lightlyrow3")[0].duration;
+         var secs = $(".lightlyrow3")[0].currentTime;
+         var progress = (secs/track_length) * 100;
+
+         $('#lightlyrow').find('.progressfill:eq(2)').css({'width' : progress + "%"});
+
+
+ });
+
+
+///////////////////////////////////
+
+//BOOM BOOM PLAY TOGGLE ON CLICK
+$('#boomboom').find('.play:eq(0)').click(function () {
+    if ($(".boomboom1")[0].paused == false) {
+        $(".boomboom1").trigger('pause')
+
+    } else {
+        $(".boomboom1").trigger('play')
+
+    }
+});
+//BOOM BOOM ATTACHED TO AUDIO PROGRESS BAR
+$(".boomboom1").bind('timeupdate', function(){
+
+         var track_length = $(".boomboom1")[0].duration;
+         var secs = $(".boomboom1")[0].currentTime;
+         var progress = (secs/track_length) * 100;
+
+         $('#boomboom').find('.progressfill:eq(0)').css({'width' : progress + "%"});
+
+
+ });
+
+//BOOM BOOM PLAY TOGGLE ON CLICK
+$('#boomboom').find('.play:eq(1)').click(function () {
+    if ($(".boomboom2")[0].paused == false) {
+        $(".boomboom2").trigger('pause')
+
+    } else {
+        $(".boomboom2").trigger('play')
+
+    }
+});
+//BOOM BOOM ATTACHED TO AUDIO PROGRESS BAR
+$(".boomboom2").bind('timeupdate', function(){
+
+         var track_length = $(".boomboom2")[0].duration;
+         var secs = $(".boomboom2")[0].currentTime;
+         var progress = (secs/track_length) * 100;
+
+         $('#boomboom').find('.progressfill:eq(1)').css({'width' : progress + "%"});
+
+
+ });
+
+//BOOM BOOM PLAY TOGGLE ON CLICK
+$('#boomboom').find('.play:eq(2)').click(function () {
+    if ($(".boomboom3")[0].paused == false) {
+        $(".boomboom3").trigger('pause')
+
+    } else {
+        $(".boomboom3").trigger('play')
+
+    }
+});
+//BOOM BOOM ATTACHED TO AUDIO PROGRESS BAR
+$(".boomboom3").bind('timeupdate', function(){
+
+         var track_length = $(".boomboom3")[0].duration;
+         var secs = $(".boomboom3")[0].currentTime;
+         var progress = (secs/track_length) * 100;
+
+         $('#boomboom').find('.progressfill:eq(2)').css({'width' : progress + "%"});
+
+
+ });
+
+
+///////////////////////////////////
+
+//MERRILY PLAY TOGGLE ON CLICK
+$('#merrily').find('.play:eq(0)').click(function () {
+    if ($(".merrily1")[0].paused == false) {
+        $(".merrily1").trigger('pause')
+
+    } else {
+        $(".merrily1").trigger('play')
+
+    }
+});
+//MERRILY ATTACHED TO AUDIO PROGRESS BAR
+$(".merrily1").bind('timeupdate', function(){
+
+         var track_length = $(".merrily1")[0].duration;
+         var secs = $(".merrily1")[0].currentTime;
+         var progress = (secs/track_length) * 100;
+
+         $('#merrily').find('.progressfill:eq(0)').css({'width' : progress + "%"});
+
+
+ });
+
+//MERRILY PLAY TOGGLE ON CLICK
+$('#merrily').find('.play:eq(1)').click(function () {
+    if ($(".merrily2")[0].paused == false) {
+        $(".merrily2").trigger('pause')
+
+    } else {
+        $(".merrily2").trigger('play')
+
+    }
+});
+//MERRILY ATTACHED TO AUDIO PROGRESS BAR
+$(".merrily2").bind('timeupdate', function(){
+
+         var track_length = $(".merrily2")[0].duration;
+         var secs = $(".merrily2")[0].currentTime;
+         var progress = (secs/track_length) * 100;
+
+         $('#merrily').find('.progressfill:eq(1)').css({'width' : progress + "%"});
+
+
+ });
+
+//MERRILY PLAY TOGGLE ON CLICK
+$('#merrily').find('.play:eq(2)').click(function () {
+    if ($(".merrily3")[0].paused == false) {
+        $(".merrily3").trigger('pause')
+
+    } else {
+        $(".merrily3").trigger('play')
+
+    }
+});
+//MERRILY ATTACHED TO AUDIO PROGRESS BAR
+$(".merrily3").bind('timeupdate', function(){
+
+         var track_length = $(".merrily3")[0].duration;
+         var secs = $(".merrily3")[0].currentTime;
+         var progress = (secs/track_length) * 100;
+
+         $('#merrily').find('.progressfill:eq(2)').css({'width' : progress + "%"});
 
 
  });
