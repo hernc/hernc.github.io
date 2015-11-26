@@ -233,10 +233,8 @@ a.current:link, a.current:visited {
 
 /*CONTENT*/
 
-.stage2,
-.stage3 {
-  display: flex;
-  flex-flow: column;
+.blocks .stage2 ,
+.blocks .stage3 , {
   margin-top: 10vh;
 }
 
