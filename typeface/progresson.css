@@ -148,7 +148,7 @@ a.current:link, a.current:visited {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-/*  margin-top: ;*/
+  margin-top: 10vh ;
 }
 
 .b1 {
@@ -233,6 +233,14 @@ a.current:link, a.current:visited {
 
 /*CONTENT*/
 
+/*
+.stage2,
+.stage3 {
+  display: flex;
+  flex-flow: column;
+  margin-top: 100px;
+}
+*/
 
 .stagecard {
   display: flex;
@@ -397,12 +405,6 @@ a.current:link, a.current:visited {
   color: #555;
 }
 
-.stage2,
-.stage3 {
-  display: flex;
-  flex-flow: column;
-  margin-top: 100px;
-}
 
 
 /**STAGE1 ANIMATION*/
