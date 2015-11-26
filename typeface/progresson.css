@@ -233,14 +233,12 @@ a.current:link, a.current:visited {
 
 /*CONTENT*/
 
-/*
 .stage2,
 .stage3 {
   display: flex;
   flex-flow: column;
-  margin-top: 100px;
+  margin-top: 10vh;
 }
-*/
 
 .stagecard {
   display: flex;
