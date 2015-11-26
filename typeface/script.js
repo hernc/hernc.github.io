@@ -38,7 +38,7 @@ $('.v-button').click(function(event) {
 	var target   = $(this).data('target'),
 			y_offset = $(target).offset().top;
 
-	$('body, html').animate({ scrollTop: y_offset - 20 });
+	$('body, html').animate({ scrollTop: y_offset - 30 });
 })
 
 
