@@ -237,7 +237,7 @@ a.current:link, a.current:visited {
 .stagecard {
   display: flex;
   align-items: center;
-  min-height: 65vmin;
+  height: 65vmin;
   justify-content: space-between;
 }
 
