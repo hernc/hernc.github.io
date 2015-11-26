@@ -1,8 +1,9 @@
 body {
   display: flex;
   flex-flow: column;
-  font-family: arial, helvetica, sans-serif;
-  font-size: 1.1vw;
+  font-family: 'Fredoka One';
+  color: #555;
+  font-size: 1.1vmax;
   margin: 0 auto;
   padding: 0;
   background-color: #3CC76F;
@@ -47,11 +48,12 @@ body#merrily {
 /************HEADER*/
 
 .nav {
-  width: 100%;
+  width:100vmax;
   margin: 0;
-  padding: 10px;
-  display: inline-flex;
-  align-content: flex-start;
+  padding:0 5px;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
   flex-wrap: nowrap;
   background-color: #f0f0f0;
 }
@@ -71,19 +73,14 @@ body#merrily {
 }
 
 .nav li {
-  margin-right: 10px;
-  display: flex;
-  flex-direction: row;
-  line-height: 20px;
-  padding: 10px;
+  list-style: none;
+  display:flex;
   font-size: 1.3vw;
   text-transform: uppercase;
-  line-height: 1.2vw;
 }
 
 .nav li:hover {
-  color: #EA4E3E;
-  border-top: solid .1vw #E74240;
+  border-bottom: solid 10px #E74240;
 }
 
 .nav.merrily a.merrily {
@@ -91,25 +88,36 @@ body#merrily {
 }
 
 ul li:nth-child(1) {
-  margin-right: 55px;
   font-size: 2vw;
   font-weight: 900;
   color: #EA4E3E;
-  padding: .7vw;
   border-top: solid 2px #E74240;
   text-transform: none;
 }
 
+ul li:nth-child(1):hover{
+  color: #EA4E3E;
+  background-color: #f0f0f0;
+  border-bottom: none;
+}
+
 .nav a {
+  display: block;
   text-decoration: none;
   color: inherit;
 }
 
+a.current:link, a.current:visited {
+	border-bottom: solid 10px #E74240;
+}
+
+
+.vbutton,
 .v-button {
   text-decoration: none;
   background-color: none;
 }
-
+.vbutton:visited,
 .v-button:visited {
   color: inherit;
   text-decoration: none;
@@ -239,16 +247,17 @@ ul li:nth-child(1) {
   padding: 5px;
   font-weight: 100;
   font-size: 1.8vmax;
+  font-family: 'Cabin Sketch', cursive;
 }
 
-.justpress{
+.golisten{
   width: 25%;
-  color: #555;
+  color: #E74240;
   padding: 15px;
   font-weight: 100;
-  font-size: 1.1vw;
+  font-size: 1.4vmax;
   text-transform:uppercase;
-  text-align: right;
+  font-family: 'Cabin Sketch', cursive;
 }
 
 .progresscontainer {
@@ -292,19 +301,26 @@ ul li:nth-child(1) {
   border: 0.5em solid #45B8DE;
 }
 
+#boomboom .stagecopy{
+  color: #45B8DE;
+}
+
 .playerinfo{
 	color:#f0f0f0;
 	width: 50%;
 	font-size: 1.3vmax;
-    text-align: right;
     align-self: center;
-
+    font-family: 'Cabin Sketch', cursive;
 }
 
 .stagecopy{
   color:#E74240;
   font-size: 1.8vmax;
 
+}
+
+#merrily .stagecopy{
+  color: #E74240;
 }
 
 #merrily .playerinfo{
@@ -331,6 +347,7 @@ ul li:nth-child(1) {
   background-color: #45B8DE;
 }
 
+.vbutton,
 .v-button {
   color: #fff;
   border: none;
@@ -338,17 +355,32 @@ ul li:nth-child(1) {
   background-color: inherit;
 }
 
+
 #merrily .v-button .letter-v .lv,
 #merrily .v-button .letter-v .cv,
 #merrily .v-button .letter-v .rv {
   background-color: #E74240;
 }
 
-#home .v-button {
-  transform: rotate(90deg);
+#merrily .vbutton .letter-v .lv,
+#merrily .vbutton .letter-v .cv,
+#merrily .vbutton .letter-v .rv {
+  background-color: #E74240;
 }
 
+#merrily .vbutton,
+#boomboom .vbutton,
+#riverroad .vbutton,
+#thisland .vbutton,
+#londonbridges .vbutton,
+#lightlyrow .vbutton,
+#home .vbutton {
+  transform: rotate(-90deg);
+}
 
+.vbutton .letter-v .lv,
+.vbutton .letter-v .cv,
+.vbutton .letter-v .rv,
 .v-button .letter-v .lv,
 .v-button .letter-v .cv,
 .v-button .letter-v .rv {
@@ -362,7 +394,7 @@ ul li:nth-child(1) {
 
 
 .merrily .about {
-  color: #000;
+  color: #555;
 }
 
 .stage2,
