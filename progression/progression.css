@@ -1460,3 +1460,1466 @@ p {
 
 }
 
+/**//**//**//**//**//*STAGE1 ANIMATION */
+/**//**//**//**//*//**//**//**//**//**/
+
+.stage1-a{
+  margin:10px;
+  display: flex;
+}
+
+.stage1la{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  background-color:#555;
+	animation-name: stage1left-a;
+  animation-duration: 500ms;
+  animation-fill-mode:both;
+  animation-iteration-count:infinite;
+	animation-direction:alternate;
+}
+.stage1ca{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+	animation-name: stage1center-a;
+  animation-duration: 500ms;
+  animation-fill-mode:both;
+  animation-iteration-count:infinite;
+	animation-direction:alternate;
+}
+
+.stage1ra{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+	animation-name: stage1right-a;
+  animation-duration: 500ms;
+  animation-fill-mode:both;
+  animation-iteration-count:infinite;
+	animation-direction:alternate;
+}
+
+/**//**//**//**//*ANIMATION A//**//**//**//**//**/
+@keyframes stage1left-a{
+		from {transform: rotate(0);}
+		to{transform: rotate(15deg);}
+}
+
+@keyframes stage1center-a{
+		from{transform: rotate(0);}
+		to{transform:  rotate(90deg);}
+}
+
+@keyframes stage1right-a{
+		from{transform: rotate(0);}
+		to{transform: rotate(-15deg);}
+}
+
+/**//**//**//**//*stage1 B//**//**//**//**//**/
+
+
+.stage1-b{
+  margin:10px;
+  display:flex;
+}
+
+
+.stage1lb{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+}
+.stage1cb{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-b;
+  animation-duration: 300ms;
+  animation-fill-mode:both;
+  animation-iteration-count:infinite;
+	animation-direction:alternate;
+}
+
+.stage1rb{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1right-b;
+  animation-duration: 300ms;
+  animation-fill-mode:both;
+  animation-iteration-count:infinite;
+	animation-direction:alternate;
+
+}
+
+/**//**//**//**//*ANIMATION B//**//**//**//**//**/
+@keyframes stage1center-b{
+		from{transform: rotate(0);}
+		to{transform: translateY(1px) translateX(7px) rotate(90deg);}
+}
+
+@keyframes stage1right-b{
+		from{transform: rotate(0);}
+		to{transform: translateY(1.094em) translateX(-18px) rotate(90deg);}
+}
+
+/**//**//**//**//*stage1 C//**//**//**//**//**/
+
+.stage1-c{
+  margin:10px;
+  display: flex;
+}
+
+
+.stage1lc{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+}
+.stage1cc{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-c;
+  animation-duration: 300ms;
+  animation-fill-mode:forwards;
+	animation-delay: 2s;
+  animation-iteration-count:infinite;
+	animation-direction:normal;
+}
+
+.stage1rc{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1right-c;
+  animation-duration: 300ms;
+  animation-fill-mode:forwards;
+	animation-delay: 2s;
+  animation-iteration-count:infinite;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION C//**//**//**//**//**/
+@keyframes stage1center-c{
+		0%,
+  30%,
+  80%,
+  100% {
+    transform: rotate(0);}
+		to{transform: translateY(-1.094em) translateX(7px) rotate(90deg);}
+}
+
+@keyframes stage1right-c{
+		from{transform: rotate(0);}
+		to{transform: translateY(1.094em) translateX(-18px) rotate(90deg);}
+}
+
+/**//**//**//**//*stage1 D//**//**//**//**//**/
+
+.stage1-d{
+  margin:10px;
+  display: flex;
+}
+
+
+.stage1ld{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+  animation-name: stage1left-d;
+  animation-duration: 300ms;
+  animation-fill-mode:forwards;
+	animation-delay: 3s;
+  animation-iteration-count:2;
+	animation-direction:normal;
+}
+.stage1cd{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-d;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 3s;
+  animation-iteration-count:3;
+	animation-direction:normal;
+}
+
+.stage1rd{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+
+}
+
+/**//**//**//**//*ANIMATION D//**//**//**//**//**/
+@keyframes stage1left-d{
+		from{transform: rotate(0);}
+		to{transform: translateY(1.094em) translateX(18px) rotate(90deg);}
+}
+
+@keyframes stage1center-d{
+		from{transform: rotate(0);}
+		to{transform: translateY(-1.094em) translateX(-0.469em) rotate(90deg);}
+}
+
+/**//**//**//**//*stage1 E//**//**//**//**//**/
+
+.stage1-e{
+  margin:10px;
+  display: flex;
+}
+
+
+.stage1le{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+  animation-name: stage1left-e;
+  animation-duration: 400ms;
+  animation-fill-mode:forwards;
+	animation-delay: 3.5s;
+  animation-iteration-count:3;
+	animation-direction:normal;
+}
+.stage1ce{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-e;
+  animation-duration: 300ms;
+  animation-fill-mode:forwards;
+	animation-delay: 3.5s;
+  animation-iteration-count:3;
+	animation-direction:normal;
+}
+
+.stage1re{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1right-e;
+  animation-duration: 500ms;
+  animation-fill-mode:forwards;
+	animation-delay: 3.5s;
+  animation-iteration-count:5;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION E//**//**//**//**//**/
+@keyframes stage1left-e{
+		from{transform: rotate(0);}
+		to{transform: scaleX(1.35) translateY(-18px) translateX(19px) rotate(90deg);}
+}
+
+@keyframes stage1center-e{
+		from{transform: rotate(0);}
+		to{transform:scaleX(1.35) translateY(0.031em) translateX(0.031em) rotate(90deg);}
+}
+
+@keyframes stage1right-e{
+		from{transform: rotate(0);}
+		to{transform:scaleX(1.35) translateY(19px) translateX(-18px) rotate(90deg);}
+}
+
+/**//**//**//**//*stage1 F//**//**//**//**//**/
+
+.stage1-f{
+  margin:10px;
+  display: flex;
+}
+
+.stage1lf{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+}
+.stage1cf{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-f;
+  animation-duration: 300ms;
+  animation-fill-mode:forwards;
+	animation-delay: 4s;
+  animation-iteration-count:2;
+	animation-direction:normal;
+}
+
+.stage1rf{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1right-f;
+  animation-duration: 400ms;
+  animation-fill-mode:forwards;
+	animation-delay: 4s;
+  animation-iteration-count:3;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION F//**//**//**//**//**/
+
+@keyframes stage1center-f{
+		0%{transform: rotate(0);}
+		30%{transform: rotate(50);}
+		100%{transform: translateY(-1.094em) translateX(0.469em) rotate(90deg);}
+}
+
+@keyframes stage1right-f{
+		from{transform: rotate(0);}
+		to{transform: translateY(-0.031em) translateX(-18px) rotate(90deg);}
+}
+
+/**//**//**//**//*stage1 G//**//**//**//**//**/
+
+
+.stage1-g{
+  margin:10px;
+  display: flex;
+}
+
+.stage1lg{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+  animation-name: stage1left-g;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 4.5s;
+  animation-iteration-count:3;
+	animation-direction:normal;
+}
+.stage1cg{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-g;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 4.5s;
+  animation-iteration-count:3;
+	animation-direction:normal;
+}
+
+.stage1rg{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1right-g;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 4.5s;
+  animation-iteration-count:2;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION G//**//**//**//**//**/
+
+@keyframes stage1left-g{
+		from{transform: rotate(0);}
+		to{transform:scaleX(1.3) translateY(-16px) translateX(20px) rotate(90deg);}
+}
+
+@keyframes stage1center-g{
+		from{transform: rotate(0);}
+		to{transform:scaleX(1.3) translateY(18px) translateX(1px) rotate(-90deg);}
+}
+
+@keyframes stage1right-g{
+		from{transform: rotate(0);}
+		to{transform:scaleY(.40)translateY(32px) translateX(2px);}
+}
+
+/**//**//**//**//*stage1 H//**//**//**//**//**/
+
+.stage1-h{
+  margin:10px;
+  display: flex;
+}
+
+.stage1lh{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+}
+.stage1ch{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-h;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 5s;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+.stage1rh{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+}
+
+/**//**//**//**//*ANIMATION H//**//**//**//**//**/
+
+@keyframes stage1center-h{
+		0%{transform: rotate(0);}
+		25%{transform:rotate(70deg);}
+		75%{transform:rotate(45deg);}
+		100%{transform:rotate(90deg);}
+}
+
+/**//**//**//**//*stage1 I//**//**//**//**//**/
+
+.stage1-i{
+  margin:10px;
+  display: flex;
+}
+
+
+.stage1li{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+  animation-name: stage1left-i;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 5.5s;
+  animation-iteration-count:3;
+	animation-direction:normal;
+}
+.stage1ci{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+
+}
+
+.stage1ri{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1right-i;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 5.5s;
+  animation-iteration-count:2;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION I//**//**//**//**//**/
+
+@keyframes stage1left-i{
+		0%{transform: rotate(0);}
+		25%{transform:rotate(-70deg);}
+		100%{transform:scaleX(1.35) translateY(-1.094em) translateX(19px) rotate(90deg);}
+}
+
+@keyframes stage1right-i{
+		0%{transform: rotate(0);}
+		50%{transform:scaleX(-1.35) translateY(-1.094em) translateX(-8px) rotate(9deg);}
+		100%{transform:scaleX(1.35) translateY(1.094em) translateX(-18px) rotate(90deg);}
+}
+
+/**//**//**//**//*stage1 J//**//**//**//**//**/
+
+.stage1-j{
+  margin:10px;
+  display: flex;
+}
+
+
+.stage1lj{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+  animation-name: stage1left-j;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 6s;
+  animation-iteration-count:2;
+	animation-direction:normal;
+}
+.stage1cj{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-j;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 6s;
+  animation-iteration-count:2;
+	animation-direction:normal;
+}
+
+.stage1rj{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+
+}
+
+/**//**//**//**//*ANIMATION J//**//**//**//**//**/
+
+@keyframes stage1left-j{
+		0%{transform: rotate(0);}
+		40%{transform: translateY(-0.94em) translateX(-6px) rotate(-10deg);}
+		100%{transform: translateY(1.094em) translateX(18px) rotate(90deg);}
+}
+
+@keyframes stage1center-j{
+		0%{transform: rotate(0);}
+		36%{transform: rotate(78deg);}
+		100%{transform: translateY(1.094em) rotate(90deg);}
+}
+
+/**//**//**//**//*stage1 K//**//**//**//**//**/
+
+.stage1-k{
+  margin:10px;
+  display: flex;
+}
+
+.stage1lk{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+}
+.stage1ck{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-k;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 6.5s;
+  animation-iteration-count:3;
+	animation-direction:normal;
+}
+
+.stage1rk{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1right-k;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 6.5s;
+  animation-iteration-count:2;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION K//**//**//**//**//**/
+
+@keyframes stage1center-k{
+		0%{transform: rotate(0);}
+		10%{transform: rotate(30);}
+		50%{transform: rotate(-36);}
+		100%{transform:  translateY(-1px) translateX(3px)rotate(35deg);}
+}
+
+@keyframes stage1right-k{
+		0%{transform: rotate(0);}
+		50%{transform: rotate(-50deg);}
+		100%{transform: translateY(1.094em) translateX(-18px) rotate(90deg);}
+}
+
+
+/**//**//**//**//*stage1 L//**//**//**//**//**/
+
+.stage1-l{
+  margin:10px;
+  display: flex;
+}
+
+
+.stage1ll{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+}
+
+.stage1cl{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-l;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 7s;
+  animation-iteration-count:3;
+	animation-direction:normal;
+}
+
+.stage1rl{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1right-l;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 7s;
+  animation-iteration-count:2;
+	animation-direction:normal;
+
+}
+
+/**//**//**//**//*ANIMATION L//**//**//**//**//**/
+
+@keyframes stage1center-l{
+		0%{transform: rotate(0);}
+		50%{transform: translateY(-1.094em) rotate(-90deg);}
+		100%{transform: translateY(1.094em) rotate(90deg);}
+}
+
+@keyframes stage1right-l{
+		0%{transform: rotate(0);}
+		50%{transform: translateY(-.094em) translateX(18px) rotate(60deg);}
+		100%{transform: translateY(1.094em) translateX(-18px) rotate(90deg);}
+}
+
+/**//**//**//**//*stage1 M//**//**//**//**//**/
+
+.stage1-m{
+  margin:10px;
+  display: flex;
+}
+
+.stage1lm{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+}
+.stage1cm{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-m;
+  animation-duration: 400ms;
+  animation-fill-mode:forwards;
+	animation-delay: 7.5s;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+.stage1rm{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1right-m;
+  animation-duration: 400ms;
+  animation-fill-mode:forwards;
+	animation-delay: 7.5s;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION M//**//**//**//**//**/
+
+@keyframes stage1center-m{
+		0%{transform: rotate(0);}
+		60%{transform:rotate(50deg) translateX(-31px) translateY(12px);}
+		100%{transform:rotate(-27deg) translateX(-10px) translateY(-4px);}
+}
+
+@keyframes stage1right-m{
+		0%{transform: rotate(0);}
+		45%{transform:rotate(17deg) translateX(-35px) translateY(-15px);}
+		100%{transform:rotate(-27deg) translateX(-10px) translateY(-7px);}
+}
+
+
+/**//**//**//**//*stage1 N//**//**//**//**//**/
+
+.stage1-n{
+  margin:10px;
+  display: flex;
+}
+
+.stage1ln{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+}
+.stage1cn{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-n;
+  animation-duration: 500ms;
+  animation-fill-mode:forwards;
+	animation-delay: 8s;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+.stage1rn{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+}
+
+/**//**//**//**//*ANIMATION O//**//**//**//**//**/
+
+@keyframes stage1center-n{
+		0%{transform: rotate(0);}
+		30%{transform:rotate(80deg);}
+		60%{transform:rotate(-68deg);}
+		100%{transform:rotate(-60deg);}
+}
+
+
+/**//**//**//**//*stage1 O//**//**//**//**//**/
+
+.stage1-o{
+  margin:10px;
+  display: flex;
+}
+
+.stage1lo{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+}
+.stage1co{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-o;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 8.5s;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+.stage1ro{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+}
+
+/**//**//**//**//*ANIMATION O//**//**//**//**//**/
+
+@keyframes stage1center-o{
+		0%{transform: rotate(0);}
+		40%{transform: translateY(-2.044em) rotate(-75deg);}
+		100%{transform: translateY(-1.094em) rotate(90deg);}
+}
+
+/**//**//**//**//*stage1 P//**//**//**//**//**/
+
+.stage1-p{
+  margin:10px;
+  display: flex;
+}
+
+.stage1lp{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+}
+.stage1cp{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-p;
+  animation-duration: 500ms;
+  animation-fill-mode:forwards;
+	animation-delay: 8.5s;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+.stage1rp{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1right-p;
+  animation-duration: 500ms;
+  animation-fill-mode:forwards;
+	animation-delay: 8.5s;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION P//**//**//**//**//**/
+
+@keyframes stage1center-p{
+		0%{transform: rotate(0);}
+		30%{transform: translateY(1.094em) translateX(-0.469em) rotate(-90deg);}
+		100%{transform: translateY(-1.094em) translateX(0.469em) rotate(90deg);}
+}
+
+@keyframes stage1right-p{
+		0%{transform: rotate(0);}
+		65%{transform: rotate(40deg);}
+		100%{transform: translateY(-.2em) translateX(-1.094em) rotate(90deg);}
+}
+
+/**//**//**//**//*stage1 Q//**//**//**//**//**/
+
+.stage1-q{
+  margin:10px;
+  display: flex;
+}
+
+.stage1lq{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+}
+.stage1cq{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-q;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 9s;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+.stage1rq{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+}
+
+/**//**//**//**//*ANIMATION Q//**//**//**//**//**/
+
+
+@keyframes stage1center-q{
+		0%{transform: rotate(0);}
+		35%{transform:rotate(54deg) translate(-01px, 81px);}
+		100%{transform:rotate(-45deg) translate(-10px, 18px);}
+}
+
+/**//**//**//**//*stage1 R//**//**//**//**//**/
+
+.stage1-r{
+  margin:10px;
+  display: flex;
+}
+
+.stage1lr{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+}
+.stage1cr{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-r;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 9.5s;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+.stage1rr{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1right-r;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 9.5s;
+  animation-iteration-count:1;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION R//**//**//**//**//**/
+
+
+@keyframes stage1center-r{
+		0%{transform: rotate(0);}
+70%{transform: translateY(1.094em) translateX(-0.469em) rotate(-90deg);}
+100%{transform: translateY(-1.094em) translateX(0.469em) rotate(90deg);}
+}
+
+@keyframes stage1right-r{
+		0%{transform: rotate(0);}
+46%{transform:translateY(-2px)translateX(15px) rotate(45deg);}
+100%{transform:translateY(2px)translateX(-15px) rotate(-45deg);}
+}
+
+/**//**//**//**//*stage1 S//**//**//**//**//**/
+
+.stage1-s{
+  margin:10px;
+  display: flex;
+}
+
+.stage1ls{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+  animation-name: stage1left-s;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 10s;
+  animation-iteration-count:2;
+	animation-direction:normal;
+}
+.stage1cs{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-s;
+  animation-duration:700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 10s;
+  animation-iteration-count:2;
+	animation-direction:normal;
+}
+
+.stage1rs{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: rotate;
+  animation-name: stage1right-s;
+  animation-duration:700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 10s;
+  animation-iteration-count:2;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION S//**//**//**//**//**/
+
+@keyframes stage1left-s{
+		0%{transform: rotate(0);}
+		65%{transform:scaleX(-1.30) translateY(-18px) translateX(-20px) rotate(90deg);}
+		100%{transform:scaleX(1.30) translateY(18px) translateX(20px) rotate(90deg);}
+}
+
+@keyframes stage1center-s{
+		0%{transform: rotate(0);}
+		34%{transform:scaleX(-1.30) translateY(1.094em) rotate(-90deg);}
+		100%{transform:scaleX(1.30) translateY(-1.094em) rotate(90deg);}
+}
+
+@keyframes stage1right-s{
+		0%{transform: rotate(0);}
+		36%{transform:translateY(-10px)translateX(25px) rotate(45deg);}
+		100%{transform:translateY(0px)translateX(-25px) rotate(-45deg);}
+}
+
+/**//**//**//**//*stage1 T//**//**//**//**//**/
+
+.stage1-t{
+  margin:10px;
+  display: flex;
+}
+
+
+.stage1lt{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+  animation-name: stage1left-t;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 10.5s;
+  animation-iteration-count:3;
+	animation-direction:alternate;
+}
+.stage1ct{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+
+}
+
+.stage1rt{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1right-t;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 10.5s;
+  animation-iteration-count:3;
+	animation-direction:alternate;
+}
+
+/**//**//**//**//*ANIMATION T//**//**//**//**//**/
+
+@keyframes stage1left-t{
+		0%{transform: rotate(0);}
+		87%{transform:scaleX(-1.35) translateY(1.094em) translateX(-19px) rotate(-90deg);}
+		100%{transform:scaleX(1.35) translateY(-1.094em) translateX(19px) rotate(90deg);}
+}
+
+@keyframes stage1right-t{
+		0%{transform: rotate(0);}
+		78%{transform:scaleX(-1.35) translateY(1.094em) translateX(18px) rotate(-90deg);}
+		100%{transform:scaleX(1.35) translateY(-1.094em) translateX(-18px) rotate(90deg);}
+}
+
+/**//**//**//**//*stage1 U//**//**//**//**//**/
+
+.stage1-u{
+  margin:10px;
+  display: flex;
+}
+
+
+.stage1lu{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+}
+.stage1cu{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-u;
+  animation-duration: 700ms;
+  animation-fill-mode:forwards;
+	animation-delay: 11s;
+  animation-iteration-count:3;
+	animation-direction:alternate;
+}
+
+.stage1ru{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+}
+
+/**//**//**//**//*ANIMATION U//**//**//**//**//**/
+
+@keyframes stage1center-u {
+    0% {transform:rotate(0deg);}
+    35% {transform:rotate(30deg);}
+    53% {transform:translateY(-1.094em) rotate(-90deg);}
+    100% {transform:translateY(1.094em) rotate(90deg);}
+}
+
+
+/**//**//**//**//*stage1 V//**//**//**//**//**/
+
+.stage1-v{
+  margin:10px;
+  display: flex;
+}
+
+
+.stage1lv{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+  animation-name: stage1left-v;
+  animation-duration: 900ms;
+  animation-fill-mode:forwards;
+	animation-delay: 11s;
+  animation-iteration-count:3;
+	animation-direction:alternate;
+}
+.stage1cv{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-v;
+  animation-duration: 600ms;
+  animation-fill-mode:forwards;
+	animation-delay: 11s;
+  animation-iteration-count:3;
+	animation-direction:alternate;
+}
+
+.stage1rv{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1right-v;
+  animation-duration: 300ms;
+  animation-fill-mode:forwards;
+	animation-delay: 11s;
+  animation-iteration-count:3;
+	animation-direction:alternate;
+}
+
+/**//**//**//**//*ANIMATION V//**//**//**//**//**/
+
+@keyframes stage1left-v{
+		0%{transform: rotate(0);}
+		30%{transform:scaleY(-1.25) translateX(-12px) rotate(45deg);}
+		100%{transform:scaleY(1.25) translateX(12px) rotate(-45deg);}
+}
+
+@keyframes stage1center-v {
+    0% {transform:rotate(0deg);}
+    45% {transform:rotate(65deg);}
+    100% {transform:translateX(15px)  rotate(40deg);}
+}
+
+@keyframes stage1right-v{
+		0%{transform: rotate(0);}
+		50%{transform:scaleY(1.25) translateX(-22px) rotate(-45deg);}
+		100%{transform:scaleY(1.25) translateX(-12px) rotate(45deg);}
+}
+
+/**//**//**//**//*stage1 W//**//**//**//**//**/
+
+.stage1-w{
+  margin:10px;
+  display: flex;
+
+}
+
+.stage1lw{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+}
+.stage1cw{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-w;
+  animation-duration: 900ms;
+  animation-fill-mode:forwards;
+	animation-delay: 11.5s;
+  animation-iteration-count:3;
+	animation-direction:normal;
+}
+
+.stage1rw{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1right-w;
+  animation-duration: 600ms;
+  animation-fill-mode:forwards;
+	animation-delay: 11.5s;
+  animation-iteration-count:3;
+	animation-direction:normal;
+}
+
+/**//**//**//**//*ANIMATION W//**//**//**//**//**/
+
+@keyframes stage1left-w{
+		0%{transform: rotate(0);}
+		67%{transform:scaleY(-1.1) scaleX(.35) translateX(-18px) rotate(35deg);}
+		100%{transform:scaleY(1.1) scaleX(1.35) translateX(18px) rotate(-35deg);}
+}
+
+@keyframes stage1center-w {
+    0% {transform:rotate(0deg);}
+    37% {transform:rotate(56deg);}
+    100% {transform:rotate(27deg) translateX(-10px) translateY(5px);}
+}
+
+@keyframes stage1right-w{
+		0%{transform: rotate(0);}
+		78%{transform:rotate(-27deg) translateX(10px) translateY(-5px);}
+		100%{transform:rotate(27deg) translateX(-10px) translateY(7px);}
+}
+
+/**//**//**//**//*stage1 X//**//**//**//**//**/
+
+.stage1-x{
+  margin:10px;
+  display: flex;
+}
+
+
+.stage1lx{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+  animation-name: stage1left-x;
+  animation-duration: 900ms;
+  animation-fill-mode:forwards;
+	animation-delay: 12s;
+  animation-iteration-count:3;
+	animation-direction:normal;
+}
+.stage1cx{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-x;
+  animation-duration: 600ms;
+  animation-fill-mode:forwards;
+	animation-delay: 12s;
+  animation-iteration-count:3;
+	animation-direction:normal;
+}
+
+.stage1rx{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1right-x;
+  animation-duration: 300ms;
+  animation-fill-mode:forwards;
+	animation-delay: 12s;
+  animation-iteration-count:3;
+	animation-direction:normal;
+}
+
+
+/**//**//*/*ANIMATION X*//**//**//**//**//**//**//**/
+
+@keyframes stage1right-x{
+		0%{transform: rotate(0);}
+		35%{transform: rotate(45deg);}
+		100%{transform:scaleY(1.1) scaleX(1.35) translateX(-18px) rotate(35deg);}
+}
+
+@keyframes stage1center-x {
+    0% {transform:rotate(0deg);}
+    25% {transform:rotate(-25deg);}
+    75% {transform:rotate(75deg);}
+    100% {transform: translateY(4px)  translateX(-2px) rotate(35deg);}
+}
+
+
+@keyframes stage1left-x{
+		0%{transform: rotate(0);}
+		50%{transform: rotate(50deg);}
+		100%{transform:scaleY(1.1) scaleX(1.35) translateX(18px) rotate(-35deg);}
+}
+
+/**//**//**//**//*stage1 Y//**//**//**//**//**/
+
+.stage1-y{
+  margin:10px;
+  display: flex;
+}
+
+
+.stage1ly{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  position: relative;
+  background-color:#555;
+  animation-name: stage1left-y;
+  animation-duration: 900ms;
+  animation-fill-mode:forwards;
+	animation-delay: 12.5s;
+  animation-iteration-count:2;
+	animation-direction:normal;
+}
+.stage1cy{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-y;
+  animation-duration: 600ms;
+  animation-fill-mode:forwards;
+	animation-delay: 12.5s;
+  animation-iteration-count:2;
+	animation-direction:normal;
+}
+
+.stage1ry{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1right-y;
+  animation-duration: 300ms;
+  animation-fill-mode:forwards;
+	animation-delay: 12.5s;
+  animation-iteration-count:2;
+	animation-direction:normal;
+}
+
+/**//**//*/*ANIMATION Y*//**//**//**//**//**//**//**/
+
+@keyframes stage1right-y{
+		0%{transform: rotate(0);}
+		60%{transform:scaleY(1.10) translateX(13px) rotate(45deg);}
+		100%{transform:scaleY(1.10) translateX(-13px) rotate(45deg);}
+}
+
+@keyframes stage1center-y {
+    0% {transform:rotate(0deg);}
+    30% {transform:rotate(60deg);}
+    100% {transform:scale(0.95) translateY(1.094em)  translateX(-2px) rotate(39deg);}
+}
+
+
+@keyframes stage1left-y{
+		0%{transform: rotate(0);}
+		70%{transform:scaleY(-1.10) translateX(12px) rotate(-45deg);}
+		100%{transform:scaleY(1.10) translateX(12px) rotate(-45deg);}
+}
+
+/**//**//**//**//*stage1 Z//**//**//**//**//**/
+
+
+.stage1-z{
+  margin:10px;
+  display: flex;
+}
+
+.stage1lz{
+  margin: 0 5px;
+  width: 15px;
+  height: 50px;
+  background-color:#555;
+  animation-name: stage1left-z;
+  animation-duration: 900ms;
+  animation-fill-mode:forwards;
+	animation-delay: 13s;
+  animation-iteration-count:2;
+	animation-direction:normal;
+}
+.stage1cz{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1center-z;
+  animation-duration:600ms;
+	animation-fill-mode:forwards;
+	animation-delay: 13s;
+  animation-iteration-count:2;
+	animation-direction: normal;
+}
+
+.stage1rz{
+  margin:0 5px;
+  width:15px;
+  height:50px;
+  background-color:#555;
+  animation-name: stage1right-z;
+  animation-duration:400ms;
+	animation-fill-mode:both;
+	animation-delay: 13s;
+  animation-iteration-count:2;
+	animation-direction: normal;
+}
+
+
+/**//**//*/*ANIMATION Z*//**//**//**//**//**//**//**/
+
+
+@keyframes stage1right-z{
+		0%{transform: rotate(0);}
+		26%{transform: rotate(36deg);}
+		100%{transform:scaleX(1.30) translateX(-20px)translateY(-1.094em) rotate(90deg);}
+}
+
+@keyframes stage1center-z {
+    0% {transform:rotate(0deg);}
+    50% {transform: translateY(30px) rotate(-45deg);}
+    100% {transform: translateY(0px) rotate(45deg);}
+}
+
+@keyframes stage1left-z{
+		0%{transform: rotate(0);}
+		78%{transform: rotate(40deg);}
+		100%{transform:scaleX(1.30) translateY(18px) translateX(20px) rotate(90deg);}
+}
+
