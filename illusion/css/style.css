@@ -58,39 +58,61 @@ header nav li{
 	margin: .3vh;
 	width: 100vw;
 }
+
+header nav a{
+	display: block;
+	padding: .4vh;
+}
+
 #illusion main{
-	width: 3000px;
+	display:flex;
 	position: relative;
+	min-width: 500vw;
+	height: 100vh;
 }
 
 #illusion .container{
-	display: flex;
+	display: inline-flex;
+	flex-wrap: nowrap;
 }
 .letters{
 	display: inline-flex;
 	font-family: 'shadow';
 	font-size: 35rem;
 	color: white;
-	margin:10rem 5rem;
+	margin:5rem 2rem;
 	transition: font-size 2s;
-
 }
 
-.letterz{
-	font-size: 12rem;
-	position: absolute;
-	top:-30vh;
+.letters:nth-child(odd){
 	color: transparent;
-  text-shadow: 0 0 11px rgba(255, 255, 255, 1);
-
+	text-shadow: 0 0 21px rgba(255, 255, 255, 1);
+	font-size: 40rem;
+	transform: rotate(60deg);
+	margin: 5rem;
 }
 
+.letters:nth-child(even){
+	font-size: 15rem;
+	align-items: flex-end;
+	margin: 5rem;
+}
+
+.letters:nth-child(1){
+	transform: rotate(-40deg);
+	font-size: 60rem;
+}
 
 .letters:hover{
 	font-size: 50rem;
 	opacity: .2;
 }
 
+.letterz{
+	font-size: 4rem;
+	position: absolute;
+	top:-20vh;
+}
 /*type page*/
 
 #type main{
