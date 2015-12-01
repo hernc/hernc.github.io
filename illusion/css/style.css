@@ -72,21 +72,19 @@ header nav a{
 #illusion main{
 	display:flex;
 	position: relative;
-	min-width: 500vw;
-	height: 100vh;
+/*	height: 100vh;*/
 }
 
-#illusion .container{
+.container ul{
 	display: inline-flex;
-	flex-wrap: nowrap;
+	margin-top: 5vw;
 }
 .letters{
 	display: inline-flex;
 	font-family: 'shadow';
-	font-size: 35vw;
 	color: white;
-	margin:5rem 2rem;
 	transition: font-size 2s;
+	flex-wrap: nowrap;
 }
 
 .letters:nth-child(odd){
@@ -108,6 +106,18 @@ header nav a{
 	font-size: 60vw;
 }
 
+.letters:nth-child(3){
+	transform: rotate(-120deg);
+	font-size: 90vw;
+	color: transparent;
+	text-shadow: 0 0 13px rgba(255, 255, 255, 1);
+}
+
+.letters:nth-child(5){
+	transform: rotate(-60deg);
+	font-size: 60vw;
+}
+
 .letters:hover{
 	font-size: 100vw;
 	opacity: .2;
@@ -118,7 +128,7 @@ header nav a{
 .letterz{
 	font-size: 4rem;
 	position: absolute;
-	top:-20vh;
+	top:-5vh;
 }
 
 
