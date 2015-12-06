@@ -48,12 +48,8 @@ body{
 	color: #fff
 }
 
-header{
-    display: flex;
-	transform: rotate(-45deg);
-	position: relative;
-	top: -30vw;
-	left: -10vw;
+header ul{
+	display: flex;
 }
 
 header nav li{
@@ -72,64 +68,50 @@ header nav a{
 #illusion main{
 	display:flex;
 	position: relative;
-/*	height: 100vh;*/
 }
 
 .container ul{
-	display: inline-flex;
-	margin-top: 5vw;
+	display:flex;
+	flex-flow: wrap;
+	margin-top: 10vw;
 }
 .letters{
-	display: inline-flex;
 	font-family: 'shadow';
+	font-size: 47vmin;
+	letter-spacing:0.5vw;
+	line-height: 36vmin;
 	color: white;
-	transition: font-size 2s;
-	flex-wrap: nowrap;
+}
+@media (max-width:825px){
+
+		.letters:nth-child(17){
+		margin:0 6vw;
+	}
 }
 
-.letters:nth-child(odd){
-	color: transparent;
-	text-shadow: 0 0 21px rgba(255, 255, 255, 1);
-	font-size: 40vw;
-	transform: rotate(60deg);
-	margin: 5rem;
+.lettera{
+	perspective: 100px;
 }
 
-.letters:nth-child(even){
+/*innerIllusion*/
+
+li.lettera .innerIllusion{
+	display: none;
+}
+
+.innerIllusion {
+	background: #98d12c;
+	font-family: 'shadow';
 	font-size: 10vw;
-	align-items: flex-end;
-	margin: 5vw;
+	letter-spacing: 0.5vw;
+	line-height: 8vmin;
 }
 
-.letters:nth-child(1){
-	transform: rotate(-40deg);
-	font-size: 60vw;
-}
 
-.letters:nth-child(3){
-	transform: rotate(-120deg);
-	font-size: 90vw;
-	color: transparent;
-	text-shadow: 0 0 13px rgba(255, 255, 255, 1);
-}
 
-.letters:nth-child(5){
-	transform: rotate(-60deg);
-	font-size: 60vw;
-}
 
-.letters:hover{
-	font-size: 100vw;
-	opacity: .2;
-    color: transparent;
-    text-shadow: 0 0 21px rgba(255, 255, 255, .6);
-}
 
-.letterz{
-	font-size: 4rem;
-	position: absolute;
-	top:-5vh;
-}
+
 
 
 /*type page*/
