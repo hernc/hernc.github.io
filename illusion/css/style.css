@@ -89,9 +89,17 @@ header nav a{
 	}
 }
 
+
 .lettera{
-	perspective: 100px;
+	perspective: 50px;
+	animation: mymove 5s infinite;
+	transform: rotateX(-15deg);
 }
+
+@keyframes mymove {
+    50% {perspective: 400px;}
+}
+
 
 /*innerIllusion*/
 
@@ -105,6 +113,8 @@ li.lettera .innerIllusion{
 	font-size: 10vw;
 	letter-spacing: 0.5vw;
 	line-height: 8vmin;
+	transform: rotateX(-15deg);
+
 }
 
 
