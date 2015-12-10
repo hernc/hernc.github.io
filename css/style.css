@@ -1,7 +1,7 @@
 
 
 body{
-    font: 80%/1.5 arial, helvetica, sans-serif;
+    font-family:  arial, helvetica, sans-serif;
     display: flex;
 }  
 
@@ -11,17 +11,16 @@ body{
 }
 
 .wrapper{
-	width: 100%
+	width: 80%;
+    margin: 0 auto;
 }
 
 
 /**//**//**//*NAVIGATION*//**//**//**//**//**//**/
 
 ul{
-    /*position:relative;*/
-    display:inline-block;
-    /*padding: auto 0;*/
-    margin:auto;
+    display:inline-flex;
+    margin-left: 5vw;
     vertical-align:bottom;
 }
 
@@ -33,7 +32,7 @@ ul{
     border-color:#42628C;
     font-family: Arial;
     /*color: #42628C;*/
-    font-size: 14px;
+    font-size: 1.5vw;
     padding: 7px;
     text-decoration: none;
     
@@ -51,9 +50,8 @@ li{
 
 nav{
     position:relative;
-    display:inline-block;
-    /*text-align:left;*/
-    /*margin:auto;*/
+    display:inline-flex;
+    justify-content:flex-end;
     padding:10px 0px;
 }
 
@@ -61,38 +59,35 @@ nav{
 
 header{
     display:flex;
-	justify-content: flex-end;
-	align-content: center;
-	margin:30px 0px 30px 50px;
+
 }
 .header{
 	display: flex;
+    margin:30px 0px 30px 50px;
     position:relative;
-	width: 100%;
+	width: 100vw;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .description, .big {
     position:relative;
-    display:inline-block;
+    display:inline-flex;
     text-decoration:none;
-    font-family:helvetica;
+    font-family: helvetica;
     font-weight:lighter;
     color:#7D6464;
     margin:4px 0px;
-    /*width:20%;*/
-    line-height:30px;
     
 }
 
 .small{
     position:relative;
     width:200px;
-    /*height:50px;*/
     color:#42628C;
-    line-height:16px;
     text-align:inherit;
     vertical-align:top;
-    font-size:14px;
+    font-size:1.3vw;
     margin-left:30px;
     border-left:solid;
     border-color:#42628C;
@@ -102,10 +97,8 @@ header{
 .big{
 	color:#42628C;
     position:relative;
-    font-size:30px;
+    font-size: 3vw;
     padding-right:-20px;
-    /*width:12%;*/
-    vertical-align:center;
 }
 
 .header > a:first-child{
@@ -140,7 +133,9 @@ header{
 /*CONTENT*//**//**//**//**//**//**//**//**//**//**/
 
 .content{
+    display: flex;
 	margin-top: 20px;
+<<<<<<< HEAD
 	height: 100vh;
   display: flex;
 	border-top: 3px dotted #42628C
@@ -152,6 +147,19 @@ article{
 	flex:  3 300px;
   margin:10px;
 
+=======
+	justify-content: center;
+	align-content: center;
+	border-top: 3px dotted #42628C;
+    height: 100vh;
+    flex: 1 1 400px;
+}
+article{
+    margin:10px;
+    vertical-align:top;
+	justify-content: center;
+    font-size: 1vw;
+>>>>>>> origin/master
 }
 
 
@@ -169,12 +177,19 @@ img{
 
 
 .content p {
+<<<<<<< HEAD
 		flex: 1 5 300px;
+=======
+    flex: 2 1 400px;
+>>>>>>> origin/master
     text-align:left;
-    font-size:medium;
     color:#375275;
+<<<<<<< HEAD
 /*    width:300px;*/
 		flex-wrap: wrap;
+=======
+/*    width:400px;*/
+>>>>>>> origin/master
 }
 
 
