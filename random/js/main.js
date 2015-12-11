@@ -6,30 +6,6 @@
 //});
 
 
-
-$(".letter-a").click(function(){
-    $(".la").animate({  textIndent: 15 }, {
-    step: function(now,fx) {
-      $(this).css('-webkit-transform','rotate('+now+'deg)');
-    },
-    duration:'500'
-},'linear');
-	$(".ra").animate({  textIndent: -15 }, {
-    step: function(now,fx) {
-      $(this).css('-webkit-transform','rotate('+now+'deg)');
-    },
-    duration:'500'
-},'linear');
-	$(".ca").animate({  textIndent: -90 }, {
-    step: function(now,fx) {
-      $(this).css('-webkit-transform','rotate('+now+'deg)');
-    },
-    duration:'500'
-},'linear');
-});
-
-
-
 //BRANDON'S SUGGESTION
 //var source = '<div class="source"></div>';
 //$("button").click(function() {
@@ -39,19 +15,46 @@ $(".letter-a").click(function(){
 
 var moreletter = function () {
 
-    var letter = $('.letter-a').clone(Math.random *5);
+    var letter = $('.letter-a').clone(Math.random *2);
     var i = 0;
     letter.click(function() {
 //        $(this).addClass('letter-a');
     });
-
     letter.prependTo('.alphabet-b');
+};
 
-}
+
+
+// ref step function
+$(".letter-a").click(function(){
+    $(".la").animate({
+              textIndent: 15 }, {
+      step: function(now,fx) {
+      $(this).css('-webkit-transform','rotate('+now+'deg)')
+    }, duration:'500', complete:function() {
+        $(this).css('-webkit-transform','')
+    },
+},'ease-out')
+	$(".ra").animate({  textIndent: -15 }, {
+    step: function(now,fx) {
+      $(this).css('-webkit-transform','rotate('+now+'deg)')
+    }, duration:'500', complete:function() {
+        $(this).css('-webkit-transform','')
+    },
+},'ease-out')
+	$(".ca").animate({  textIndent: -90 }, {
+    step: function(now,fx) {
+      $(this).css('-webkit-transform','rotate('+now+'deg)')
+    }, duration:'500', comlete:function() {
+        $(this).css('-webkit-transform','')
+    }
+},'ease-out')
+});
 
 $('.letter-a').click(function(){
     moreletter();
-})
+});
+
 
 //TRANSFORM RAMDOMLY
 	//create an array of properties to animate randomly
