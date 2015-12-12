@@ -84,12 +84,12 @@ body{
 }
 a:hover p{
 	color: #555;
-	opacity: .8;
+	opacity: 1;
 }
 .intro{
 	display: inline-flex;
 	font-size: 1.3vw;
-	opacity: .2;
+	opacity: 0.5;
 	align-self: center;
 	color: #555;
 	margin-left: 1vw;
@@ -106,7 +106,7 @@ main{
 main span{
 	font-size: 3.5vw;
 	color: #555;
-	opacity: .2;
+	opacity: 0.5;
 	text-align: center;
 }
 
@@ -125,7 +125,7 @@ button:hover{
 }
 
 button:hover span{
-	opacity: .7;
+	opacity: 1;
 }
 
 #output {
