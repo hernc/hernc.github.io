@@ -14,15 +14,9 @@ var words = new Array( "change", "off", "play", "spell", "air", "away", "animal"
 
 
 
-/****************** END ARRAY OF WORDS*******************/
+/****************** FUNCTIONS AND GLOBAL VAR*******************/
 
-
-
-var subjects=['I','You','Bob','John','Sue','Kate','The lizard people'];
-var verbs=['will search for','will get','will find','attained','found','will start interacting with','will accept','accepted'];
-var objects=['Billy','an apple','a Triforce','the treasure','a sheet of paper'];
-var endings=['.',', right?','.',', like I said.','.',', just like your momma!'];
-
+var poem;
 
 
 function getRandomColor() {
@@ -36,22 +30,46 @@ function getRandomColor() {
 
 function getRandomWords() {
         var letters = words
-        var poem = '';
+         poem = '';
         for (var i = 0; i < Math.random() * words.length; i++ ) {
             poem += letters[Math.floor(Math.random() * words.length)]+' ';
         }
         return poem;
     }
 
-
-
-
-
-
+//gen poem like paragraph
 
 $('button').click(function(){
 	//change bg style
 	$("body").css("background-color",getRandomColor());
 	$("#output").html(getRandomWords());
+	//pitch (range 0 to 2), rate (range 0 to 1.5), volume{range 0 to 1}//
+	responsiveVoice.speak(poem, "UK English Male", {pitch: 0.5},{rate: 0.5},{volume: 1});
 });
+
+
+//cancel the speech
+
+$('.poem1').click(function(){
+	responsiveVoice.cancel();
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
