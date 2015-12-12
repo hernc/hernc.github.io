@@ -155,15 +155,17 @@ img{
 @media screen and (max-width: 640px){
 
 	.header{
+		flex-flow: column;
+		width: 100%;
 		margin: 0;
-		padding: 0;
-		align-items: center;
-
-/*		flex-grow:2 0 auto;*/
+/*		padding: 0;*/
+/*		justify-content: flex-start;*/
+/*		align-content: stretch;*/
+		flex-grow:5 0 100%;
   }
 	.wrapper {
 		display: flex;
-		width: 95%;
+		width: 100%;
 }
 	.wrapper > * {
 		flex-direction: column;
@@ -174,16 +176,18 @@ img{
 	article{
 		background-color: #d6dee8;
 	}
+
 	.content  p{
 		flex-direction: column;
 		font-size: 3.8vw;
 	}
 
-
+	ul{
+		padding: 0;
+	}
 
 	.sl{
 		font-size: 5vw;
-		justify-content: space-around;
 
 	}
 .description {
