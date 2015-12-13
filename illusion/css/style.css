@@ -16,7 +16,7 @@
          url('fonts/shadow.woff2') format('woff2'),
          url('fonts/shadow.woff') format('woff'),
          url('fonts/shadow.ttf') format('truetype'),
-         url('fonts/shadow.svg#shadow_regularregular') format('svg');
+         url('fonts/shadow.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 
