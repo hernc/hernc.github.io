@@ -1,3 +1,27 @@
+/*fonts*/
+/*
+@font-face {
+    font-family: 'shadow';
+    src: url('fonts/shadow.ttf')
+			format('truetype'),
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+@font-face {
+    font-family: 'shadow';
+    src: url('fonts/shadow.eot');
+    src: url('fonts/shadow.eot?#iefix') format('embedded-opentype'),
+         url('fonts/shadow.woff2') format('woff2'),
+         url('fonts/shadow.woff') format('woff'),
+         url('fonts/shadow.ttf') format('truetype'),
+         url('fonts/shadow.svg#shadow_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*resets*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -29,14 +53,7 @@ a:visited{
   color: inherit;
 }
 
-/*fonts*/
-@font-face {
-    font-family: 'shadow';
-    src: url('fonts/shadow.ttf')
-			format('truetype'),
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 body{
 	margin: 0;
@@ -111,20 +128,27 @@ header nav a{
 
 
 .innerIllusion {
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+/*	width: 100vw;*/
+/*	height: 100vh;*/
 	background: #98d12c;
 	font-family: 'shadow';
 	font-size: 6vmin;
 	letter-spacing: 0.5vw;
 	line-height: 8vmin;
-	opacity: 0;
-/*	transform: scale(1);*/
-/*	transition: scale 1000ms linear;*/
+/*	display: none;*/
+	transform: scale(0);
+	transition: all 1000ms ease;
 }
 
 
  .innerIllusionhidden{
-	opacity: 1;
+	display: flex;
   transform: scale(1);
+	transition: all 1000ms ease;
 }
 
 
