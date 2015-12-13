@@ -76,11 +76,13 @@ header nav a{
 	margin-top: 10vw;
 }
 .letters{
+	display: flex;
 	font-family: 'shadow';
 	font-size: 47vmin;
 	letter-spacing:0.5vw;
 	line-height: 36vmin;
 	color: white;
+	transition: all 1000ms linear;
 }
 @media (max-width:825px){
 
@@ -89,12 +91,15 @@ header nav a{
 	}
 }
 
-
-.lettera{
-	perspective: 50px;
-	animation: mymove 5s infinite;
-	transform: rotateX(-15deg);
+.mainLetters {
 }
+
+
+.lettera.hidden{
+	opacity: 0;
+  transform: scale(4.01);
+}
+
 
 @keyframes mymove {
     50% {perspective: 400px;}
@@ -103,20 +108,24 @@ header nav a{
 
 /*innerIllusion*/
 
-li.lettera .innerIllusion{
-	display: none;
-}
+
 
 .innerIllusion {
 	background: #98d12c;
 	font-family: 'shadow';
-	font-size: 10vw;
+	font-size: 6vmin;
 	letter-spacing: 0.5vw;
 	line-height: 8vmin;
-	transform: rotateX(-15deg);
-
+	opacity: 0;
+/*	transform: scale(1);*/
+/*	transition: scale 1000ms linear;*/
 }
 
+
+ .innerIllusionhidden{
+	opacity: 1;
+  transform: scale(1);
+}
 
 
 
