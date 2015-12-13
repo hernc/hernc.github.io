@@ -15,7 +15,7 @@
     src: url('fonts/shadow.eot?#iefix') format('embedded-opentype'),
          url('fonts/shadow.woff2') format('woff2'),
          url('fonts/shadow.woff') format('woff'),
-         url('fonts/shadow.ttf') format('truetype'),
+         url('fonts/shadow.ttf') format('ttf'),
          url('fonts/shadow.svg') format('svg');
     font-weight: normal;
     font-style: normal;
@@ -94,7 +94,7 @@ header nav a{
 }
 .letters{
 	display: flex;
-	font-family: 'shadow';
+	font-family: 'shadow', arial, sans-serif;
 	font-size: 47vmin;
 	letter-spacing:0.5vw;
 	line-height: 36vmin;
@@ -135,7 +135,7 @@ header nav a{
 /*	width: 100vw;*/
 /*	height: 100vh;*/
 	background: #98d12c;
-	font-family: 'shadow';
+	font-family: 'shadow', arial, sans-serif;
 	font-size: 6vmin;
 	letter-spacing: 0.5vw;
 	line-height: 8vmin;
@@ -177,7 +177,7 @@ header nav a{
 }
 
 .fullalphabet{
-	font-family: 'shadow';
+	font-family: 'shadow', arial, sans-serif;
 	font-size: 10vw;
 	background-color: #fff;
 	color:#000;
