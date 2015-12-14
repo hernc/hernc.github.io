@@ -26,6 +26,7 @@ time, mark, audio, video {
 a, li{
 	list-style: none;
 }
+
 a:visited{
   text-decoration: none;
   color: inherit;
@@ -66,10 +67,12 @@ header nav a{
 }
 
 .container ul{
+    padding: 2em 1em;
 	display:flex;
 	flex-flow: wrap;
-	margin-top: 10vw;
 }
+
+
 .letters{
 	display: flex;
 	font-family: 'illusionregular', arial, sans-serif;
@@ -108,10 +111,6 @@ header nav a{
 .innerIllusion {
 	display: flex;
 	position: absolute;
-	top: 0;
-	left: 0;
-/*	width: 100vw;*/
-/*	height: 100vh;*/
 	background: #98d12c;
 	font-family: 'illusionregular', arial, sans-serif;
 	font-size: 6vmin;
@@ -125,8 +124,11 @@ header nav a{
 
  .innerIllusionhidden{
 	display: flex;
-  transform: scale(1);
+    transform: scale(1);
+    height: 50vh;
+    width: 50vw;
 	transition: all 1000ms ease;
+    z-index: 1000;
 }
 
 

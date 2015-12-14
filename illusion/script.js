@@ -15,8 +15,15 @@
 //    });
 
 
+ function blurElement(element, size){
+            var filterVal = 'blur('+size+'px)';
+            $(element)
+              .css('filter',filterVal)
+              .css('webkitFilter',filterVal);
+        }
+
 
 $(".lettera").click(function() {
-		$(".lettera").toggleClass("hidden");
-		$(".innerIllusion").toggleClass("innerIllusionhidden");
+		$(".lettera").toggleClass("hidden");	$(".innerIllusion").toggleClass("innerIllusionhidden");
+        blurElement(".letters", 8);
 	});
