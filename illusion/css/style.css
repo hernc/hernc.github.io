@@ -55,7 +55,7 @@ header ul{
 
 header nav li{
 	display: flex;
-	flex: 2 1 auto;
+	flex: 5 1 auto;
 	justify-content: center;
 	background-color: #fff;
 	color: #000;
@@ -135,8 +135,7 @@ header nav li:hover{
     flex-wrap: wrap;
 	font-family: sans-serif;
 	text-transform: uppercase;
-	font-size: 2.5vw;
-/*	color: #fff*/
+	font-size: 2.5vmax;
 }
 
 
@@ -167,12 +166,12 @@ header nav li:hover{
 }
 
 .fullalphabet{
-    margin-top: 3vw;
+    margin-top: 3vmax;
     display: flex;
     flex-wrap: wrap;
 	font-family: 'illusionregular', arial, sans-serif;
     word-break: break-all;
-    font-size: 10vw;
+    font-size: 10vmax;
 	letter-spacing: .5vw;
 /*	padding: 2vw;*/
 }
@@ -180,7 +179,7 @@ header nav li:hover{
 .alphabetinfo{
 	width: 90vw;
     font-family: sans-serif;
-	font-size: 3vw;
+	font-size: 3vmax;
 	color:#000;
     margin-top: 1vw;
 }
