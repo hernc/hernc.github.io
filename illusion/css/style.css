@@ -140,37 +140,47 @@ header nav li:hover{
 }
 
 #type {
-	display: flex;
-	position: relative;
-	flex-wrap: wrap;
+	display:flex;
+/*	flex-flow: column;*/
+/*	position: relative;*/
+/*	word-break: normal;*/
+/*	flex-wrap: wrap;*/
 	background-color: #fff;
 }
-/*
-#type.container{
+
+#type main{
 	display: flex;
-	margin-top: 10%;
-	flex: 1 1 100vw;
+	flex-flow: column;
+	padding: 2vw;
+	flex-wrap: wrap;
+	margin-top: 10%;*/
+	width: 80vw;*/
+	justify-content: flex-end;*/
 }
-*/
 
 .alphabet{
+	font-size: 24vw;
 	display:flex;
 	flex-wrap: wrap;
+/*	width: 90%;*/
 }
 
 .fullalphabet{
-	display:flex;
 	flex-wrap: wrap;
 	font-family: 'illusionregular', arial, sans-serif;
-	font-size: 12vw;
+/*	font-size: 12vw;*/
 	background-color: #fff;
 	color:#000;
 	letter-spacing: .5vw;
-	word-break: normal;
 	padding: 2vw;
+	margin: 2vw;
+	word-break: normal;
 }
 
 .alphabetinfo{
+	align-content: center;
+	justify-content: center;
+/*	width: 90vw;*/
 	font-size: 3vw;
 	color:#000;
 }
