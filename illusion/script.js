@@ -1,20 +1,5 @@
 //LETTER INTERACTION
 
-//$('.lettera').click(function(){
-//	$('.lettera').not(this).find('.innerIllusion').hide();
-//	$(this).find('.innerIllusion').toggle();
-//	$('lettera').fadeOut("slow",function(){
-//      $(this).css('scale','5');
-//		});
-//
-//});
-
-//$(".lettera").click(function() {
-//        var el = $(this);
-//        el.before( el.clone(true) ).remove();
-//    });
-
-
  function blurElement(element, size){
             var filterVal = 'blur('+size+'px)';
             $(element)
@@ -23,7 +8,55 @@
         }
 
 
-$(".lettera").click(function() {
-		$(".lettera").toggleClass("hidden");	$(".innerIllusion").toggleClass("innerIllusionhidden");
-        blurElement(".letters", 8);
-	});
+//$(".lettera").click(function() {
+//		$(".lettera").toggleClass("hidden");	$(".innerIllusion").toggleClass("innerIllusionhidden");
+//
+//	});
+
+
+
+
+//$('.letters , .innerIllusion').on('click',function(){
+//
+//	if($(this).attr('data-click-state') ==1) {
+//		$(this).attr('data-click-state', 0)
+//		/*Change this to your own property / function - Click State 1*/
+//		$(this).addClass("hidden");
+//		blurElement(".letters", 8);
+//		$(".innerIllusion").addClass("innerIllusionhidden");
+//		/*Click State 1 finish*/
+//	} else {
+//		$(this).attr('data-click-state', 1)
+//		/*Change this to your own property / function - Click State 2*/
+//		$(this).removeClass("hidden");
+//		blurElement(".letters", 8);
+//		$(".innerIllusion").removeClass("innerIllusionhidden");
+//		/*Click State 2 finish*/
+//	}
+//
+//});
+
+
+
+$('.letters').on('click', function (event) {
+         $target = $(event.target);
+            $target.toggleClass('hidden');	$(".innerIllusion").toggleClass("innerIllusionhidden");
+					if($(this).attr('data-click-state') == 1) {
+						$(this).attr('data-click-state', 0)
+						blurElement(".letters", 0);
+						/*Click State 1 finish*/
+					} else {
+						$(this).attr('data-click-state', 1)
+						/*Change this to your own property / function - Click State 2*/
+						blurElement(".letters", 8);
+						/*Click State 2 finish*/
+					}
+});
+
+
+
+
+
+
+
+

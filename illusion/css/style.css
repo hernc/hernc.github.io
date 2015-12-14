@@ -35,12 +35,15 @@ a:visited{
 
 
 body{
+	display: flex;
+	flex-flow: column;
+	align-content: center;
 	margin: 0;
 	padding: 0;
 	background-color: #000;
 	font-family:sans-serif;
 	text-transform: uppercase;
-	font-size: 2.5vw;
+	font-size: 2.5vmax;
 	color: #fff
 }
 
@@ -49,63 +52,50 @@ header ul{
 }
 
 header nav li{
+	display: flex;
+	flex: 2 1 auto;
+	justify-content: center;
 	background-color: #fff;
 	color: #000;
 	padding: .4vw;
 	margin: .3vw;
-	width: 40vw;
+/*	width: 40vw;*/
 }
 
 header nav a{
 	display: inline-flex;
-	padding: .4vw;
+	width: 100%;
+	justify-content: center;
 }
 
-#illusion main{
-	display:flex;
-	position: relative;
+header nav li:hover{
+	background-color: #000;
+	color: #fff;
 }
 
-.container ul{
-    padding: 2em 1em;
+
+ .container ul {
+	margin: 7vh;
 	display:flex;
-	flex-flow: wrap;
+	flex-wrap: wrap;
+/*	justify-content: center;*/
 }
 
 
 .letters{
-	display: flex;
+	display:flex;
 	font-family: 'illusionregular', arial, sans-serif;
-	font-size: 47vmin;
-	letter-spacing:0.5vw;
-	line-height: 36vmin;
+	font-size: 19vmax;
+	letter-spacing:0.1vmax;
+	line-height: 0.8em;
 	color: white;
 	transition: all 1000ms linear;
 }
-@media (max-width:825px){
 
-		.letters:nth-child(17){
-		margin:0 6vw;
-	}
-}
-
-.mainLetters {
-}
-
-
-.lettera.hidden{
+.hidden{
 	opacity: 0;
   transform: scale(4.01);
 }
-
-
-@keyframes mymove {
-    50% {perspective: 400px;}
-}
-
-
-/*innerIllusion*/
-
 
 
 .innerIllusion {
@@ -139,39 +129,50 @@ header nav a{
 
 /*type page*/
 
-#type main{
+#type header nav li{
+	background-color: #000;
+	color: #fff;
+}
+
+#type header nav li:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+#type {
 	display: flex;
-	width: 100vw;
 	position: relative;
 	flex-wrap: wrap;
+	background-color: #fff;
 }
-#type .container{
+/*
+#type.container{
 	display: flex;
-	height: 100vw;
-	width: 100vw;
 	margin-top: 10%;
+	flex: 1 1 100vw;
 }
+*/
+
 .alphabet{
-	display: flex;
+	display:flex;
 	flex-wrap: wrap;
 }
 
 .fullalphabet{
+	display:flex;
+	flex-wrap: wrap;
 	font-family: 'illusionregular', arial, sans-serif;
-	font-size: 10vw;
+	font-size: 12vw;
 	background-color: #fff;
 	color:#000;
 	letter-spacing: .5vw;
-/*	word-break: normal;*/
+	word-break: normal;
 	padding: 2vw;
-	height: 25vw;
-    width: 100vw;
-
 }
 
 .alphabetinfo{
-	padding: 0 10vw 10vw 5vw;
 	font-size: 3vw;
+	color:#000;
 }
 
 
