@@ -25,16 +25,17 @@ time, mark, audio, video {
 
 a, li{
 	list-style: none;
+    text-decoration: none;
 }
 
-a:visited{
+a:visited,a{
   text-decoration: none;
   color: inherit;
 }
 
 
 
-body{
+#illusion{
 	display: flex;
 	flex-flow: column;
 	align-content: center;
@@ -46,6 +47,7 @@ body{
 	font-size: 2.5vmax;
 	color: #fff
 }
+
 
 header ul{
 	display: flex;
@@ -59,7 +61,6 @@ header nav li{
 	color: #000;
 	padding: .4vw;
 	margin: .3vw;
-/*	width: 40vw;*/
 }
 
 header nav a{
@@ -74,11 +75,11 @@ header nav li:hover{
 }
 
 
- .container ul {
+ #illusion .container ul {
 	margin: 7vh;
 	display:flex;
 	flex-wrap: wrap;
-/*	justify-content: center;*/
+	justify-content: center;
 }
 
 
@@ -87,7 +88,7 @@ header nav li:hover{
 	font-family: 'illusionregular', arial, sans-serif;
 	font-size: 19vmax;
 	letter-spacing:0.1vmax;
-	line-height: 0.8em;
+	line-height: 0.85em;
 	color: white;
 	transition: all 1000ms linear;
 }
@@ -106,7 +107,6 @@ header nav li:hover{
 	font-size: 6vmin;
 	letter-spacing: 0.5vw;
 	line-height: 8vmin;
-/*	display: none;*/
 	transform: scale(0);
 	transition: all 1000ms ease;
 }
@@ -127,7 +127,18 @@ header nav li:hover{
 
 
 
-/*type page*/
+/*TYPE PAGE*/
+
+#type {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-size: 2.5vw;
+/*	color: #fff*/
+}
+
 
 #type header nav li{
 	background-color: #000;
@@ -139,50 +150,39 @@ header nav li:hover{
 	color: #000;
 }
 
-#type {
-	display:flex;
-/*	flex-flow: column;*/
-/*	position: relative;*/
-/*	word-break: normal;*/
-/*	flex-wrap: wrap;*/
-	background-color: #fff;
+#type .container{
+  display: flex;
+  word-wrap: break-word;
+/*  flex-direction: column;*/
+  flex-wrap: wrap;
+  align-items: center;
+	justify-content: center;
 }
 
-#type main{
-	display: flex;
-	flex-flow: column;
-	padding: 2vw;
-	flex-wrap: wrap;
-	margin-top: 10%;*/
-	width: 80vw;*/
-	justify-content: flex-end;*/
-}
-
-.alphabet{
-	font-size: 24vw;
+ .alphabet{
+     width: 95%;
 	display:flex;
+	justify-content: center;
 	flex-wrap: wrap;
-/*	width: 90%;*/
 }
 
 .fullalphabet{
-	flex-wrap: wrap;
+    margin-top: 3vw;
+    display: flex;
+    flex-wrap: wrap;
 	font-family: 'illusionregular', arial, sans-serif;
-/*	font-size: 12vw;*/
-	background-color: #fff;
-	color:#000;
+    word-break: break-all;
+    font-size: 10vw;
 	letter-spacing: .5vw;
-	padding: 2vw;
-	margin: 2vw;
-	word-break: normal;
+/*	padding: 2vw;*/
 }
 
 .alphabetinfo{
-	align-content: center;
-	justify-content: center;
-/*	width: 90vw;*/
+	width: 90vw;
+    font-family: sans-serif;
 	font-size: 3vw;
 	color:#000;
+    margin-top: 1vw;
 }
 
 

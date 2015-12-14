@@ -1,19 +1,12 @@
 //LETTER INTERACTION
 
- function blurElement(element, size){
-            var filterVal = 'blur('+size+'px)';
-            $(element)
-              .css('filter',filterVal)
-              .css('webkitFilter',filterVal);
-        }
+
 
 
 //$(".lettera").click(function() {
 //		$(".lettera").toggleClass("hidden");	$(".innerIllusion").toggleClass("innerIllusionhidden");
 //
 //	});
-
-
 
 
 //$('.letters , .innerIllusion').on('click',function(){
@@ -35,6 +28,13 @@
 //	}
 //
 //});
+
+function blurElement(element, size){
+            var filterVal = 'blur('+size+'px)';
+            $(element)
+              .css('filter',filterVal)
+              .css('webkitFilter',filterVal);
+        }
 
 
 
