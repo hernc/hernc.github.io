@@ -40,7 +40,7 @@ function blurElement(element, size){
 
 $('.letters').on('click', function (event) {
          $target = $(event.target);
-            $target.toggleClass('hidden');	$(".innerIllusion").toggleClass("innerIllusionhidden");
+            $target.toggleClass('hidden');	$(this).next().toggleClass("innerIllusionhidden");
 					if($(this).attr('data-click-state') == 1) {
 						$(this).attr('data-click-state', 0)
 						blurElement(".letters", 0);

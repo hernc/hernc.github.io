@@ -61,6 +61,7 @@ header nav li{
 	color: #000;
 	padding: .4vw;
 	margin: .3vw;
+    border: solid;
 }
 
 header nav a{
@@ -87,7 +88,7 @@ header nav li:hover{
 	display:flex;
 	font-family: 'illusionregular', arial, sans-serif;
 	font-size: 19vmax;
-	letter-spacing:0.1vmax;
+	letter-spacing:0.3vmax;
 	line-height: 0.85em;
 	color: white;
 	transition: all 1000ms linear;
@@ -102,11 +103,13 @@ header nav li:hover{
 .innerIllusion {
 	display: flex;
 	position: absolute;
+    padding: 3vw;
+    align-items: center;
 	background: #98d12c;
 	font-family: 'illusionregular', arial, sans-serif;
 	font-size: 6vmin;
-	letter-spacing: 0.5vw;
-	line-height: 8vmin;
+	letter-spacing: 0.1vw;
+	line-height: 6vmin;
 	transform: scale(0);
 	transition: all 1000ms ease;
 }
@@ -115,8 +118,6 @@ header nav li:hover{
  .innerIllusionhidden{
 	display: flex;
     transform: scale(1);
-    height: 50vh;
-    width: 50vw;
 	transition: all 1000ms ease;
     z-index: 1000;
 }
@@ -136,12 +137,14 @@ header nav li:hover{
 	font-family: sans-serif;
 	text-transform: uppercase;
 	font-size: 2.5vmax;
+    background-color: #fff;
 }
 
 
 #type header nav li{
 	background-color: #000;
 	color: #fff;
+    border: solid;
 }
 
 #type header nav li:hover{
@@ -152,14 +155,13 @@ header nav li:hover{
 #type .container{
   display: flex;
   word-wrap: break-word;
-/*  flex-direction: column;*/
   flex-wrap: wrap;
   align-items: center;
-	justify-content: center;
+  justify-content: center;
 }
 
  .alphabet{
-     width: 95%;
+/*    width: 95%;*/
 	display:flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -171,22 +173,34 @@ header nav li:hover{
     flex-wrap: wrap;
 	font-family: 'illusionregular', arial, sans-serif;
     word-break: break-all;
-    font-size: 10vmax;
-	letter-spacing: .5vw;
-/*	padding: 2vw;*/
+    font-size: 8vmax;
+    padding: 0 4vw;
+	letter-spacing: 0.5vw;
+    color: #000;
 }
 
-.alphabetinfo{
-	width: 90vw;
-    font-family: sans-serif;
-	font-size: 3vmax;
-	color:#000;
-    margin-top: 1vw;
+.displayInfo{
+  text-transform: none;
+  width: 70vw;
+  font-style: italic;
+  font-family:serif;
+  font-weight: 100;
+  font-size: 1.4vmax;
+  color: #555;
+  opacity: 0.7;
+  margin-top: 1vw;
+
 }
 
-
-
-
+.description{
+  display: flex;
+  text-transform: none;
+  color: #000;
+  font-weight: 100;
+  margin-top: 2vw;
+  padding: 0 4vw;
+  font-size: 2vw;
+}
 
 
 
