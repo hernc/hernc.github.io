@@ -330,16 +330,18 @@ body {
   width: 50%;
   float: right;
 }
-
+.chamfer section.present{
+  margin-left: 5vw;
+}
 .leftP section.present{
   margin-left: -3vw;
 }
 .leftP p, .leftP h4, .leftP h2{
-  width: 70%;
-  float: left;
   text-align: left;
-  margin: 1vw;
+  padding: 0;
+  margin: 1vw 0;
 }
+
 .leftP blockquote{
   color: #555;
   font-size: .7vw;
@@ -350,7 +352,6 @@ body {
 
 h2{
 	position: relative;
-    color: crimson;
 }
 
 .decisions section.present{
@@ -371,24 +372,25 @@ h2{
 
 }
  .decisions h2{
-/*  width: 70%;*/
-  float: left;
-  text-align: left;
-  color: crimson;
+   margin-top: 3vw;
 }
 
 .print section.present{
-  margin-left: -4vw;
+  margin-left: -5vw;
 }
 .print p{
-  width: 33%;
+  width: 36%;
+}
+
+.internets h4{
+  text-align: left;
 }
 /****************LETTER H ANGLES************************/
 
 .angle3,
 .angle2,
 .angle {
-    background-color: aqua;
+    background-color: crimson;
     width: 150px;
     height: 1px;
     position: absolute;
@@ -415,18 +417,18 @@ h2{
 .dAngle3,
 .dAngle2,
 .dAngle {
-    background-color: aqua;
+    background-color: crimson;
     width: 150px;
     height: 1px;
     position: absolute;
-    top: 2.9em;
+    top: 5.4em;
     left: 0.5em;
     transform: rotate(120deg);
 }
 
 .dAngle2{
   position: absolute;
-  top: 12.9em;
+  top: 15.4em;
   left: -1.4em;
   transform: rotate(60deg);
 }
@@ -434,7 +436,7 @@ h2{
 .dAngle3{
   width: 2em;
   position: absolute;
-  top: 12.9em;
+  top: 15.4em;
   left: 9.1em;
   transform: rotate(120deg);
 }
