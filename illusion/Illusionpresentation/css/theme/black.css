@@ -4,10 +4,12 @@
  * Copyright (C) 2015 Hakim El Hattab, http://hakim.se
  */
 @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+@import url(../css/illusionType.css);
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
 
-/*fonts*/
+/*
+fonts
 @font-face {
     font-family: 'shadow';
     src: url('../../lib/font/shadow/shadow.ttf')
@@ -15,6 +17,19 @@ section.has-light-background, section.has-light-background h1, section.has-light
     font-weight: normal;
     font-style: normal;
 }
+*/
+@font-face {
+    font-family: 'illusionregular';
+    src: url('illusion-webfont.eot');
+    src: url('illusion-webfont.eot?#iefix') format('embedded-opentype'),
+         url('illusion-webfont.woff2') format('woff2'),
+         url('illusion-webfont.woff') format('woff'),
+         url('illusion-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 /*********************************************
  * GLOBAL STYLES
@@ -53,10 +68,10 @@ body {
   margin: 0;
   display:block ;
   color: #9DA9AE;
-  font-family: "shadow", Helvetica, sans-serif;
+  font-family: "illusionregular", Helvetica, sans-serif;
   font-weight: normal;
   line-height: 1.2;
-  letter-spacing: 8px;
+  letter-spacing: 7px;
   text-transform: uppercase;
   text-shadow: none;
   word-wrap: break-word;
@@ -67,7 +82,7 @@ body {
 	letter-spacing: 4px;
 	line-height: 0.9;
 	margin: auto 0;
-  font-size: 6em; }
+  font-size: 5em; }
 
 .reveal h2 {
 	color: #9DA9AE;
