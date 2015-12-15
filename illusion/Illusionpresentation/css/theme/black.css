@@ -38,7 +38,8 @@ body {
 .reveal .slides > section,
 .reveal .slides > section > section {
   line-height: 1.3;
-  font-weight: inherit; }
+  font-weight: inherit;
+}
 
 /*********************************************
  * HEADERS
@@ -325,19 +326,145 @@ body {
  *********************************************/
 
 
+.rightP p {
+  width: 50%;
+  float: right;
+}
+
+.leftP section.present{
+  margin-left: -3vw;
+}
+.leftP p, .leftP h4, .leftP h2{
+  width: 70%;
+  float: left;
+  text-align: left;
+  margin: 1vw;
+}
+.leftP blockquote{
+  color: #555;
+  font-size: .7vw;
+  position: absolute;
+  top: 33%;
+  text-align: left;
+}
+
 h2{
 	position: relative;
+    color: crimson;
 }
 
+.decisions section.present{
+  margin-left: -3vw;
+}
+.decisions p{
+  float: right;
+  width: 60%;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+}
+.decisions h4{
+  float: left;
+  position: absolute;
+  top: 15%;
+  left: 37%;
+
+}
+ .decisions h2{
+/*  width: 70%;*/
+  float: left;
+  text-align: left;
+  color: crimson;
+}
+
+.print section.present{
+  margin-left: -4vw;
+}
+.print p{
+  width: 33%;
+}
+/****************LETTER H ANGLES************************/
+
+.angle3,
+.angle2,
 .angle {
-		background-color: red;
+    background-color: aqua;
     width: 150px;
     height: 1px;
-		position: absolute;
-		top: 2.9em;
-		left: 0.5em;
+    position: absolute;
+    top: 2.9em;
+    left: 0.5em;
     transform: rotate(120deg);
-
 }
+
+.angle2{
+  position: absolute;
+  top: 12.9em;
+  left: -1.4em;
+  transform: rotate(60deg);
+}
+
+.angle3{
+  width: 2em;
+  position: absolute;
+  top: 12.9em;
+  left: 9.1em;
+  transform: rotate(120deg);
+}
+/****************LETTER D ANGLES************************/
+.dAngle3,
+.dAngle2,
+.dAngle {
+    background-color: aqua;
+    width: 150px;
+    height: 1px;
+    position: absolute;
+    top: 2.9em;
+    left: 0.5em;
+    transform: rotate(120deg);
+}
+
+.dAngle2{
+  position: absolute;
+  top: 12.9em;
+  left: -1.4em;
+  transform: rotate(60deg);
+}
+
+.dAngle3{
+  width: 2em;
+  position: absolute;
+  top: 12.9em;
+  left: 9.1em;
+  transform: rotate(120deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
