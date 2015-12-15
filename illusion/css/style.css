@@ -45,7 +45,8 @@ a:visited,a{
 	font-family:sans-serif;
 	text-transform: uppercase;
 	font-size: 2.5vmax;
-	color: #fff
+	color: #fff;
+    width: 100vmax;
 }
 
 
@@ -77,10 +78,10 @@ header nav li:hover{
 
 
  #illusion .container ul {
-	margin: 7vh;
+	margin: 2vw;
 	display:flex;
 	flex-wrap: wrap;
-	justify-content: center;
+/*	justify-content: center;*/
 }
 
 
@@ -96,20 +97,24 @@ header nav li:hover{
 
 .hidden{
 	opacity: 0;
-  transform: scale(4.01);
+  transform: scale(8.01);
 }
 
 
 .innerIllusion {
-	display: flex;
+	display: inline-flex;
+    flex-wrap: wrap;
 	position: absolute;
+    top: 10vw;
+    left: 10vw;
     padding: 3vw;
-    align-items: center;
+/*    align-items: center;*/
 	background: #98d12c;
 	font-family: 'illusionregular', arial, sans-serif;
 	font-size: 6vmin;
 	letter-spacing: 0.1vw;
 	line-height: 6vmin;
+    word-spacing: -1.1vw;
 	transform: scale(0);
 	transition: all 1000ms ease;
 }
@@ -120,15 +125,23 @@ header nav li:hover{
     transform: scale(1);
 	transition: all 1000ms ease;
     z-index: 1000;
+/*    width: 70%;*/
+    position: absolute;
+    top: 10vw;
+}
+
+em{
+  color: aqua;
+  padding: none;
+  margin:0 .4em;
+  display: flex;
 }
 
 
 
 
 
-
-
-/*TYPE PAGE*/
+/**********TYPE PAGE***************/
 
 #type {
     display: flex;

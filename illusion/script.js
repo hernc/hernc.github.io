@@ -41,16 +41,16 @@ function blurElement(element, size){
 $('.letters').on('click', function (event) {
          $target = $(event.target);
             $target.toggleClass('hidden');	$(this).next().toggleClass("innerIllusionhidden");
-					if($(this).attr('data-click-state') == 1) {
-						$(this).attr('data-click-state', 0)
-						blurElement(".letters", 0);
-						/*Click State 1 finish*/
-					} else {
-						$(this).attr('data-click-state', 1)
-						/*Change this to your own property / function - Click State 2*/
-						blurElement(".letters", 8);
-						/*Click State 2 finish*/
-					}
+            if($(this).attr('data-click-state') == 1) {
+                $(this).attr('data-click-state', 0)
+                blurElement(".letters", 0);
+                /*Click State 1 finish*/
+            } else {
+                $(this).attr('data-click-state', 1)
+                /*Change this to your own property / function - Click State 2*/
+                blurElement(".letters", 15);
+                /*Click State 2 finish*/
+            }
 });
 
 
