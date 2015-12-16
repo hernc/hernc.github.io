@@ -8,16 +8,7 @@
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
 
-/*
-fonts
-@font-face {
-    font-family: 'shadow';
-    src: url('../../lib/font/shadow/shadow.ttf')
-			format('truetype'),
-    font-weight: normal;
-    font-style: normal;
-}
-*/
+
 @font-face {
     font-family: 'illusionregular';
     src: url('illusion-webfont.eot');
@@ -82,7 +73,7 @@ body {
 	letter-spacing: 4px;
 	line-height: 0.9;
 	margin: auto 0;
-  font-size: 5em; }
+  font-size: 3em; }
 
 .reveal h2 {
 	color: #9DA9AE;
@@ -93,18 +84,18 @@ body {
 .reveal h3 {
 	text-align: center;
 	letter-spacing: 4px;
-  font-size: 5em; }
+  font-size: 4em; }
 
 .reveal h4 {
 	color: crimson;
 	letter-spacing: 3px;
-  font-size: 3.5em; }
+  font-size: 2.5em; }
 
 .reveal h1 {
   text-shadow: none; }
 
 .reveal h5{
-	font-size: 3em;
+	font-size: 2em;
 	color: crimson;
 	text-align: center;
 	transform: rotate(90deg);
@@ -344,9 +335,10 @@ body {
 .rightP p {
   width: 50%;
   float: right;
+
 }
 .chamfer section.present{
-  margin-left: 5vw;
+/*  margin-left: 5em;*/
 }
 .leftP section.present{
   margin-left: -3vw;
