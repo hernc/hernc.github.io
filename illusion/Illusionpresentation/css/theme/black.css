@@ -399,30 +399,37 @@ body {
 .form h4{
   text-align: center;
 }
+@media screen and (max-width: 1440px){
+  .decisions section.present{
+    margin-top: 4vw;
+  }
 
-.decisions section.present {
-  positio n: absolute;
+  .decisions p{
+    text-align: left;
+    font-size: 1.5vw;
+  }
+  .decisions h4{
+    text-align:left;
+  }
 }
 
-.decisions p{
+.print section.present p{
+  margin-left: -7vw;
+}
+.print h4{
   text-align: left;
-  font-size: 1.5vw;
-  margin-top: 4vw;
-}
-.decisions h4{
-  text-align:left;
-}
-
-
-.print section.present{
-  margin-left: -5vw;
+  margin-left: -7vw;
 }
 .print p{
-  width: 36%;
+  width: 30%;
 }
 
 .internets h4{
   text-align: left;
+  font-size: 3vw;
+}
+.internets p{
+  color: #fff;
 }
 /****************LETTER H ANGLES************************/
 
