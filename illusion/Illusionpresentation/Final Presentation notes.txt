@@ -1,92 +1,102 @@
 **ILLUSION TYPEFACE**
-Good morning My presentation has a backwards flow and it doesn’t follow the usual format but hopefully it will come together by the end. 
+Good morning 
+
+An overall theme through out this project is the idea of illusion. not necessarily in mystical forms with unicorns and such, but just suttle differences that could infer a sense of illusion in the right setting. 
+
+for example the use of negative space as well as experimenting with lines weights and varied layout positions. when arranged in a tight almost restricted manner, the negative lines can crate new shapes and pattersns and at times create a space of illusion and interest from the content being shoved down your mind.  
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-**ILLUSION**
- The name is still a work in progress. “UMBRA” is latin for shadow is one I’ve been thinking about. 
+**LETTER H---INTRO**************
+ So some technical details... 
 
--It is a unique display design
- chamfered corners give the font an industrial feel
--I think it questions  strength, solidity ,character & dimension.
+Its classification is a 
 
--the dark side is dominant, and often you see more light than shadow.
-
-- attracts attention in display settings,
-& may also be legible in short display blocks. 
+display bold 
+geometric
+san serif
+monospaced(even tho I cheated a little for optics,)
+maybe Industrial?
+and definately viewed best at large sizes. I mean large.
 
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
  
+**TECHNICAL FOUNDATION**
 
-**BASE  CLASSIFICATION**
+Just some general ideas on the foundation of the typeface...
 
-I wanted to show those basic numbers that we have all become so familiar with in this process. X-height, Cap height, etc… the bones of the face!
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-**CHAMFER**
-WHY CHAMFER?
-It has historical ties with large-scale lettering: traditional sign painters often use simple polygonal letterforms when working large, since they can be scaled up more easily using a systematic grid, requiring fewer calculations for curves. this systematic quality was very present in the concept of the typeface so it fit well.  
+    **HISTORY**
+
+    I wanted to use simple shapes and elements to get a better understanding of the parts that make up the typeface.  with use of heavy weights to aid in its graphic appearance as well as working either within a grid or having some constrains to guide me, helped alot with overall consistency.
+
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-**DECISIONS**
-Some of the decisions which help in defining the typeface characters are; the angles 120º and 60º which are not used in the same order or placements throughout the typeface as other fonts. not  all corners have an angle as is the base idea behind most of the chamfered typefaces. I struggled with this rule and sticking to it didn’t make sense in all glyphs.  
- 
- The stem is also the same weight when used as a diagonal , horizontal stem, or crossbars.    
 
-The measurements used for the outline and inset are intended to interact with the visibility of the shadow form & it’s dimension. 
+    **CHAMFER**
+    the systematic quality was very present in the concept of the typeface so its use fit well.
+    as you can see aside from the use of negative space, this element is very prevelent in the overall design.
+    
+    the chamfer does have historical ties with large-scale lettering: they often used simple letterforms when working large, since they can be scaled up more easily this is where the grid became useful and instrumental, requiring fewer calculations for curves. 
+
+      
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+**PROCESS**
+A little about the process of executing on the ideas...
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    **FORM**
+    I aimed to focus on the form and shape of the design. By that I mean that I was looking to make a graphic shape.
+
+    However I found that when you set up a grid system, these decisions are at times, automatically decided, sometimes not for the better. 
+
+    For example, on some of the edges, for optical reasons, adjustments had to be made. the T just did not need  chamfers on such a small crossbar. all this allowed me to learn more about the process of making letterforms and have a new appreciation!  crazy!
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    **DECISIONS**
+    Some of the decisions which help in defining the typeface characters are; 
+
+    the angles 120º and 60º which are not used in the same order or placements throughout the typeface as other fonts. not  all corners have an angle as is the base idea behind most of the chamfered typefaces. I struggled with this rule a bit and sticking to it didn’t make sense in all glyphs. Thanks Yujune!  
+
+     The stem is also the same weight when used as a diagonal , horizontal stem or crossbar.    
+
+    The measurements used for the outline and inset are intended to interact with the visibility of the shadow form & it’s dimension. 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
 
-**ERRORS**
-Erroneous moves during design process.!! I’m sure we all have those details that bug us. my typeface suffers from many of these. 
-The opening counter in the D 
-as well as the sharp contrast inside the W between the angles and horizontal lines. 
-the chosen angle on the J is off balance due to the direction of the letter.
- the number 7 is completely off the grid and does not share logic with its family. 
- the letter E middle crossbar lack of angles creates tension
- ETC….
+**REALITY IS**
+if the letters can create illusion, then putting them on paper with ink, seemed backwards, but with the use of translucent paper, I was able to add a dimension to the poster that it does not have on digital format. 
+
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-**FORM**
-Rectangular forms, in different weights are used as base elements of the typeface. By playing with these elements the illusion of depth is portrayed. and some light dark forms present themselves  
-
-This unknown quote made me look at the shapes in order to create the form.  crazy!
+**PRINT FONT**
+The poster front shown here was a struggle at first, going back and forth on a direction. again, I wanted to create that sense of illusion. but maybe it just looks like confusion. either way I am pleased with the result. I think it has a strong graphic nature. and maybe the message is a bit elusive!
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-**GRECIAN**
-By now you have realized the alphabetical nature of my presentation and are realizing how this is probably one of those times I did not want to get rid of an idea –as we often do– but I couldn’t see myself starting with H for the sake of history setting a context.  SO here are some examples of the historical reference. 
-
-Grecian: A typically heavy display typeface with octagonal shapes where curves are normally used. Also known as Chamfered or Beveled. Popular in the 19th Century for wood types.
-
-This kind of Grecian style rose to prominence during the 1800s. At the time, type founders were doing all sorts of strange and wonderful things with letterforms, mostly to service the field of advertising. 
-
-most of these specimens don’t have names and simply are numbered. all are from the later 1800’s
-**on the:**
-**left**— the expanded showing of Page’s Grecian Double Extra Condensed in the 8-line and 10-line sizes
-**right**—Nº 10. — 8 cicéros from Imprimerie Suisse’s “Spécimen des Caractères”, 1892.
-			Example of a Grecian from The WM. H. Page Wood Type Co. Specimen facsimile, 1888.
-			Identified only as No. 1229, this is a typeface from the French typefoundry of Peignot, as it appeared in their Lettres Fantaises of 1896. 
+**PRINT BACK**
+In this version the use of black as a background actually takes away from the illlusion concept a little, but gives it a stronger stance. so still trying to execute on the strong graphic shapes concept.
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-**HISTORY**
-The impact of technology on printing, paper manufacturing, and mechanical typesetting created a demand for a new style in type design that was compatible with mass-production.
+**THE INTERWEBS**
 
-Print journalism and advertising demanded types that were not only readable, but bold and distinctive enough to catch the reader’s attention.
-the **DISPLAY** was born. 
+Taking the idea of illusion and reality to the screen allowed the typeface to be showcased in context.
+here I used excerpts from a research paper on "the illusion of reality philosopher" which I thought were very appropriate.
 
-**ON THE RIGHT— BROADWAY**
-In 1928 Morris Fuller Benton applied geometry to the Modern letterform to arrive at Broadway. 
+>>>>>WEBSITE SLIDE 
+>>>>>DEMO SOME INTERACTION ON SITE
+
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-**INDUSTRILIZATION**
+**SUGGESTIONS**
 
- Industrial manufacturing created a need to promote the sale of ready-made goods which aided in the development of advertisement which aided all sort of things on and on… 
- 
- So in a sense I went  back to the industrialization idea and created something which in my mind has a bit of industrial spirit both in form but also in the creation process. 
- 
- In this context,  the characteristics of this typeface connect to the concepts of industrialization. the manufacturing of parts from a specific set of forms to deliver a final product.
- I see the form of this type as well as it’s concept–in a satirical way–being able to bring attention to industrialization and consumption issues. 
- 
-  **OR JUST SOME POSTER ON BEHANCE OR DRIBBBLE WOULD BE KINDA COOL TOO.  THANKS**
+any feeback is better than no feedback, so give it to me straight. thanks 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
 
 
 

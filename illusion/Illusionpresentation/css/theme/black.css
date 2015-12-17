@@ -334,14 +334,16 @@ body {
  * MY STYLES
  *********************************************/
 
-
+* span{
+  display: block;
+}
 .rightP p {
   width: 50%;
   float: right;
 }
 
 .intro section.present {
-  margin: 5vw auto;
+  margin: 2.5vw auto;
 }
 
 .intro h2{
@@ -349,21 +351,25 @@ body {
 }
 
 .intro p {
-	padding:0 3vw;
+	padding:0 1.4vw;
+}
+
+.chamfer p:before,
+.intro p:after{
+  content: "/";
+  color: crimson;
 }
 .chamfer p{
   width: 21vw;
-  font-size: 1.8vw;
-  text-align: left;
-  margin: 0 auto;
+  margin:0 auto 1vw auto;
 }
 
 .chamfer section .present{
-  margin-left: 12vw;
+  margin-left: 15vw;
 }
 
 .chamfer h4{
-  text-align: center;
+  margin-right: 17vw;
 }
 
 
@@ -379,14 +385,15 @@ body {
 .history p{
   width: 50%;
 }
-
+.process h3{
+  color: crimson !important;
+}
 .form blockquote{
   color: #a8a8a8;
   font-size: 0.5vw;
   position: absolute;
   top: 4vw;
   left: 3vw;
-  text-align: right;
   width: 50%;
 }
 .form section.present{
@@ -394,7 +401,7 @@ body {
 }
 .form p{
   width: 50%;
-  text-align: right;
+/*  text-align: right;*/
   padding:0 2vw;
   font-size: 1.5vw;
 }
@@ -406,6 +413,7 @@ body {
     margin-top: 4vw;
   }
 
+
   .decisions p{
     text-align: left;
     font-size: 1.5vw;
@@ -415,22 +423,28 @@ body {
   }
 }
 
+.decisions section.present{
+    margin-top: 2vw;
+    text-align: center;
+  }
+
 .print section.present p{
-  margin-left: -7vw;
+  margin-left: -8vw;
 }
 .print h4{
   text-align: left;
-  margin-left: -7vw;
+  margin-left: -8vw;
 }
 .print p{
   width: 30%;
 }
 
-.internets h4{
+.interwebs h4{
   text-align: left;
-  font-size: 3vw;
+  font-size: 5vw;
+  color: crimson !important;
 }
-.internets p{
+.interwebs p{
   color: #fff;
 }
 /****************LETTER H ANGLES************************/
