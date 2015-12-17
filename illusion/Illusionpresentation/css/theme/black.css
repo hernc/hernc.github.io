@@ -349,8 +349,7 @@ body {
 }
 
 .intro p {
-	list-style: none;
-	text-align: left !important;
+	padding:0 3vw;
 }
 .chamfer p{
   width: 21vw;
