@@ -348,7 +348,10 @@ body {
 	position: relative;
 }
 
-
+.intro li {
+	list-style: none;
+	text-align: left;
+}
 .chamfer p{
   width: 21vw;
   font-size: 1.8vw;
