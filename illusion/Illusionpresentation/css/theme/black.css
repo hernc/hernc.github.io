@@ -439,6 +439,9 @@ body {
   width: 30%;
 }
 
+.interwebs a{
+	margin-right: 5vw;
+}
 .interwebs h4{
   text-align: left;
   font-size: 5vw;
@@ -447,6 +450,7 @@ body {
 .interwebs p{
   color: #fff;
 }
+
 /****************LETTER H ANGLES************************/
 
 .angle3,
