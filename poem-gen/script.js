@@ -16,7 +16,7 @@ var words = new Array( "change", "off", "play", "spell", "air", "away", "animal"
 
 /****************** FUNCTIONS AND GLOBAL VAR*******************/
 
-var poem;
+var poem, sequence, x = 0;
 
 
 function getRandomColor() {
@@ -29,10 +29,10 @@ function getRandomColor() {
     }
 
 function getRandomWords() {
-        var letters = words
-         poem = '';
-        for (var i = 0; i < Math.random() * words.length; i++ ) {
-            poem += letters[Math.floor(Math.random() * words.length)]+' ';
+        var letters = words;
+         poem = [];
+        for (var i = 0; i < Math.random() * words.length - 10; i++ ) {
+            poem.push([letters[Math.floor(Math.random() * words.length)]]);
         }
         return poem;
     }
@@ -43,10 +43,22 @@ $('button').click(function(){
 	//change bg style
 	$("body").css("background-color",getRandomColor());
 	$("#output").html(getRandomWords());
-	//pitch (range 0 to 2), rate (range 0 to 1.5), volume{range 0 to 1}//
-	responsiveVoice.speak(poem, "UK English Male", {pitch: 0.5},{rate: 0.5},{volume: 1});
+
+	for (var i = 0; i < poem.length; i++) {
+		var time_to_next_word = 1500 * i;
+		window.setTimeout(say_word, time_to_next_word);
+//		console.log(1000 * x);
+	}
 });
 
+function say_word() {
+	console.log(x);
+	console.log(poem[x][0]);
+	var pitch = Math.floor(Math.random() * 2);
+	var rate = Math.floor(Math.random() * 1.5);
+	responsiveVoice.speak(poem[x][0], "UK English Male", { pitch: pitch, rate: rate, volume: 1 });
+	x++;
+}
 
 //cancel the speech
 
@@ -55,8 +67,9 @@ $('.poem1').click(function(){
 })
 
 
-
-
+//new jBox('Notice', {
+//    content: 'Let me tell you why'
+//});
 
 
 
