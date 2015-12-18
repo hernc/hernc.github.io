@@ -161,10 +161,13 @@ button:hover span{
 }
 
 #output {
-/*	flex: 1 1 30vh;*/
+/*	display: flex;*/
+	flex: 1 1 30vh;
+	justify-content: center;
 	font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
 	padding: 6vw;
-/*	width: 75%;*/
-/*	align-self: center;*/
+	width: 75%;
+	align-self: center;
+	word-break: break-all;
 
 }
