@@ -9,13 +9,13 @@ for example the use of negative space as well as experimenting with lines weight
 **LETTER H---INTRO**************
  So some technical details... 
 
-Its classification is a 
+It's classification is: 
 
 display bold 
 geometric
 san serif
 monospaced(even tho I cheated a little for optics,)
-maybe Industrial?
+maybe Industrial? idk
 and definately viewed best at large sizes. I mean large.
 
 
@@ -29,13 +29,13 @@ Just some general ideas on the foundation of the typeface...
 
     **HISTORY**
 
-    I wanted to use simple shapes and elements to get a better understanding of the parts that make up the typeface.  with use of heavy weights to aid in its graphic appearance as well as working either within a grid or having some constrains to guide me, helped alot with overall consistency.
+    I wanted to use simple shapes and elements to get a better understanding of the parts that make up the typeface.   using heavy weights to aid in its graphic appearance as well as working either within a grid or having some constrains to guide me, helped alot with overall consistency.
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
     **CHAMFER**
-    the systematic quality was very present in the concept of the typeface so its use fit well.
+    the systematic approach of the chamfer fit well in this design due to its consistency.
     as you can see aside from the use of negative space, this element is very prevelent in the overall design.
     
     the chamfer does have historical ties with large-scale lettering: they often used simple letterforms when working large, since they can be scaled up more easily this is where the grid became useful and instrumental, requiring fewer calculations for curves. 
@@ -49,17 +49,21 @@ A little about the process of executing on the ideas...
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
     **FORM**
-    I aimed to focus on the form and shape of the design. By that I mean that I was looking to make a graphic shape.
+    I aimed to focus on the form and shape of the design. By that I mean that I was looking to make a contrasting graphic shape.
 
     However I found that when you set up a grid system, these decisions are at times, automatically decided, sometimes not for the better. 
 
-    For example, on some of the edges, for optical reasons, adjustments had to be made. the T just did not need  chamfers on such a small crossbar. all this allowed me to learn more about the process of making letterforms and have a new appreciation!  crazy!
+    For example, on some of the edges,like the T, for optical reasons, adjustments were made. the T just did not need  chamfers on such a small crossbar. 
+		
+		all this allowed me to learn more about the process of making letterforms and have a new appreciation!  crazy!
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
     **DECISIONS**
     Some of the decisions which help in defining the typeface characters are; 
 
-    the angles 120º and 60º which are not used in the same order or placements throughout the typeface as other fonts. not  all corners have an angle as is the base idea behind most of the chamfered typefaces. I struggled with this rule a bit and sticking to it didn’t make sense in all glyphs. Thanks Yujune!  
+    the angles 120º and 60º which are not used in the same order or placements throughout the typeface as other fonts. 
+		
+		not  all corners have an angle as is the base idea behind most of the chamfered typefaces. I struggled with this rule a bit and sticking to it didn’t make sense in all glyphs. Thanks Yujune!  
 
      The stem is also the same weight when used as a diagonal , horizontal stem or crossbar.    
 
@@ -67,7 +71,7 @@ A little about the process of executing on the ideas...
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
 
 **REALITY IS**
-if the letters can create illusion, then putting them on paper with ink, seemed backwards, but with the use of translucent paper, I was able to add a dimension to the poster that it does not have on digital format. 
+if the letters can create illusion, then putting them on paper with ink, seemed backwards, but with the use of translucent paper, I was able to add a dimension to the poster, which interacts with its setting,  that does not rally come thru on digital format as much. 
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
