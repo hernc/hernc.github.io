@@ -1,4 +1,6 @@
-var userChoice = prompt("Do you choose meteor, glass or volcano?");
+
+
+var userChoice = alert("Do you choose meteor, glass or volcano?");
 var computerChoice = Math.random();
 if (computerChoice < 0.34) {
 	computerChoice = "meteor";
@@ -6,30 +8,30 @@ if (computerChoice < 0.34) {
 	computerChoice = "glass";
 } else {
 	computerChoice = "volcano";
-} console.log("Computer: " + computerChoice);
+} alert("Computer: " + computerChoice);
 
-var compare = function(choice1, choice2){
-    if(choice1 === choice2){
+var compare = function(userChoice, computerChoice){
+    if(userChoice === computerChoice){
         return "The result is a tie!";
     }
-    else if(choice1 === "meteor"){
-        if (choice2 === "volcano"){
+    else if(userChoice === "meteor"){
+        if (computerChoice === "volcano"){
             return "meteor wins"
         }else{
             return "glass wins"
         }
     }
 
-    else if(choice1 === "glass"){
-        if (choice2 === "meteor"){
+    else if(userChoice === "glass"){
+        if (computerChoice === "meteor"){
         return "glass wins"
         }else{
             return "volcano wins"
         }
     }
 
-    else if(choice1 === "volcano"){
-        if (choice2 === "meteor"){
+    else if(userChoice === "volcano"){
+        if (computerChoice === "meteor"){
         return "meteor wins"
         }else{
             return "volcano wins"
@@ -38,4 +40,22 @@ var compare = function(choice1, choice2){
 
 };//end of compare fucntion
 
-compare(userChoice, computerChoice);
+//compare(userChoice, computerChoice);
+
+//$().click(function() {
+//		compare(userChoice, computerChoice);
+//});
+
+
+$(".selectionArea").click(function() {
+   $('.' + this.class).fadeToggle();
+});
+
+
+
+
+
+
+
+
+

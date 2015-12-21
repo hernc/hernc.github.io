@@ -67,6 +67,8 @@ table{
 /*------------------------------------*\
     GAME CODE
 \*------------------------------------*/
+
+
 body{
   display: flex;
   justify-content: center;
@@ -78,7 +80,7 @@ body{
 header{
   display: flex;
   flex-flow: column;
-  margin: 2vw;
+  margin-top: 1vw;
 }
 .main{
   display: flex;
@@ -95,11 +97,11 @@ header h1{
 
 header h2{
   font-size: 3vw;
-  margin-top: 3vw;
+  margin-top: 1vw;
 }
 
 
-  .start{
+.start{
   display: flex;
   align-self: center;
   font-size: 2vw;
@@ -122,33 +124,45 @@ input[type=checkbox] {
    line-height: 100px;
    color: #fa5244;
    text-align: center;
-  visibility: hidden;
-  align-self: center;
+	display: none;
+/*  align-self: center;*/
+	transition: all 4s ease;
 }
 
 /* Toggled State */
+/*
 input[type=checkbox]:checked ~ .intro {
   visibility: visible;
 }
+*/
 
 
 .game {
   position: relative;
   display: flex;
+	flex-flow: column;
   justify-content: center;
+	align-content: center;
 
 }
 
-.click{
+.pick, .done{
   font-size: 2vw;
-  flex: 0 1 auto;
+  flex: 0 5 10%;
   border: solid 5px white;
   color: chartreuse;
   padding: 15px;
   margin-bottom: 2vw;
+	text-align: center;
+}
 
+.pickWrap {
+	display: flex;
+	justify-content: space-around;
 
 }
+
+
 .selectionArea{
   display: flex;
   justify-content: center;
@@ -166,8 +180,18 @@ input[type=checkbox]:checked ~ .intro {
 }
 
 
+.turn > h2 {
+	color: aqua;
+	margin-top: 1vw;
+	font-size: 2vw;
+}
 
-
+.winner {
+	width: 50vw;
+	height: 5vw;
+	border: solid 5px #fa5244;
+	align-self: center;
+}
 
 
 
